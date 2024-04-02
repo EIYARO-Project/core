@@ -46,8 +46,8 @@ $ git clone https://github.com/Eiyaro/ey.git $GOPATH/src/eiyaro/ey
 
 ``` bash
 $ cd $GOPATH/src/eiyaro/ey
-$ GO111MODULE=off make eiyarocd    # build eiyaro-classic daemon
-$ GO111MODULE=off make eiyaroccli  # build eiyaro-classic command line
+$ GO111MODULE=off make eiyarocd    
+$ GO111MODULE=off make eiyaroccli  
 ```
 
 When successfully building the project, the `eiyarod` and `eiyarocli` binary should be present in `cmd/eiyarocd` and `cmd/eiyaroccli` directory, respectively.
@@ -61,7 +61,7 @@ The Eiyaro project comes with several executables found in the `cmd` directory.
 | **eiyarocd**   | eiyarod command can help to initialize and launch eiyaro domain by custom parameters. `eiyarocd --help` for command line options. |
 | **eiyaroccli** | Our main Eiyaro CLI client. It is the entry point into the Eiyaro network (main-, test- or private net), capable of running as a full node archive node (retaining all historical state). It can be used by other processes as a gateway into the Eiyaro network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eiyaroccli --help` and the [eiyaroccli Wiki page](https://github.com/Eiyaro/eiyaro-classic/wiki/Command-Line-Options) for command line options. |
 
-## Running eiyaro classic
+## Running eiyaro
 
 Currently, eiyaro classic is still in active development and a ton of work needs to be done, but we also provide the following content for these eager to do something with `eiyaro classic`. This section won't cover all the commands of `eiyarocd` and `eiyaroccli` at length, for more information, please the help of every command, e.g., `eiyaroccli help`.
 
