@@ -2,6 +2,7 @@ package config
 
 import (
 	"encoding/hex"
+	"time"
 
 	log "github.com/sirupsen/logrus"
 
@@ -44,12 +45,16 @@ func mainNetGenesisBlock() *types.Block {
 		log.Panicf("fail on calc genesis tx merkel root")
 	}
 
+	currentTime := time.Now().Unix()
+
+	currentTimeUint64 := uint64(currentTime)
+
 	block := &types.Block{
 		BlockHeader: types.BlockHeader{
 			Version:   1,
 			Height:    0,
 			Nonce:     9253507043297,
-			Timestamp: 1524549600,
+			Timestamp: currentTimeUint64,
 			Bits:      2305843009214532812,
 			BlockCommitment: types.BlockCommitment{
 				TransactionsMerkleRoot: merkleRoot,
