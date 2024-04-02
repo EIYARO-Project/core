@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
 )
 
 type chain struct {

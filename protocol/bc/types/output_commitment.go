@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"io"
 
-	"ey/crypto/sha3pool"
-	"ey/encoding/blockchain"
-	"ey/errors"
-	"ey/protocol/bc"
+	"eiyaro/crypto/sha3pool"
+	"eiyaro/encoding/blockchain"
+	"eiyaro/errors"
+	"eiyaro/protocol/bc"
 )
 
 // OutputCommitment contains the commitment data for a transaction output.

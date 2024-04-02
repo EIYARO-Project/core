@@ -6,9 +6,9 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"ey/consensus"
-	"ey/protocol/bc"
-	"ey/testutil"
+	"eiyaro/consensus"
+	"eiyaro/protocol/bc"
+	"eiyaro/testutil"
 )
 
 func TestMapSpendTx(t *testing.T) {

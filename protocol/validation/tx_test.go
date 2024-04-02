@@ -6,14 +6,14 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"ey/consensus"
-	"ey/crypto/sha3pool"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/vm"
-	"ey/protocol/vm/vmutil"
-	"ey/testutil"
+	"eiyaro/consensus"
+	"eiyaro/crypto/sha3pool"
+	"eiyaro/errors"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
+	"eiyaro/protocol/vm"
+	"eiyaro/protocol/vm/vmutil"
+	"eiyaro/testutil"
 )
 
 func init() {

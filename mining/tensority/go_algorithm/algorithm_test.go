@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"ey/protocol/bc"
+	"eiyaro/protocol/bc"
 )
 
 var tests = []struct {

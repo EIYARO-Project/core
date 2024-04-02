@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/vm"
+	"eiyaro/errors"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
+	"eiyaro/protocol/vm"
 )
 
 func TestCheckOutput(t *testing.T) {

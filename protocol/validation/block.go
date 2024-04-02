@@ -5,12 +5,12 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/consensus"
-	"ey/consensus/difficulty"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
+	"eiyaro/consensus"
+	"eiyaro/consensus/difficulty"
+	"eiyaro/errors"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
+	"eiyaro/protocol/state"
 )
 
 const logModule = "leveldb"

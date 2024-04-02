@@ -7,7 +7,7 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"ey/node"
+	"eiyaro/node"
 )
 
 const logModule = "cmd"

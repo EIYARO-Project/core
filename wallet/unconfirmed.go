@@ -8,11 +8,11 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/account"
-	"ey/blockchain/query"
-	"ey/crypto/sha3pool"
-	"ey/protocol"
-	"ey/protocol/bc/types"
+	"eiyaro/account"
+	"eiyaro/blockchain/query"
+	"eiyaro/crypto/sha3pool"
+	"eiyaro/protocol"
+	"eiyaro/protocol/bc/types"
 )
 
 const (

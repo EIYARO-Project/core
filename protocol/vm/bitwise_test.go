@@ -3,7 +3,7 @@ package vm
 import (
 	"testing"
 
-	"ey/testutil"
+	"eiyaro/testutil"
 )
 
 func TestBitwiseOps(t *testing.T) {

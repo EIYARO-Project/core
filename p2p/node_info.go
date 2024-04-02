@@ -7,9 +7,9 @@ import (
 
 	"github.com/tendermint/go-crypto"
 
-	cfg "ey/config"
-	"ey/consensus"
-	"ey/version"
+	cfg "eiyaro/config"
+	"eiyaro/consensus"
+	"eiyaro/version"
 )
 
 const maxNodeInfoSize = 10240 // 10Kb

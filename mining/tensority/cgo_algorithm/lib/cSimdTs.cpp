@@ -4,14 +4,14 @@
 #include <mutex>
 #include <signal.h>
 #include "cSimdTs.h"
-#include "EiyaroPoW.h"
+#include "EIYAROPoW.h"
 #include "seed.h"
 
 using namespace std;
 
-EiyaroMatList16* matList_int16;
+EIYAROMatList16* matList_int16;
 uint8_t result[32] = {0};
-map <vector<uint8_t>, EiyaroMatList16*> seedCache;
+map <vector<uint8_t>, EIYAROMatList16*> seedCache;
 static const int cacheSize = 42; //"Answer to the Ultimate Question of Life, the Universe, and Everything"
 mutex mtx;
 
@@ -28,16 +28,16 @@ uint8_t *SimdTs(uint8_t blockheader[32], uint8_t seed[32]){
         Words32 extSeed;
         init_seed(extSeed, exted);
 
-        matList_int16 = new EiyaroMatList16;
+        matList_int16 = new EIYAROMatList16;
         matList_int16->init(extSeed);
 
         seedCache.insert(make_pair(seedVec, matList_int16));
     }
 
-    iter_mineEiyaro(blockheader, 32, result);
+    iter_mineEIYARO(blockheader, 32, result);
 
     if(seedCache.size() > cacheSize) {
-        for(map<vector<uint8_t>, EiyaroMatList16*>::iterator it=seedCache.begin(); it!=seedCache.end(); ++it){
+        for(map<vector<uint8_t>, EIYAROMatList16*>::iterator it=seedCache.begin(); it!=seedCache.end(); ++it){
             delete it->second;
         }
         seedCache.clear();

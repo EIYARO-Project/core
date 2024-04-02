@@ -3,10 +3,10 @@ package api
 import (
 	"strings"
 
-	chainjson "ey/encoding/json"
-	"ey/equity/compiler"
-	"ey/errors"
-	"ey/protocol/vm"
+	chainjson "eiyaro/encoding/json"
+	"eiyaro/equity/compiler"
+	"eiyaro/errors"
+	"eiyaro/protocol/vm"
 )
 
 // pre-define contract error types

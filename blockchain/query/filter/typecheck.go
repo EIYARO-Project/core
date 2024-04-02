@@ -3,7 +3,7 @@ package filter
 import (
 	"fmt"
 
-	"ey/errors"
+	"eiyaro/errors"
 )
 
 //Column describe a column

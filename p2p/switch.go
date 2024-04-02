@@ -11,17 +11,17 @@ import (
 	"github.com/tendermint/go-crypto"
 	cmn "github.com/tendermint/tmlibs/common"
 
-	cfg "ey/config"
-	"ey/consensus"
-	"ey/crypto/ed25519"
-	"ey/errors"
-	"ey/event"
-	"ey/p2p/connection"
-	"ey/p2p/discover/dht"
-	"ey/p2p/discover/mdns"
-	"ey/p2p/netutil"
-	"ey/p2p/security"
-	"ey/version"
+	cfg "eiyaro/config"
+	"eiyaro/consensus"
+	"eiyaro/crypto/ed25519"
+	"eiyaro/errors"
+	"eiyaro/event"
+	"eiyaro/p2p/connection"
+	"eiyaro/p2p/discover/dht"
+	"eiyaro/p2p/discover/mdns"
+	"eiyaro/p2p/netutil"
+	"eiyaro/p2p/security"
+	"eiyaro/version"
 )
 
 const (

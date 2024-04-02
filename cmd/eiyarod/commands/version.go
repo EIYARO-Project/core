@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"ey/version"
+	"eiyaro/version"
 )
 
 var versionCmd = &cobra.Command{

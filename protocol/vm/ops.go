@@ -6,8 +6,8 @@ import (
 	"math"
 	"reflect"
 
-	"ey/errors"
-	"ey/math/checked"
+	"eiyaro/errors"
+	"eiyaro/math/checked"
 )
 
 type Op uint8

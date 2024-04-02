@@ -5,14 +5,14 @@ import (
 	"testing"
 	"time"
 
-	"ey/consensus"
-	"ey/mining/tensority"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
-	"ey/protocol/vm"
-	"ey/protocol/vm/vmutil"
-	"ey/testutil"
+	"eiyaro/consensus"
+	"eiyaro/mining/tensority"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
+	"eiyaro/protocol/state"
+	"eiyaro/protocol/vm"
+	"eiyaro/protocol/vm/vmutil"
+	"eiyaro/testutil"
 )
 
 func TestCheckBlockTime(t *testing.T) {

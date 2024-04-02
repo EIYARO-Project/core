@@ -10,9 +10,9 @@ import (
 	log "github.com/sirupsen/logrus"
 	cmn "github.com/tendermint/tmlibs/common"
 
-	cfg "ey/config"
-	"ey/errors"
-	"ey/p2p/upnp"
+	cfg "eiyaro/config"
+	"eiyaro/errors"
+	"eiyaro/p2p/upnp"
 )
 
 const (

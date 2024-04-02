@@ -3,9 +3,9 @@ package asset
 import (
 	"encoding/json"
 
-	"ey/blockchain/query"
-	chainjson "ey/encoding/json"
-	"ey/protocol/vm/vmutil"
+	"eiyaro/blockchain/query"
+	chainjson "eiyaro/encoding/json"
+	"eiyaro/protocol/vm/vmutil"
 )
 
 func isValidJSON(b []byte) bool {

@@ -47,7 +47,7 @@ const (
 
 var (
 	// The full version string
-	Version = "1.1.2"
+	Version = "1.0.0"
 	// GitCommit is set with --ldflags "-X main.gitCommit=$(git rev-parse HEAD)"
 	GitCommit string
 	Status    *UpdateStatus
@@ -81,13 +81,15 @@ func (s *UpdateStatus) AddSeed(seedAddr string) {
 
 // CheckUpdate checks whether there is a newer version to update.
 // If there is, it set the "Status" variable to a proper value.
-// 	params:
-// 		localVerStr: the version of the node itself
-// 		remoteVerStr: the version received from a seed node.
-// 		remoteAddr: the version received from a seed node.
+//
+//	params:
+//		localVerStr: the version of the node itself
+//		remoteVerStr: the version received from a seed node.
+//		remoteAddr: the version received from a seed node.
+//
 // current rule:
-// 		1. small update: seed version is higher than the node itself
-// 		2. significant update: seed mojor version is higher than the node itself
+//  1. small update: seed version is higher than the node itself
+//  2. significant update: seed mojor version is higher than the node itself
 func (s *UpdateStatus) CheckUpdate(localVerStr string, remoteVerStr string, remoteAddr string) error {
 	s.Lock()
 	defer s.Unlock()
@@ -127,7 +129,7 @@ func (s *UpdateStatus) CheckUpdate(localVerStr string, remoteVerStr string, remo
 			"Current version": localVerStr,
 			"Newer version":   remoteVerStr,
 			"seed":            remoteAddr,
-		}).Warn("Please update your eiyarod via https://github.com/Eiyaro/eiyaro-classic/releases/ or http://eiyaro.io/wallet/")
+		}).Warn("Please update your eiyarod via https://github.com/EY/eiyaro/releases/ or http://eiyaro.org/wallet/")
 		s.notified = true
 	}
 	return nil

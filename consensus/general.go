@@ -5,9 +5,10 @@ import (
 	"math"
 	"strings"
 
-	"ey/protocol/bc"
+	"eiyaro/protocol/bc"
 )
 
+// consensus variables
 const (
 	// MaxBlockGas Max gas that one block contains
 	MaxBlockGas      = uint64(10000000)

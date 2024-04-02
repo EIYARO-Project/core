@@ -1,6 +1,6 @@
 package mining
 
-import "ey/protocol"
+import "eiyaro/protocol"
 
 type byTime []*protocol.TxDesc
 

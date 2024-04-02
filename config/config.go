@@ -10,7 +10,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/crypto/ed25519"
+	"eiyaro/crypto/ed25519"
 )
 
 var (
@@ -266,8 +266,8 @@ func DefaultDataDir() string {
 	case "darwin":
 		// In order to be compatible with old data path,
 		// copy the data from the old path to the new path
-		oldPath := filepath.Join(home, "Library", "Eiyaro")
-		newPath := filepath.Join(home, "Library", "Application Support", "Eiyaro")
+		oldPath := filepath.Join(home, "Library", "EIYARO")
+		newPath := filepath.Join(home, "Library", "Application Support", "EIYARO")
 		if !isFolderNotExists(oldPath) && isFolderNotExists(newPath) {
 			if err := os.Rename(oldPath, newPath); err != nil {
 				log.Errorf("DefaultDataDir: %v", err)
@@ -276,7 +276,7 @@ func DefaultDataDir() string {
 		}
 		return newPath
 	case "windows":
-		return filepath.Join(home, "AppData", "Roaming", "Eiyaro")
+		return filepath.Join(home, "AppData", "Roaming", "EIYARO")
 	default:
 		return filepath.Join(home, ".eiyaro")
 	}

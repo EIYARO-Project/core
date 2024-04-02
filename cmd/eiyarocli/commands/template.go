@@ -3,7 +3,7 @@ package commands
 import (
 	"fmt"
 
-	"ey/errors"
+	"eiyaro/errors"
 )
 
 const (

@@ -3,9 +3,9 @@ package types
 import (
 	"io"
 
-	"ey/encoding/blockchain"
-	"ey/errors"
-	"ey/protocol/bc"
+	"eiyaro/encoding/blockchain"
+	"eiyaro/errors"
+	"eiyaro/protocol/bc"
 )
 
 // TxOutput is the top level struct of tx output.

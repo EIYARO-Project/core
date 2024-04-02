@@ -4,11 +4,11 @@ import (
 	"os"
 	"testing"
 
-	dbm "ey/database/leveldb"
-	"ey/database/storage"
-	"ey/protocol/bc"
-	"ey/protocol/state"
-	"ey/testutil"
+	dbm "eiyaro/database/leveldb"
+	"eiyaro/database/storage"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/state"
+	"eiyaro/testutil"
 )
 
 func TestSaveUtxoView(t *testing.T) {

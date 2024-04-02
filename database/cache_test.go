@@ -3,8 +3,8 @@ package database
 import (
 	"testing"
 
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
 )
 
 func TestBlockCache(t *testing.T) {

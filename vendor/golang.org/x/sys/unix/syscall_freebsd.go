@@ -273,7 +273,7 @@ func Listxattr(file string, dest []byte) (sz int, err error) {
 	s := 0
 	var e error
 	for _, nsid := range [...]int{EXTATTR_NAMESPACE_USER, EXTATTR_NAMESPACE_SYSTEM} {
-		stmp, e := ExtattrListFile(file, nsid, uintptr(d), destsiz)
+		seyp, e := ExtattrListFile(file, nsid, uintptr(d), destsiz)
 
 		/* Errors accessing system attrs are ignored so that
 		 * we can implement the Linux-like behavior of omitting errors that
@@ -289,7 +289,7 @@ func Listxattr(file string, dest []byte) (sz int, err error) {
 			return s, e
 		}
 
-		s += stmp
+		s += seyp
 		destsiz -= s
 		if destsiz < 0 {
 			destsiz = 0
@@ -307,7 +307,7 @@ func Flistxattr(fd int, dest []byte) (sz int, err error) {
 	s := 0
 	var e error
 	for _, nsid := range [...]int{EXTATTR_NAMESPACE_USER, EXTATTR_NAMESPACE_SYSTEM} {
-		stmp, e := ExtattrListFd(fd, nsid, uintptr(d), destsiz)
+		seyp, e := ExtattrListFd(fd, nsid, uintptr(d), destsiz)
 		if e != nil && e == EPERM && nsid != EXTATTR_NAMESPACE_USER {
 			e = nil
 			continue
@@ -315,7 +315,7 @@ func Flistxattr(fd int, dest []byte) (sz int, err error) {
 			return s, e
 		}
 
-		s += stmp
+		s += seyp
 		destsiz -= s
 		if destsiz < 0 {
 			destsiz = 0
@@ -333,7 +333,7 @@ func Llistxattr(link string, dest []byte) (sz int, err error) {
 	s := 0
 	var e error
 	for _, nsid := range [...]int{EXTATTR_NAMESPACE_USER, EXTATTR_NAMESPACE_SYSTEM} {
-		stmp, e := ExtattrListLink(link, nsid, uintptr(d), destsiz)
+		seyp, e := ExtattrListLink(link, nsid, uintptr(d), destsiz)
 		if e != nil && e == EPERM && nsid != EXTATTR_NAMESPACE_USER {
 			e = nil
 			continue
@@ -341,7 +341,7 @@ func Llistxattr(link string, dest []byte) (sz int, err error) {
 			return s, e
 		}
 
-		s += stmp
+		s += seyp
 		destsiz -= s
 		if destsiz < 0 {
 			destsiz = 0

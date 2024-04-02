@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build ignore
 // +build ignore
 
 // +godefs map struct_in6_addr [16]byte /* in6_addr */
@@ -84,13 +85,13 @@ const (
 
 	sysIPV6_ADDR_PREFERENCES = C.IPV6_ADDR_PREFERENCES
 
-	sysIPV6_PREFER_SRC_TMP            = C.IPV6_PREFER_SRC_TMP
-	sysIPV6_PREFER_SRC_PUBLIC         = C.IPV6_PREFER_SRC_PUBLIC
+	sysIPV6_PREFER_SRC_TMP           = C.IPV6_PREFER_SRC_TMP
+	sysIPV6_PREFER_SRC_PUBLIC        = C.IPV6_PREFER_SRC_PUBLIC
 	sysIPV6_PREFER_SRC_PUEYP_DEFAULT = C.IPV6_PREFER_SRC_PUEYP_DEFAULT
-	sysIPV6_PREFER_SRC_COA            = C.IPV6_PREFER_SRC_COA
-	sysIPV6_PREFER_SRC_HOME           = C.IPV6_PREFER_SRC_HOME
-	sysIPV6_PREFER_SRC_CGA            = C.IPV6_PREFER_SRC_CGA
-	sysIPV6_PREFER_SRC_NONCGA         = C.IPV6_PREFER_SRC_NONCGA
+	sysIPV6_PREFER_SRC_COA           = C.IPV6_PREFER_SRC_COA
+	sysIPV6_PREFER_SRC_HOME          = C.IPV6_PREFER_SRC_HOME
+	sysIPV6_PREFER_SRC_CGA           = C.IPV6_PREFER_SRC_CGA
+	sysIPV6_PREFER_SRC_NONCGA        = C.IPV6_PREFER_SRC_NONCGA
 
 	sysIPV6_MINHOPCOUNT = C.IPV6_MINHOPCOUNT
 

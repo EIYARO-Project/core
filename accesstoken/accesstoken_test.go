@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	dbm "ey/database/leveldb"
-	"ey/errors"
+	dbm "eiyaro/database/leveldb"
+	"eiyaro/errors"
 )
 
 func TestCreate(t *testing.T) {

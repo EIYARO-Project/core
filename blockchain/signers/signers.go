@@ -4,8 +4,8 @@ package signers
 import (
 	"bytes"
 	"encoding/binary"
-	"ey/crypto/ed25519/chainkd"
-	"ey/errors"
+	"eiyaro/crypto/ed25519/chainkd"
+	"eiyaro/errors"
 )
 
 type keySpace byte

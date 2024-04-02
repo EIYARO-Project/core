@@ -4,8 +4,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"ey/crypto/ed25519"
-	"ey/errors"
+	"eiyaro/crypto/ed25519"
+	"eiyaro/errors"
 )
 
 // TestIsUnspendable ensures the IsUnspendable function returns the expected

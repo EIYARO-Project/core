@@ -6,7 +6,7 @@ import (
 	cmn "github.com/tendermint/tmlibs/common"
 )
 
-/****** these are for production settings ***********/
+// EnsureRoot /****** these are for production settings ***********/
 func EnsureRoot(rootDir string, network string) {
 	cmn.EnsureDir(rootDir, 0700)
 	cmn.EnsureDir(rootDir+"/data", 0700)
@@ -30,13 +30,13 @@ node_alias = ""
 var mainNetConfigTmpl = `chain_id = "mainnet"
 [p2p]
 laddr = "tcp://0.0.0.0:46657"
-seeds = "103.112.184.34:46657,103.115.46.201:46657,217.194.133.61:46657"
+seeds = "103.115.46.201:46657,103.112.184.34:46657,217.194.133.61:46657"
 `
 
 var testNetConfigTmpl = `chain_id = "wisdom"
 [p2p]
 laddr = "tcp://0.0.0.0:46656"
-seeds = "103.112.184.34:46656,103.115.46.201:46656"
+seeds = ""
 `
 
 var soloNetConfigTmpl = `chain_id = "solonet"

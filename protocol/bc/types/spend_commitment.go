@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"io"
 
-	"ey/encoding/blockchain"
-	"ey/errors"
-	"ey/protocol/bc"
+	"eiyaro/encoding/blockchain"
+	"eiyaro/errors"
+	"eiyaro/protocol/bc"
 )
 
 // SpendCommitment contains the commitment data for a transaction output.

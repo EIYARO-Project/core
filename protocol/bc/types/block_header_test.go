@@ -9,9 +9,9 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"ey/encoding/blockchain"
-	"ey/errors"
-	"ey/testutil"
+	"eiyaro/encoding/blockchain"
+	"eiyaro/errors"
+	"eiyaro/testutil"
 )
 
 func TestBlockHeader(t *testing.T) {

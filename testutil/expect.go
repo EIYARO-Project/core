@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"ey/errors"
+	"eiyaro/errors"
 )
 
 var wd, _ = os.Getwd()

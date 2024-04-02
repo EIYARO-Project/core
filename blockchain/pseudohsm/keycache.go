@@ -15,7 +15,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/crypto/ed25519/chainkd"
+	"eiyaro/crypto/ed25519/chainkd"
 )
 
 // Minimum amount of time between cache reloads. This limit applies if the platform does

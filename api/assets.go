@@ -4,9 +4,9 @@ import (
 	"context"
 	"strings"
 
-	"ey/asset"
-	"ey/crypto/ed25519/chainkd"
-	chainjson "ey/encoding/json"
+	"eiyaro/asset"
+	"eiyaro/crypto/ed25519/chainkd"
+	chainjson "eiyaro/encoding/json"
 
 	log "github.com/sirupsen/logrus"
 )

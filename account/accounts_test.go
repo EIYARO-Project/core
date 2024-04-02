@@ -7,15 +7,15 @@ import (
 	"strings"
 	"testing"
 
-	"ey/blockchain/pseudohsm"
-	"ey/blockchain/signers"
-	"ey/crypto/ed25519/chainkd"
-	"ey/database"
-	dbm "ey/database/leveldb"
-	"ey/errors"
-	"ey/event"
-	"ey/protocol"
-	"ey/testutil"
+	"eiyaro/blockchain/pseudohsm"
+	"eiyaro/blockchain/signers"
+	"eiyaro/crypto/ed25519/chainkd"
+	"eiyaro/database"
+	dbm "eiyaro/database/leveldb"
+	"eiyaro/errors"
+	"eiyaro/event"
+	"eiyaro/protocol"
+	"eiyaro/testutil"
 )
 
 func TestCreateAccountWithUppercase(t *testing.T) {

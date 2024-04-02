@@ -1,11 +1,11 @@
 package database
 
 import (
-	dbm "ey/database/leveldb"
-	"ey/database/storage"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/state"
+	dbm "eiyaro/database/leveldb"
+	"eiyaro/database/storage"
+	"eiyaro/errors"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/state"
 	"github.com/golang/protobuf/proto"
 )
 

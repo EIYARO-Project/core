@@ -14,8 +14,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/common"
-	"ey/crypto"
+	"eiyaro/common"
+	"eiyaro/crypto"
 )
 
 const (

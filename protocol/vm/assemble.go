@@ -10,7 +10,7 @@ import (
 	"strings"
 	"unicode"
 
-	"ey/errors"
+	"eiyaro/errors"
 )
 
 // Assemble converts a string like "2 3 ADD 5 NUMEQUAL" into 0x525393559c.

@@ -8,9 +8,9 @@ import (
 
 	"github.com/tendermint/go-crypto"
 
-	cfg "ey/config"
-	conn "ey/p2p/connection"
-	"ey/version"
+	cfg "eiyaro/config"
+	conn "eiyaro/p2p/connection"
+	"eiyaro/version"
 )
 
 const testCh = 0x01

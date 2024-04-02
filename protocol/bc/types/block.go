@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io"
 
-	"ey/encoding/blockchain"
-	"ey/encoding/bufpool"
-	"ey/errors"
+	"eiyaro/encoding/blockchain"
+	"eiyaro/encoding/bufpool"
+	"eiyaro/errors"
 )
 
 // serflag variables, start with 1

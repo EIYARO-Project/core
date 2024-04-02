@@ -7,12 +7,12 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/account"
-	"ey/blockchain/signers"
-	"ey/common"
-	"ey/consensus"
-	"ey/crypto/ed25519/chainkd"
-	"ey/protocol/vm/vmutil"
+	"eiyaro/account"
+	"eiyaro/blockchain/signers"
+	"eiyaro/common"
+	"eiyaro/consensus"
+	"eiyaro/crypto/ed25519/chainkd"
+	"eiyaro/protocol/vm/vmutil"
 )
 
 // POST /create-account

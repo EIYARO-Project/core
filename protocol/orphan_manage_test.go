@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/testutil"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
+	"eiyaro/testutil"
 )
 
 var testBlocks = []*types.Block{

@@ -5,7 +5,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"ey/errors"
+	"eiyaro/errors"
 )
 
 func TestAssemble(t *testing.T) {

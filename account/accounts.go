@@ -1,4 +1,4 @@
-// Package account stores and tracks accounts within a Eiyaro Core.
+// Package account stores and tracks accounts within a EIYARO Core.
 package account
 
 import (
@@ -11,19 +11,19 @@ import (
 	"github.com/golang/groupcache/lru"
 	log "github.com/sirupsen/logrus"
 
-	"ey/blockchain/signers"
-	"ey/blockchain/txbuilder"
-	"ey/common"
-	"ey/consensus"
-	"ey/consensus/segwit"
-	"ey/crypto"
-	"ey/crypto/ed25519/chainkd"
-	"ey/crypto/sha3pool"
-	dbm "ey/database/leveldb"
-	"ey/errors"
-	"ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/vm/vmutil"
+	"eiyaro/blockchain/signers"
+	"eiyaro/blockchain/txbuilder"
+	"eiyaro/common"
+	"eiyaro/consensus"
+	"eiyaro/consensus/segwit"
+	"eiyaro/crypto"
+	"eiyaro/crypto/ed25519/chainkd"
+	"eiyaro/crypto/sha3pool"
+	dbm "eiyaro/database/leveldb"
+	"eiyaro/errors"
+	"eiyaro/protocol"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/vm/vmutil"
 )
 
 const (
@@ -85,7 +85,7 @@ func contractIndexKey(accountID string) []byte {
 	return append(contractIndexPrefix, []byte(accountID)...)
 }
 
-// Account is structure of Eiyaro account
+// Account is structure of EIYARO account
 type Account struct {
 	*signers.Signer
 	ID    string `json:"id"`

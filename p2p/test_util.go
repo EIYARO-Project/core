@@ -7,10 +7,10 @@ import (
 	"github.com/tendermint/go-crypto"
 	cmn "github.com/tendermint/tmlibs/common"
 
-	cfg "ey/config"
-	dbm "ey/database/leveldb"
-	"ey/p2p/connection"
-	"ey/p2p/discover/dht"
+	cfg "eiyaro/config"
+	dbm "eiyaro/database/leveldb"
+	"eiyaro/p2p/connection"
+	"eiyaro/p2p/discover/dht"
 )
 
 //PanicOnAddPeerErr add peer error

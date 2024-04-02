@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"ey/common/bech32"
-	"ey/consensus"
+	"eiyaro/common/bech32"
+	"eiyaro/consensus"
 )
 
 func TestAddresses(t *testing.T) {

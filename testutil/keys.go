@@ -1,8 +1,8 @@
 package testutil
 
 import (
-	"ey/crypto/ed25519"
-	"ey/crypto/ed25519/chainkd"
+	"eiyaro/crypto/ed25519"
+	"eiyaro/crypto/ed25519/chainkd"
 )
 
 var (

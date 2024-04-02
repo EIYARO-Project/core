@@ -7,10 +7,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/event"
-	"ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"eiyaro/event"
+	"eiyaro/protocol"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
 )
 
 // Notification types

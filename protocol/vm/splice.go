@@ -1,6 +1,6 @@
 package vm
 
-import "ey/math/checked"
+import "eiyaro/math/checked"
 
 func opCat(vm *virtualMachine) error {
 	err := vm.applyCost(4)

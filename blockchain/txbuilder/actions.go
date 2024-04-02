@@ -5,12 +5,12 @@ import (
 	stdjson "encoding/json"
 	"errors"
 
-	"ey/common"
-	"ey/consensus"
-	"ey/encoding/json"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/vm/vmutil"
+	"eiyaro/common"
+	"eiyaro/consensus"
+	"eiyaro/encoding/json"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
+	"eiyaro/protocol/vm/vmutil"
 )
 
 // DecodeControlAddressAction convert input data to action struct

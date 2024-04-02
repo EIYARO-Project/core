@@ -12,7 +12,7 @@ import (
 	"strings"
 	"bytes"
 
-	"ey/crypto/ed25519"
+	"eiyaro/crypto/ed25519"
 )
 
 // NewPrivateKey returns a PrivateKey by parsing the string s.

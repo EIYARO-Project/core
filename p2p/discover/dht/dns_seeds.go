@@ -6,8 +6,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/consensus"
-	"ey/errors"
+	"eiyaro/consensus"
+	"eiyaro/errors"
 )
 
 var (

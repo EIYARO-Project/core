@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"ey/util"
+	"eiyaro/util"
 )
 
 var netInfoCmd = &cobra.Command{

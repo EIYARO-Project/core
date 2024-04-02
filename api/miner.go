@@ -4,11 +4,11 @@ import (
 	"context"
 	"strconv"
 
-	chainjson "ey/encoding/json"
-	"ey/errors"
-	"ey/event"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	chainjson "eiyaro/encoding/json"
+	"eiyaro/errors"
+	"eiyaro/event"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
 )
 
 // BlockHeaderJSON struct provides support for get work in json format, when it also follows

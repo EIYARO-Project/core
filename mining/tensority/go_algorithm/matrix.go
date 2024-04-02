@@ -8,8 +8,8 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"ey/crypto/sha3pool"
-	"ey/protocol/bc"
+	"eiyaro/crypto/sha3pool"
+	"eiyaro/protocol/bc"
 )
 
 const (

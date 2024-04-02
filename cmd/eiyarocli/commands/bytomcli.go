@@ -7,7 +7,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"ey/util"
+	"eiyaro/util"
 )
 
 // eiyarocli usage template
@@ -80,11 +80,11 @@ func isUserError(err error) bool {
 	return userErrorRegexp.MatchString(err.Error())
 }
 
-// EiyarocliCmd is Eiyarocli's root command.
-// Every other command attached to EiyarocliCmd is a child command to it.
-var EiyarocliCmd = &cobra.Command{
+// BytomcliCmd is Bytomcli's root command.
+// Every other command attached to BytomcliCmd is a child command to it.
+var BytomcliCmd = &cobra.Command{
 	Use:   "eiyarocli",
-	Short: "Eiyarocli is a commond line client for eiyaro core (a.k.a. eiyarod)",
+	Short: "Bytomcli is a commond line client for eiyaro core (a.k.a. eiyarod)",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) < 1 {
 			cmd.SetUsageTemplate(usageTemplate)
@@ -93,90 +93,90 @@ var EiyarocliCmd = &cobra.Command{
 	},
 }
 
-// Execute adds all child commands to the root command EiyarocliCmd and sets flags appropriately.
+// Execute adds all child commands to the root command BytomcliCmd and sets flags appropriately.
 func Execute() {
 
 	AddCommands()
 	AddTemplateFunc()
 
-	if _, err := EiyarocliCmd.ExecuteC(); err != nil {
+	if _, err := BytomcliCmd.ExecuteC(); err != nil {
 		os.Exit(util.ErrLocalExe)
 	}
 }
 
-// AddCommands adds child commands to the root command EiyarocliCmd.
+// AddCommands adds child commands to the root command BytomcliCmd.
 func AddCommands() {
-	EiyarocliCmd.AddCommand(createAccessTokenCmd)
-	EiyarocliCmd.AddCommand(listAccessTokenCmd)
-	EiyarocliCmd.AddCommand(deleteAccessTokenCmd)
-	EiyarocliCmd.AddCommand(checkAccessTokenCmd)
+	BytomcliCmd.AddCommand(createAccessTokenCmd)
+	BytomcliCmd.AddCommand(listAccessTokenCmd)
+	BytomcliCmd.AddCommand(deleteAccessTokenCmd)
+	BytomcliCmd.AddCommand(checkAccessTokenCmd)
 
-	EiyarocliCmd.AddCommand(createAccountCmd)
-	EiyarocliCmd.AddCommand(deleteAccountCmd)
-	EiyarocliCmd.AddCommand(listAccountsCmd)
-	EiyarocliCmd.AddCommand(updateAccountAliasCmd)
-	EiyarocliCmd.AddCommand(createAccountReceiverCmd)
-	EiyarocliCmd.AddCommand(listAddressesCmd)
-	EiyarocliCmd.AddCommand(validateAddressCmd)
-	EiyarocliCmd.AddCommand(listPubKeysCmd)
+	BytomcliCmd.AddCommand(createAccountCmd)
+	BytomcliCmd.AddCommand(deleteAccountCmd)
+	BytomcliCmd.AddCommand(listAccountsCmd)
+	BytomcliCmd.AddCommand(updateAccountAliasCmd)
+	BytomcliCmd.AddCommand(createAccountReceiverCmd)
+	BytomcliCmd.AddCommand(listAddressesCmd)
+	BytomcliCmd.AddCommand(validateAddressCmd)
+	BytomcliCmd.AddCommand(listPubKeysCmd)
 
-	EiyarocliCmd.AddCommand(createAssetCmd)
-	EiyarocliCmd.AddCommand(getAssetCmd)
-	EiyarocliCmd.AddCommand(listAssetsCmd)
-	EiyarocliCmd.AddCommand(updateAssetAliasCmd)
+	BytomcliCmd.AddCommand(createAssetCmd)
+	BytomcliCmd.AddCommand(getAssetCmd)
+	BytomcliCmd.AddCommand(listAssetsCmd)
+	BytomcliCmd.AddCommand(updateAssetAliasCmd)
 
-	EiyarocliCmd.AddCommand(getTransactionCmd)
-	EiyarocliCmd.AddCommand(listTransactionsCmd)
+	BytomcliCmd.AddCommand(getTransactionCmd)
+	BytomcliCmd.AddCommand(listTransactionsCmd)
 
-	EiyarocliCmd.AddCommand(getUnconfirmedTransactionCmd)
-	EiyarocliCmd.AddCommand(listUnconfirmedTransactionsCmd)
-	EiyarocliCmd.AddCommand(decodeRawTransactionCmd)
+	BytomcliCmd.AddCommand(getUnconfirmedTransactionCmd)
+	BytomcliCmd.AddCommand(listUnconfirmedTransactionsCmd)
+	BytomcliCmd.AddCommand(decodeRawTransactionCmd)
 
-	EiyarocliCmd.AddCommand(listUnspentOutputsCmd)
-	EiyarocliCmd.AddCommand(listBalancesCmd)
+	BytomcliCmd.AddCommand(listUnspentOutputsCmd)
+	BytomcliCmd.AddCommand(listBalancesCmd)
 
-	EiyarocliCmd.AddCommand(rescanWalletCmd)
-	EiyarocliCmd.AddCommand(walletInfoCmd)
+	BytomcliCmd.AddCommand(rescanWalletCmd)
+	BytomcliCmd.AddCommand(walletInfoCmd)
 
-	EiyarocliCmd.AddCommand(buildTransactionCmd)
-	EiyarocliCmd.AddCommand(signTransactionCmd)
-	EiyarocliCmd.AddCommand(submitTransactionCmd)
-	EiyarocliCmd.AddCommand(estimateTransactionGasCmd)
+	BytomcliCmd.AddCommand(buildTransactionCmd)
+	BytomcliCmd.AddCommand(signTransactionCmd)
+	BytomcliCmd.AddCommand(submitTransactionCmd)
+	BytomcliCmd.AddCommand(estimateTransactionGasCmd)
 
-	EiyarocliCmd.AddCommand(getBlockCountCmd)
-	EiyarocliCmd.AddCommand(getBlockHashCmd)
-	EiyarocliCmd.AddCommand(getBlockCmd)
-	EiyarocliCmd.AddCommand(getBlockHeaderCmd)
-	EiyarocliCmd.AddCommand(getDifficultyCmd)
-	EiyarocliCmd.AddCommand(getHashRateCmd)
+	BytomcliCmd.AddCommand(getBlockCountCmd)
+	BytomcliCmd.AddCommand(getBlockHashCmd)
+	BytomcliCmd.AddCommand(getBlockCmd)
+	BytomcliCmd.AddCommand(getBlockHeaderCmd)
+	BytomcliCmd.AddCommand(getDifficultyCmd)
+	BytomcliCmd.AddCommand(getHashRateCmd)
 
-	EiyarocliCmd.AddCommand(createKeyCmd)
-	EiyarocliCmd.AddCommand(deleteKeyCmd)
-	EiyarocliCmd.AddCommand(listKeysCmd)
-	EiyarocliCmd.AddCommand(updateKeyAliasCmd)
-	EiyarocliCmd.AddCommand(resetKeyPwdCmd)
-	EiyarocliCmd.AddCommand(checkKeyPwdCmd)
+	BytomcliCmd.AddCommand(createKeyCmd)
+	BytomcliCmd.AddCommand(deleteKeyCmd)
+	BytomcliCmd.AddCommand(listKeysCmd)
+	BytomcliCmd.AddCommand(updateKeyAliasCmd)
+	BytomcliCmd.AddCommand(resetKeyPwdCmd)
+	BytomcliCmd.AddCommand(checkKeyPwdCmd)
 
-	EiyarocliCmd.AddCommand(signMsgCmd)
-	EiyarocliCmd.AddCommand(verifyMsgCmd)
-	EiyarocliCmd.AddCommand(decodeProgCmd)
+	BytomcliCmd.AddCommand(signMsgCmd)
+	BytomcliCmd.AddCommand(verifyMsgCmd)
+	BytomcliCmd.AddCommand(decodeProgCmd)
 
-	EiyarocliCmd.AddCommand(createTransactionFeedCmd)
-	EiyarocliCmd.AddCommand(listTransactionFeedsCmd)
-	EiyarocliCmd.AddCommand(deleteTransactionFeedCmd)
-	EiyarocliCmd.AddCommand(getTransactionFeedCmd)
-	EiyarocliCmd.AddCommand(updateTransactionFeedCmd)
+	BytomcliCmd.AddCommand(createTransactionFeedCmd)
+	BytomcliCmd.AddCommand(listTransactionFeedsCmd)
+	BytomcliCmd.AddCommand(deleteTransactionFeedCmd)
+	BytomcliCmd.AddCommand(getTransactionFeedCmd)
+	BytomcliCmd.AddCommand(updateTransactionFeedCmd)
 
-	EiyarocliCmd.AddCommand(isMiningCmd)
-	EiyarocliCmd.AddCommand(setMiningCmd)
+	BytomcliCmd.AddCommand(isMiningCmd)
+	BytomcliCmd.AddCommand(setMiningCmd)
 
-	EiyarocliCmd.AddCommand(netInfoCmd)
-	EiyarocliCmd.AddCommand(gasRateCmd)
+	BytomcliCmd.AddCommand(netInfoCmd)
+	BytomcliCmd.AddCommand(gasRateCmd)
 
-	EiyarocliCmd.AddCommand(versionCmd)
+	BytomcliCmd.AddCommand(versionCmd)
 }
 
-// AddTemplateFunc adds usage template to the root command EiyarocliCmd.
+// AddTemplateFunc adds usage template to the root command BytomcliCmd.
 func AddTemplateFunc() {
 	walletEnableCmd := []string{
 		createAccountCmd.Name(),

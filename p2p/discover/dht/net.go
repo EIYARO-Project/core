@@ -12,9 +12,9 @@ import (
 	"github.com/tendermint/go-wire"
 	"golang.org/x/crypto/sha3"
 
-	"ey/common"
-	"ey/crypto/ed25519"
-	"ey/p2p/netutil"
+	"eiyaro/common"
+	"eiyaro/crypto/ed25519"
+	"eiyaro/p2p/netutil"
 )
 
 var (

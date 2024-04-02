@@ -7,7 +7,7 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	cfg "ey/config"
+	cfg "eiyaro/config"
 )
 
 var initFilesCmd = &cobra.Command{

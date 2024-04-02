@@ -1,9 +1,9 @@
 package txbuilder
 
 import (
-	"ey/protocol/bc"
-	"ey/protocol/vm"
-	"ey/protocol/vm/vmutil"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/vm"
+	"eiyaro/protocol/vm/vmutil"
 )
 
 // Constraint types express a constraint on an input of a proposed

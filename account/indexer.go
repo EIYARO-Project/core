@@ -1,8 +1,8 @@
 package account
 
 import (
-	"ey/blockchain/query"
-	"ey/protocol/bc"
+	"eiyaro/blockchain/query"
+	"eiyaro/protocol/bc"
 )
 
 const (

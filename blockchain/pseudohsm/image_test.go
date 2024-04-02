@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"ey/crypto/ed25519/chainkd"
+	"eiyaro/crypto/ed25519/chainkd"
 )
 
 func TestRestore(t *testing.T) {

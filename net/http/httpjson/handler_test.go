@@ -9,7 +9,7 @@ import (
 	"testing"
 	"testing/iotest"
 
-	"ey/errors"
+	"eiyaro/errors"
 )
 
 func TestHandler(t *testing.T) {

@@ -1,8 +1,8 @@
 package query
 
 import (
-	"ey/blockchain/query/filter"
-	"ey/errors"
+	"eiyaro/blockchain/query/filter"
+	"eiyaro/errors"
 )
 
 var filterTable = filter.Table{

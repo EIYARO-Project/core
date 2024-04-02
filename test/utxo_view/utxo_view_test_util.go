@@ -3,12 +3,12 @@ package utxo_view
 import (
 	"encoding/hex"
 
-	"ey/consensus"
-	"ey/consensus/difficulty"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
-	"ey/testutil"
+	"eiyaro/consensus"
+	"eiyaro/consensus/difficulty"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
+	"eiyaro/protocol/state"
+	"eiyaro/testutil"
 )
 
 const utxoPreFix = "UT:"

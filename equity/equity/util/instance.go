@@ -5,9 +5,9 @@ import (
 	"errors"
 	"strconv"
 
-	chainjson "ey/encoding/json"
+	chainjson "eiyaro/encoding/json"
 
-	"ey/equity/compiler"
+	"eiyaro/equity/compiler"
 )
 
 // InstantiateContract instantiate contract parameters

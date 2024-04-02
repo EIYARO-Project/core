@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	cfg "ey/config"
-	dbm "ey/database/leveldb"
+	cfg "eiyaro/config"
+	dbm "eiyaro/database/leveldb"
 )
 
 const (

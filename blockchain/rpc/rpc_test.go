@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"ey/testutil"
+	"eiyaro/testutil"
 )
 
 func TestRPCCallJSON(t *testing.T) {
@@ -36,8 +36,8 @@ func TestRPCCallJSON(t *testing.T) {
 		if req.Header.Get("Content-Type") != "application/json" {
 			t.Errorf("got=%s; want=application/json", req.Header.Get("Content-Type"))
 		}
-		if !strings.HasPrefix(req.Header.Get("User-Agent"), "Eiyaro; ") {
-			t.Errorf("got=%s; want prefix='Eiyaro; '", req.Header.Get("User-Agent"))
+		if !strings.HasPrefix(req.Header.Get("User-Agent"), "EIYARO; ") {
+			t.Errorf("got=%s; want prefix='EIYARO; '", req.Header.Get("User-Agent"))
 		}
 		if req.URL.Path != "/example/rpc/path" {
 			t.Errorf("got=%s want=/example/rpc/path", req.URL.Path)

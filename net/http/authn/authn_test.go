@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"ey/accesstoken"
-	dbm "ey/database/leveldb"
-	"ey/errors"
+	"eiyaro/accesstoken"
+	dbm "eiyaro/database/leveldb"
+	"eiyaro/errors"
 )
 
 func TestAuthenticate(t *testing.T) {

@@ -1,8 +1,8 @@
 package txbuilder
 
 import (
-	"ey/protocol/vm"
-	"ey/protocol/vm/vmutil"
+	"eiyaro/protocol/vm"
+	"eiyaro/protocol/vm/vmutil"
 )
 
 // Signature programs constrain how the signed inputs of a transaction

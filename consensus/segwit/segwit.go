@@ -3,9 +3,9 @@ package segwit
 import (
 	"errors"
 
-	"ey/consensus"
-	"ey/protocol/vm"
-	"ey/protocol/vm/vmutil"
+	"eiyaro/consensus"
+	"eiyaro/protocol/vm"
+	"eiyaro/protocol/vm/vmutil"
 )
 
 func IsP2WScript(prog []byte) bool {

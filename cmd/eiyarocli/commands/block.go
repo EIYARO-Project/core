@@ -9,8 +9,8 @@ import (
 	"github.com/spf13/cobra"
 	jww "github.com/spf13/jwalterweatherman"
 
-	chainjson "ey/encoding/json"
-	"ey/util"
+	chainjson "eiyaro/encoding/json"
+	"eiyaro/util"
 )
 
 func init() {

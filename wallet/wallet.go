@@ -6,15 +6,15 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/account"
-	"ey/asset"
-	"ey/blockchain/pseudohsm"
-	dbm "ey/database/leveldb"
-	"ey/errors"
-	"ey/event"
-	"ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"eiyaro/account"
+	"eiyaro/asset"
+	"eiyaro/blockchain/pseudohsm"
+	dbm "eiyaro/database/leveldb"
+	"eiyaro/errors"
+	"eiyaro/event"
+	"eiyaro/protocol"
+	"eiyaro/protocol/bc"
+	"eiyaro/protocol/bc/types"
 )
 
 const (
