@@ -89,6 +89,11 @@ After that, you'll see `config.toml` generated, then launch the node.
 
 ``` bash
 $ nohup ./eiyarod node &
+
+
+$ cd /src/eiyaro/ey/cmd/eiyarocli
+$ go build
+$ ./eiyarocli create-access-token eiyaro
 ```
 
 available flags for `eiyarocd node`:
