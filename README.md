@@ -46,8 +46,9 @@ $ git clone https://github.com/Eiyaro/ey.git $GOPATH/src/eiyaro/ey
 
 ``` bash
 $ cd $GOPATH/src/eiyaro/ey
-$ GO111MODULE=off make eiyarocd    
-$ GO111MODULE=off make eiyaroccli  
+$ go mod tidy
+$ make eiyarocd    
+$ make eiyaroccli  
 ```
 
 When successfully building the project, the `eiyarod` and `eiyarocli` binary should be present in `cmd/eiyarocd` and `cmd/eiyaroccli` directory, respectively.
@@ -88,6 +89,7 @@ After that, you'll see `config.toml` generated, then launch the node.
 
 ``` bash
 $ nohup ./eiyarod node &
+
 ```
 
 available flags for `eiyarocd node`:
@@ -152,10 +154,14 @@ For more details about using `eiyarocli` command please refer to [API Reference]
 
 ### Dashboard
 
-Access the dashboard:
+Copy and save your tokename, tokename is used to log into your node page Access the dashboard:
 
 ```
-$ open http://localhost:9888/
+$ cd /src/eiyaro/ey/cmd/eiyarocli
+$ go build
+$ ./eiyarocli create-access-token eiyaro
+
+$ open http://localhost:9888/ OR Login with your IP + 9888 port
 ```
 
 ### In Docker
