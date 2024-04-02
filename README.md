@@ -161,7 +161,7 @@ $ open http://localhost:9888/
 Ensure your [Docker](https://www.docker.com/) version is 17.05 or higher.
 
 ```bash
-$ docker build -t eiyaro-classic .
+$ docker build -t eiyaro .
 ```
 
 For the usage please refer to [running-in-docker-wiki](https://github.com/Eiyaro/ey/wiki/Running-in-Docker).
