@@ -6,7 +6,7 @@ Eiyaro
 
 Automated builds are available for stable releases and the unstable master branch. Binary archives are published at https://github.com/Eiyaro/ey/releases.
 
-## What is Eiyaro classic?
+## What is Eiyaro?
 
 Eiyaro classic is software designed to operate and connect to highly scalable blockchain networks confirming to the Eiyaro classic Blockchain Protocol, which allows partipicants to define, issue and transfer digitial assets on a multi-asset shared ledger. Please refer to the [White Paper](https://github.com/Eiyaro/wiki/blob/master/en-US/Eiyaro-Technical-White-Paper-EN.pdf) for more details.
 
