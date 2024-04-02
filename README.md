@@ -1,9 +1,8 @@
-Eiyaro classic
-======
+Eiyaro
 
 [![Build Status](https://travis-ci.org/Eiyaro/e.svg)](https://travis-ci.org/Eiyaro/ey) [![AGPL v3](https://img.shields.io/badge/license-AGPL%20v3-brightgreen.svg)](./LICENSE)
 
-**Official golang implementation of the Eiyaro classic protocol.**
+**Official golang implementation of the Eiyaro protocol.**
 
 Automated builds are available for stable releases and the unstable master branch. Binary archives are published at https://github.com/Eiyaro/ey/releases.
 
@@ -19,7 +18,7 @@ In the current state `eiyaro classic` is able to:
 ## Installing with Homebrew
 
 ```
-brew tap eiyaro/eiyaro-classic && brew install eiyaro-classic
+brew tap eiyaro/eiyaro && brew install eiyaro
 ```
 
 ## Building from source
