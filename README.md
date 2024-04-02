@@ -63,7 +63,7 @@ The Eiyaro project comes with several executables found in the `cmd` directory.
 
 ## Running eiyaro
 
-Currently, eiyaro classic is still in active development and a ton of work needs to be done, but we also provide the following content for these eager to do something with `eiyaro classic`. This section won't cover all the commands of `eiyarocd` and `eiyaroccli` at length, for more information, please the help of every command, e.g., `eiyaroccli help`.
+Currently, eiyaro is still in active development and a ton of work needs to be done, but we also provide the following content for these eager to do something with `eiyaro classic`. This section won't cover all the commands of `eiyarocd` and `eiyaroccli` at length, for more information, please the help of every command, e.g., `eiyaroccli help`.
 
 ### Initialize
 
