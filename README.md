@@ -70,9 +70,10 @@ Currently, eiyaro is still in active development and a ton of work needs to be d
 First of all, initialize the node:
 
 ```bash
-$ cd cmd/eiyarocd
+$ cd /src/eiyaro/ey/cmd/eiyarod
 $ go build
 $ ./eiyarod init --chain_id mainnet
+
 ```
 
 There are three options for the flag `--chain_id`:
@@ -86,7 +87,7 @@ After that, you'll see `config.toml` generated, then launch the node.
 ### launch
 
 ``` bash
-$ ./eiyarod node
+$ nohup ./eiyarod node &
 ```
 
 available flags for `eiyarocd node`:
