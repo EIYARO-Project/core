@@ -70,7 +70,7 @@ Currently, eiyaro is still in active development and a ton of work needs to be d
 First of all, initialize the node:
 
 ```bash
-$ cd ./cmd/eiyarocd
+$ cd cmd/eiyarocd
 $ go build
 $ ./eiyarod init --chain_id mainnet
 ```
