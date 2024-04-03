@@ -8,7 +8,7 @@ Automated builds are available for stable releases and the unstable master branc
 
 ## What is Eiyaro?
 
-Eiyaro is software designed to operate and connect to highly scalable blockchain networks confirming to the Eiyaro classic Blockchain Protocol, which allows partipicants to define, issue and transfer digitial assets on a multi-asset shared ledger. Please refer to the [White Paper](https://github.com/Eiyaro/wiki/blob/master/en-US/Eiyaro-Technical-White-Paper-EN.pdf) for more details.
+Eiyaro is software designed to operate and connect to highly scalable blockchain networks confirming to the Eiyaro Blockchain Protocol, which allows partipicants to define, issue and transfer digitial assets on a multi-asset shared ledger. Please refer to the [White Paper](https://github.com/Eiyaro/wiki/blob/master/en-US/Eiyaro-Technical-White-Paper-EN.pdf) for more details.
 
 In the current state `eiyaro` is able to:
 
