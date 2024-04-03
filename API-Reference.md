@@ -21,7 +21,7 @@ curl -X POST http://localhost:9888/create-key -d '{"alias": "alice", "password":
   "data": {
     "alias": "alice",
     "xpub": "66008ba54d0fb103e075c0ab403f2ac1527a3b9d23dc16312dede67c85199423f912c4f84c9515e87e14874bd405953abfced87f66926c25ba8c31968094c05b",
-    "file": "/home/.eiyaro/keystore/UTC--2018-11-01T06-44-28.250301455Z--6c794d3a-53b3-4c79-92d0-7b0e216667ae",
+    "file": "/home/.eiyaro/keystore/UTC--2024-4-01T06-44-28.250301455Z--6c794d3a-53b3-4c79-92d0-7b0e216667ae",
     "mnemonic": "ocean exotic route sad volume grace knock frame pumpkin fetch december capital orange cake copper exercise elephant sound aware shiver silver donate pool interest"
   }
 }
@@ -148,7 +148,7 @@ curl -X POST create-key -d '{"alias": "alice", "password": "123456", "language":
 {
   "alias": "alice",
   "xpub": "a85e6eccb22f4c5fdade905f9a969003a17b6f35c237183a4313354b819a92689d52da3bcfe55f15a550877e8d789bd2bb9620f46e5049ea36470ab1b588a986",
-  "file": "/home/yang/.eiyaro/keystore/UTC--2018-10-10T07-09-17.509894697Z--341695b9-9223-470c-a26d-bea210f8e1bb",
+  "file": "/home/yang/.eiyaro/keystore/UTC--2024-3-10T07-09-17.509894697Z--341695b9-9223-470c-a26d-bea210f8e1bb",
   "mnemonic": "verb smoke glory dentist annual peanut oval dragon fiction current orbit lab load total language female mushroom coyote regular toy slide welcome employ three"
 }
 ```
@@ -163,7 +163,7 @@ curl -X POST create-key -d '{"alias":"jack", "password":"123456", "mnemonic":"pl
 {
   "alias": "jack",
   "xpub": "c7bcb65febd31c6d900bc84c386d95c3d5b047090628d9bf5c51a848945b6986e99ff70388018a7681fa37a240dbd8df39a994c86f9314a61e75feb33563ca72",
-  "file": "/home/yang/.eiyaro/keystore/UTC--2018-10-10T07-08-51.815030323Z--46ee932e-88d3-4680-a5c1-dd9e63918fcc"
+  "file": "/home/yang/.eiyaro/keystore/UTC--2024-3-10T07-08-51.815030323Z--46ee932e-88d3-4680-a5c1-dd9e63918fcc"
 }
 ```
 
@@ -195,12 +195,12 @@ curl -X POST list-keys
   {
     "alias": "alice",
     "xpub": "a7dae957c2d35b42efe7e6871cf5a75ebd2a0d0e51caffe767db42d3e6d69dbe211d1ca492ecf05908fe6fa625ad61b3253375ea744c9442dd5551613ba50aea",
-    "file": "/Path/To/Library/Eiyaro/keystore/UTC--2018-04-21T02-35-15.035935116Z--4f2b8bd7-0576-4b82-8941-6cc6da05efe3"
+    "file": "/Path/To/Library/Eiyaro/keystore/UTC--2024-03-21T02-35-15.035935116Z--4f2b8bd7-0576-4b82-8941-6cc6da05efe3"
   },
   {
     "alias": "bob",
     "xpub": "d30a810e88532f73816b7b5007d413cbd21e526ae9159023e5262511893adc1526b8eacd691b27c080201d7d79336a4f3d2cb4c167d997821cad445765916254",
-    "file": "/Path/To/Library/Eiyaro/keystore/UTC--2018-04-22T06-30-27.609315219Z--0e34293c-8856-4f5f-b934-37456a3820fa"
+    "file": "/Path/To/Library/Eiyaro/keystore/UTC--2018-03-22T06-30-27.609315219Z--0e34293c-8856-4f5f-b934-37456a3820fa"
   }
 ]
 ```
@@ -504,7 +504,7 @@ curl -X POST create-account-receiver -d '{"account_alias": "alice", "account_id"
 // Result
 ```json
 {
-    "address": "bm1q5u8u4eldhjf3lvnkmyl78jj8a75neuryzlknk0",
+    "address": "ey1q5u8u4eldhjf3lvnkmyl78jj8a75neuryzlknk0",
     "control_program": "0014a70fcae7edbc931fb276d93fe3ca47efa93cf064"
 }
 ```
@@ -544,19 +544,19 @@ curl -X POST list-addresses -d '{"account_alias": "alice", "account_id": "086KQD
   {
     "account_alias": "alice",
     "account_id": "086KQD75G0A02",
-    "address": "bm1qcn9lf7nxhswratvmg6d78nq7r7yupm36qgsv55",
+    "address": "ey1qcn9lf7nxhswratvmg6d78nq7r7yupm36qgsv55",
     "change": false
   },
   {
     "account_alias": "alice",
     "account_id": "086KQD75G0A02",
-    "address": "bm1qew4h5uvt5ssrtg2alms0j77r94c30m78ucrcxy",
+    "address": "ey1qew4h5uvt5ssrtg2alms0j77r94c30m78ucrcxy",
     "change": false
   },
   {
     "account_alias": "alice",
     "account_id": "086KQD75G0A02",
-    "address": "bm1qgnp4lte7wge0rsekevjlrdh39vkzz0c2alheue",
+    "address": "ey1qgnp4lte7wge0rsekevjlrdh39vkzz0c2alheue",
     "change": false
   }
 ]
@@ -587,7 +587,7 @@ check whether the address is valid or not.
 
 ```js
 // Request
-curl -X POST validate-address -d '{"address": "bm1qcn9lf7nxhswratvmg6d78nq7r7yupm36qgsv55"}'
+curl -X POST validate-address -d '{"address": "ey1qcn9lf7nxhswratvmg6d78nq7r7yupm36qgsv55"}'
 
 // Result
 {
@@ -620,7 +620,7 @@ curl -X POST get-mining-address
 
 // Result
 {
-    "mining_address":"bm1qnhr65jq3q9gf8uymza8vp0ew8tfyh642wddxh6"
+    "mining_address":"ey1qnhr65jq3q9gf8uymza8vp0ew8tfyh642wddxh6"
 }
 ```
 
@@ -646,12 +646,12 @@ Set the current mining address, no matter whethere the address is a local one. I
 
 ```js
 // Request
-curl -X POST set-mining-address -d '{"mining_address":"bm1qnhr65jq3q9gf8uymza8vp0ew8tfyh642wddxh6"}'
+curl -X POST set-mining-address -d '{"mining_address":"ey1qnhr65jq3q9gf8uymza8vp0ew8tfyh642wddxh6"}'
 
 
 // Result
 {
-    "mining_address":"bm1qnhr65jq3q9gf8uymza8vp0ew8tfyh642wddxh6"
+    "mining_address":"ey1qnhr65jq3q9gf8uymza8vp0ew8tfyh642wddxh6"
 }
 ```
 
@@ -1123,7 +1123,7 @@ curl -X POST list-unspent-outputs -d {}
   {
     "account_alias": "alice",
     "account_id": "0BKBR6VR00A06",
-    "address": "bm1qv3htuvug7qdv46ywcvvzytrwrsyg0swltfa0dm",
+    "address": "ey1qv3htuvug7qdv46ywcvvzytrwrsyg0swltfa0dm",
     "amount": 2000,
     "asset_alias": "GOLD",
     "asset_id": "1883cce6aab82cf9af8cd085a3115dd4a92cdb8e6a9152acd73d7ae4adb9030a",
@@ -1138,7 +1138,7 @@ curl -X POST list-unspent-outputs -d {}
   {
     "account_alias": "default",
     "account_id": "0BKBR2D2G0A02",
-    "address": "bm1qx7ylnhszg24995d5e0nftu9e87kt9vnxcn633r",
+    "address": "ey1qx7ylnhszg24995d5e0nftu9e87kt9vnxcn633r",
     "amount": 624000000000,
     "asset_alias": "EY",
     "asset_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
@@ -1163,7 +1163,7 @@ curl -X POST list-unspent-outputs -d '{"id": "58f29f0f85f7bd2a91088bcbe536dee41c
 {
   "account_alias": "alice",
   "account_id": "0BKBR6VR00A06",
-  "address": "bm1qv3htuvug7qdv46ywcvvzytrwrsyg0swltfa0dm",
+  "address": "ey1qv3htuvug7qdv46ywcvvzytrwrsyg0swltfa0dm",
   "amount": 2000,
   "asset_alias": "GOLD",
   "asset_id": "1883cce6aab82cf9af8cd085a3115dd4a92cdb8e6a9152acd73d7ae4adb9030a",
@@ -1410,7 +1410,7 @@ Sign a message with the key password(decode encrypted private key) of an address
 
 ```js
 // Request
-curl -X POST sign-message -d '{"address":"bm1qx2qgvvjz734ur8x5lpfdtlau74aaa5djs0a5jn", "message":"this is a test message", "password":"123456"}'
+curl -X POST sign-message -d '{"address":"ey1qx2qgvvjz734ur8x5lpfdtlau74aaa5djs0a5jn", "message":"this is a test message", "password":"123456"}'
 
 // Result
 {
@@ -1518,7 +1518,7 @@ curl -X POST get-transaction -d '{"tx_id": "15b8d66e227feff47b3de0f278934ea16d6c
     {
       "account_alias": "default",
       "account_id": "0ER7MEFGG0A02",
-      "address": "sm1q4pkg8msjumtep7ecsdzuct3tsuzk5pmnm3p8nr",
+      "address": "sy1q4pkg8msjumtep7ecsdzuct3tsuzk5pmnm3p8nr",
       "amount": 41250000000,
       "asset_alias": "EY",
       "asset_definition": {
@@ -1542,7 +1542,7 @@ curl -X POST get-transaction -d '{"tx_id": "15b8d66e227feff47b3de0f278934ea16d6c
     {
       "account_alias": "default",
       "account_id": "0ER7MEFGG0A02",
-      "address": "sm1qmt6jxrr8etssufr8qp98emyaly3lknxyndh5cj",
+      "address": "sy1qmt6jxrr8etssufr8qp98emyaly3lknxyndh5cj",
       "amount": 29450000000,
       "asset_alias": "EY",
       "asset_definition": {
@@ -1560,7 +1560,7 @@ curl -X POST get-transaction -d '{"tx_id": "15b8d66e227feff47b3de0f278934ea16d6c
     {
       "account_alias": "alice",
       "account_id": "0ER7OAK400A02",
-      "address": "sm1qxe4jwhkekgnxkezu7xutu5gqnnpmyc8ppq98me",
+      "address": "sy1qxe4jwhkekgnxkezu7xutu5gqnnpmyc8ppq98me",
       "amount": 11700000000,
       "asset_alias": "EY",
       "asset_definition": {
@@ -1748,7 +1748,7 @@ curl -X POST list-transactions -d '{"id": "7e9f9b999381da936e3cae48b5bac2b9bc28b
       {
         "account_alias": "default",
         "account_id": "0ER7MEFGG0A02",
-        "address": "sm1q4pkg8msjumtep7ecsdzuct3tsuzk5pmnm3p8nr",
+        "address": "sy1q4pkg8msjumtep7ecsdzuct3tsuzk5pmnm3p8nr",
         "amount": 41250000000,
         "asset_alias": "EY",
         "asset_definition": {
@@ -1772,7 +1772,7 @@ curl -X POST list-transactions -d '{"id": "7e9f9b999381da936e3cae48b5bac2b9bc28b
       {
         "account_alias": "default",
         "account_id": "0ER7MEFGG0A02",
-        "address": "sm1qskj096x5w7ejcmk746g3djmv84dpxts62dewvd",
+        "address": "sy1qskj096x5w7ejcmk746g3djmv84dpxts62dewvd",
         "amount": 34649500000,
         "asset_alias": "EY",
         "asset_definition": {
@@ -1790,7 +1790,7 @@ curl -X POST list-transactions -d '{"id": "7e9f9b999381da936e3cae48b5bac2b9bc28b
       {
         "account_alias": "alice",
         "account_id": "0ER7OAK400A02",
-        "address": "sm1qxe4jwhkekgnxkezu7xutu5gqnnpmyc8ppq98me",
+        "address": "sy1qxe4jwhkekgnxkezu7xutu5gqnnpmyc8ppq98me",
         "amount": 6600000000,
         "asset_alias": "EY",
         "asset_definition": {
@@ -1830,7 +1830,7 @@ curl -X POST list-transactions -d '{"account_id": "0F1MQVI500A02", "unconfirmed"
       {
         "account_alias": "default",
         "account_id": "0F1L5Q3V00A02",
-        "address": "sm1ql67n04pj8mfqzv3wjq8num3yrltdykemgrr45j",
+        "address": "sy1ql67n04pj8mfqzv3wjq8num3yrltdykemgrr45j",
         "amount": 41250000000,
         "asset_alias": "EY",
         "asset_definition": {
@@ -1852,7 +1852,7 @@ curl -X POST list-transactions -d '{"account_id": "0F1MQVI500A02", "unconfirmed"
       {
         "account_alias": "default",
         "account_id": "0F1L5Q3V00A02",
-        "address": "sm1ql67n04pj8mfqzv3wjq8num3yrltdykemgrr45j",
+        "address": "sy1ql67n04pj8mfqzv3wjq8num3yrltdykemgrr45j",
         "amount": 41250000000,
         "asset_alias": "EY",
         "asset_definition": {
@@ -1876,7 +1876,7 @@ curl -X POST list-transactions -d '{"account_id": "0F1MQVI500A02", "unconfirmed"
       {
         "account_alias": "default",
         "account_id": "0F1L5Q3V00A02",
-        "address": "sm1qdcfprk7wjy6flavkzhcjh3dxyrwlm935trrs5m",
+        "address": "sy1qdcfprk7wjy6flavkzhcjh3dxyrwlm935trrs5m",
         "amount": 41249100000,
         "asset_alias": "EY",
         "asset_definition": {
@@ -1894,7 +1894,7 @@ curl -X POST list-transactions -d '{"account_id": "0F1MQVI500A02", "unconfirmed"
       {
         "account_alias": "default",
         "account_id": "0F1L5Q3V00A02",
-        "address": "sm1qt92xx2f4ys63dyhy58jle87nttcf37zftweklh",
+        "address": "sy1qt92xx2f4ys63dyhy58jle87nttcf37zftweklh",
         "amount": 39150000000,
         "asset_alias": "EY",
         "asset_definition": {
@@ -1912,7 +1912,7 @@ curl -X POST list-transactions -d '{"account_id": "0F1MQVI500A02", "unconfirmed"
       {
         "account_alias": "alice",
         "account_id": "0F1MQVI500A02",
-        "address": "sm1qum6ly8aq9u9k7xrkuck9pq64xg67gw40khnnxu",
+        "address": "sy1qum6ly8aq9u9k7xrkuck9pq64xg67gw40khnnxu",
         "amount": 2100000000,
         "asset_alias": "EY",
         "asset_definition": {
@@ -1942,7 +1942,7 @@ curl -X POST list-transactions -d '{"account_id": "0F1MQVI500A02", "unconfirmed"
       {
         "account_alias": "alice",
         "account_id": "0F1MQVI500A02",
-        "address": "sm1qum6ly8aq9u9k7xrkuck9pq64xg67gw40khnnxu",
+        "address": "sy1qum6ly8aq9u9k7xrkuck9pq64xg67gw40khnnxu",
         "amount": 10000000000,
         "asset_alias": "EY",
         "asset_definition": {
@@ -1964,7 +1964,7 @@ curl -X POST list-transactions -d '{"account_id": "0F1MQVI500A02", "unconfirmed"
       {
         "account_alias": "alice",
         "account_id": "0F1MQVI500A02",
-        "address": "sm1qum6ly8aq9u9k7xrkuck9pq64xg67gw40khnnxu",
+        "address": "sy1qum6ly8aq9u9k7xrkuck9pq64xg67gw40khnnxu",
         "amount": 1000000000000,
         "asset_alias": "GOLD",
         "asset_definition": {
@@ -1988,7 +1988,7 @@ curl -X POST list-transactions -d '{"account_id": "0F1MQVI500A02", "unconfirmed"
       {
         "account_alias": "alice",
         "account_id": "0F1MQVI500A02",
-        "address": "sm1q39sztlh4jq5nknstn2udvvpm6v5ugussx2djc0",
+        "address": "sy1q39sztlh4jq5nknstn2udvvpm6v5ugussx2djc0",
         "amount": 9980000000,
         "asset_alias": "EY",
         "asset_definition": {
@@ -2006,7 +2006,7 @@ curl -X POST list-transactions -d '{"account_id": "0F1MQVI500A02", "unconfirmed"
       {
         "account_alias": "alice",
         "account_id": "0F1MQVI500A02",
-        "address": "sm1q258yd0gvatje4pn0qc8z9w8cdv45j9tvhfpjh8",
+        "address": "sy1q258yd0gvatje4pn0qc8z9w8cdv45j9tvhfpjh8",
         "amount": 999999999901,
         "asset_alias": "GOLD",
         "asset_definition": {
@@ -2089,13 +2089,13 @@ curl -X POST build-transaction -d '{"base_transaction":null,"actions":[{"account
 - `issue` - transaction type is issue
 ```js
 // Request
-curl -X POST build-transaction -d '{"base_transaction":null,"actions":[{"account_id":"0BF63M2U00A04","amount":20000000,"asset_id":"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","type":"spend_account"},{"amount":10000,"asset_id":"3152a15da72be51b330e1c0f8e1c0db669269809da4f16443ff266e07cc43680","type":"issue"},{"amount":10000,"asset_id":"3152a15da72be51b330e1c0f8e1c0db669269809da4f16443ff266e07cc43680","address":"bm1q50u3z8empm5ke0g3ngl2t3sqtr6sd7cepd3z68","type":"control_address"}],"ttl":0,"time_range": 43432}'
+curl -X POST build-transaction -d '{"base_transaction":null,"actions":[{"account_id":"0BF63M2U00A04","amount":20000000,"asset_id":"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","type":"spend_account"},{"amount":10000,"asset_id":"3152a15da72be51b330e1c0f8e1c0db669269809da4f16443ff266e07cc43680","type":"issue"},{"amount":10000,"asset_id":"3152a15da72be51b330e1c0f8e1c0db669269809da4f16443ff266e07cc43680","address":"ey1q50u3z8empm5ke0g3ngl2t3sqtr6sd7cepd3z68","type":"control_address"}],"ttl":0,"time_range": 43432}'
 ```
 
 - `address` - transaction type is address
 ```js
 // Request
-curl -X POST build-transaction -d '{"base_transaction":null,"actions":[{"account_id":"0BF63M2U00A04","amount":20000000,"asset_id":"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","type":"spend_account"},{"account_id":"0BF63M2U00A04","amount":99,"asset_id":"3152a15da72be51b330e1c0f8e1c0db669269809da4f16443ff266e07cc43680","type":"spend_account"},{"amount":99,"asset_id":"3152a15da72be51b330e1c0f8e1c0db669269809da4f16443ff266e07cc43680","address":"bm1q50u3z8empm5ke0g3ngl2t3sqtr6sd7cepd3z68","type":"control_address"}],"ttl":0,"time_range": 43432}'
+curl -X POST build-transaction -d '{"base_transaction":null,"actions":[{"account_id":"0BF63M2U00A04","amount":20000000,"asset_id":"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","type":"spend_account"},{"account_id":"0BF63M2U00A04","amount":99,"asset_id":"3152a15da72be51b330e1c0f8e1c0db669269809da4f16443ff266e07cc43680","type":"spend_account"},{"amount":99,"asset_id":"3152a15da72be51b330e1c0f8e1c0db669269809da4f16443ff266e07cc43680","address":"ey1q50u3z8empm5ke0g3ngl2t3sqtr6sd7cepd3z68","type":"control_address"}],"ttl":0,"time_range": 43432}'
 ```
 
 - `retire` - transaction type is retire
@@ -2113,7 +2113,7 @@ curl -X POST build-transaction -d '{"base_transaction":null,"actions":[{"account
 
 ```js
 // Request
-curl -X POST build-transaction -d '{"base_transaction":null,"actions":[{"type":"spend_account_unspent_output","output_id":"01c6ccc6f522228cd4518bba87e9c43fbf55fdf7eb17f5aa300a037db7dca0cb"},{"amount":41243000000,"asset_id":"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","address":"sm1qmw8c5s29zlexknfahrze3ghvlqrtn2huuntvpn","type":"control_address"}],"ttl":0,"time_range":0}'
+curl -X POST build-transaction -d '{"base_transaction":null,"actions":[{"type":"spend_account_unspent_output","output_id":"01c6ccc6f522228cd4518bba87e9c43fbf55fdf7eb17f5aa300a037db7dca0cb"},{"amount":41243000000,"asset_id":"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","address":"sy1qmw8c5s29zlexknfahrze3ghvlqrtn2huuntvpn","type":"control_address"}],"ttl":0,"time_range":0}'
 ```
 
 ```js
@@ -2605,7 +2605,7 @@ curl -X POST create-access-token -d '{"id":"token1"}'
 {
   "token": "token1:1fee70f537128a201338bd5f25a3adbf33dad02eae4f4c9ac43f336a069df8f3",
   "id": "token1",
-  "created_at": "2018-03-20T18:56:01.043919771+08:00"
+  "created_at": "2024-03-20T18:56:01.043919771+08:00"
 }
 ```
 
@@ -2641,12 +2641,12 @@ curl -X POST list-access-tokens -d {}
   {
     "token": "token1:1fee70f537128a201338bd5f25a3adbf33dad02eae4f4c9ac43f336a069df8f3",
     "id": "token1",
-    "created_at": "2018-03-20T18:56:01.043919771+08:00"
+    "created_at": "2024-03-20T18:56:01.043919771+08:00"
   },
   {
     "token": "alice:78598c6d9fb9e3258d01f78005d4e5725ad0d45e20af90a30b577b407d4a2edd",
     "id": "alice",
-    "created_at": "2018-03-20T18:56:01.043919771+08:00"
+    "created_at": "2024-03-20T18:56:01.043919771+08:00"
   }
 ]
 ```
@@ -2908,7 +2908,7 @@ curl -X POST get-unconfirmed-transaction -d '{"tx_id": "382090f24fbfc2f737fa7372
   "id": "382090f24fbfc2f737fa7372b9d161a43f00d1c597a7130a56589d1f469d04b5",
   "inputs": [
     {
-      "address": "bm1qqrm7ruecx7yrg9smtwmnmgj3umg9vcukgy5sdj",
+      "address": "ey1qqrm7ruecx7yrg9smtwmnmgj3umg9vcukgy5sdj",
       "amount": 41250000000,
       "asset_definition": {},
       "asset_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
@@ -2925,7 +2925,7 @@ curl -X POST get-unconfirmed-transaction -d '{"tx_id": "382090f24fbfc2f737fa7372
   "mux_id": "842cd07eed050b547377b5b123f14a5ec0d76933d564f030cf4d5d5c15769645",
   "outputs": [
     {
-      "address": "bm1qehxd5cdnepckh5jc72ggn30havd78lsgcqmt7k",
+      "address": "ey1qehxd5cdnepckh5jc72ggn30havd78lsgcqmt7k",
       "amount": 21230000000,
       "asset_definition": {},
       "asset_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
@@ -2935,7 +2935,7 @@ curl -X POST get-unconfirmed-transaction -d '{"tx_id": "382090f24fbfc2f737fa7372
       "type": "control"
     },
     {
-      "address": "bm1q2me9gwccnm3ehpnrcr99gcnj730js2zfucms3r",
+      "address": "ey1q2me9gwccnm3ehpnrcr99gcnj730js2zfucms3r",
       "amount": 20000000000,
       "asset_definition": {},
       "asset_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
@@ -3021,7 +3021,7 @@ curl -X POST decode-raw-transaction -d '{"raw_transaction": "070100010161015fc82
   "fee": 20000000,
   "inputs": [
     {
-      "address": "sm1q26kpwrrevhh2c8xrfy5vnaryu0ugc97csrdy69",
+      "address": "sy1q26kpwrrevhh2c8xrfy5vnaryu0ugc97csrdy69",
       "amount": 41250000000,
       "asset_definition": {},
       "asset_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
@@ -3037,7 +3037,7 @@ curl -X POST decode-raw-transaction -d '{"raw_transaction": "070100010161015fc82
   ],
   "outputs": [
     {
-      "address": "sm1qc0fjpcwuflnc06038s2xfcl2t2hfdfv0lxzg7s",
+      "address": "sy1qc0fjpcwuflnc06038s2xfcl2t2hfdfv0lxzg7s",
       "amount": 41030000000,
       "asset_definition": {},
       "asset_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
@@ -3047,7 +3047,7 @@ curl -X POST decode-raw-transaction -d '{"raw_transaction": "070100010161015fc82
       "type": "control"
     },
     {
-      "address": "sm1qhwfumd8v5a9sdqepa6uy43wnx6rzsxm9essn4l",
+      "address": "sy1qhwfumd8v5a9sdqepa6uy43wnx6rzsxm9essn4l",
       "amount": 200000000,
       "asset_definition": {},
       "asset_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
@@ -3222,7 +3222,7 @@ curl -X POST get-block -d '{"block_height": 43, "block_hash": "886a8e85b275e7d65
       "mux_id": "2383cefe8a34ea5810cc0706f2cf8cf08a106f90fc3eb3441f723cecdbc61331",
       "outputs": [
         {
-          "address": "sm1q4pkg8msjumtep7ecsdzuct3tsuzk5pmnm3p8nr",
+          "address": "sy1q4pkg8msjumtep7ecsdzuct3tsuzk5pmnm3p8nr",
           "amount": 624000000000,
           "asset_definition": "7b7d",
           "asset_id": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
@@ -3507,7 +3507,7 @@ Verify a signed message with derived pubkey of the address.
 
 ```js
 // Request
-curl -X POST verify-message -d '{"address":"bm1qx2qgvvjz734ur8x5lpfdtlau74aaa5djs0a5jn", "derived_xpub":"6ff8c3d1321ce39a3c3550f57ba70b67dcbcef821e9b85f6150edb7f2f3f91009e67f3075e6e76ed5f657ee4b1a5f4749b7a8c74c8e7e6a1b0e5918ebd5df4d0", "message":"this is a test message", "signature":"74da3d6572233736e3a439166719244dab57dd0047f8751b1efa2da26eeab251d915c1211dcad77e8b013267b86d96e91ae67ff0be520ef4ec326e911410b609"}'
+curl -X POST verify-message -d '{"address":"ey1qx2qgvvjz734ur8x5lpfdtlau74aaa5djs0a5jn", "derived_xpub":"6ff8c3d1321ce39a3c3550f57ba70b67dcbcef821e9b85f6150edb7f2f3f91009e67f3075e6e76ed5f657ee4b1a5f4749b7a8c74c8e7e6a1b0e5918ebd5df4d0", "message":"this is a test message", "signature":"74da3d6572233736e3a439166719244dab57dd0047f8751b1efa2da26eeab251d915c1211dcad77e8b013267b86d96e91ae67ff0be520ef4ec326e911410b609"}'
 
 // Result
 {
