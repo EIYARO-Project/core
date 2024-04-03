@@ -5,12 +5,12 @@ import (
 	"log"
 	"os"
 
-	"eiyaro/api"
-	"eiyaro/consensus"
-	"eiyaro/consensus/difficulty"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/util"
+	"ey/api"
+	"ey/consensus"
+	"ey/consensus/difficulty"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/util"
 )
 
 const (

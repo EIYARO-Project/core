@@ -7,7 +7,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/event"
+	"ey/event"
 )
 
 const (

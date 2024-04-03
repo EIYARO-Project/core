@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/protocol/bc"
-	"eiyaro/testutil"
+	dbm "ey/database/leveldb"
+	"ey/protocol/bc"
+	"ey/testutil"
 )
 
 func TestAddUnconfirmedUtxo(t *testing.T) {

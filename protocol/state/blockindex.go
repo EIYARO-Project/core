@@ -6,12 +6,12 @@ import (
 	"sort"
 	"sync"
 
-	"eiyaro/common"
-	"eiyaro/consensus"
-	"eiyaro/consensus/difficulty"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/testutil"
+	"ey/common"
+	"ey/consensus"
+	"ey/consensus/difficulty"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/testutil"
 )
 
 // approxNodesPerDay is an approximation of the number of new blocks there are

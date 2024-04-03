@@ -3,22 +3,22 @@ package api
 import (
 	"context"
 
-	"eiyaro/account"
-	"eiyaro/asset"
-	"eiyaro/blockchain/pseudohsm"
-	"eiyaro/blockchain/rpc"
-	"eiyaro/blockchain/signers"
-	"eiyaro/blockchain/txbuilder"
-	"eiyaro/errors"
-	"eiyaro/net/http/httperror"
-	"eiyaro/net/http/httpjson"
-	"eiyaro/protocol/validation"
-	"eiyaro/protocol/vm"
+	"ey/account"
+	"ey/asset"
+	"ey/blockchain/pseudohsm"
+	"ey/blockchain/rpc"
+	"ey/blockchain/signers"
+	"ey/blockchain/txbuilder"
+	"ey/errors"
+	"ey/net/http/httperror"
+	"ey/net/http/httpjson"
+	"ey/protocol/validation"
+	"ey/protocol/vm"
 )
 
 var (
-	// ErrDefault is default EIYARO API Error
-	ErrDefault = errors.New("EIYARO API Error")
+	// ErrDefault is default Eiyaro API Error
+	ErrDefault = errors.New("Eiyaro API Error")
 )
 
 func isTemporary(info httperror.Info, err error) bool {
@@ -42,7 +42,7 @@ func isTemporary(info httperror.Info, err error) bool {
 }
 
 var respErrFormatter = map[error]httperror.Info{
-	ErrDefault: {500, "EY000", "EIYARO API Error"},
+	ErrDefault: {500, "EY000", "Eiyaro API Error"},
 
 	// Signers error namespace (2xx)
 	signers.ErrBadQuorum: {400, "EY200", "Quorum must be greater than or equal to 1, and must be less than or equal to the length of xpubs"},
@@ -124,7 +124,7 @@ var respErrFormatter = map[error]httperror.Info{
 // TODO(jackson): Share one error table across Chain
 // products/services so that errors are consistent.
 var errorFormatter = httperror.Formatter{
-	Default:     httperror.Info{500, "EY000", "EIYARO API Error"},
+	Default:     httperror.Info{500, "EY000", "Eiyaro API Error"},
 	IsTemporary: isTemporary,
 	Errors: map[error]httperror.Info{
 		// General error namespace (0xx)

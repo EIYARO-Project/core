@@ -6,8 +6,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	core "eiyaro/protocol"
-	"eiyaro/protocol/bc/types"
+	core "ey/protocol"
+	"ey/protocol/bc/types"
 )
 
 const (

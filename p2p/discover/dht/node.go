@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"eiyaro/common"
-	"eiyaro/crypto"
+	"ey/common"
+	"ey/crypto"
 )
 
 // Node represents a host on the network.

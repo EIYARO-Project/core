@@ -1,4 +1,4 @@
-/* EIYAROPoW.h */
+/* EiyaroPoW.h */
 #ifndef EIYAROPOW_H
 #define EIYAROPOW_H
 
@@ -267,14 +267,14 @@ struct Arr256x64i32 {
     }
 };
 
-// struct EIYAROMatList8 {
+// struct EiyaroMatList8 {
 //     std::vector<Mat256x256i8*> matVec;
 
 //     Mat256x256i8 at(int i) {
 //         return *(matVec[i]);
 //     }
 
-//     EIYAROMatList8() {
+//     EiyaroMatList8() {
 //         for(int i=0; i<256; i++) {
 //             Mat256x256i8* ptr = new Mat256x256i8;
 //             assert(ptr!=NULL);
@@ -282,7 +282,7 @@ struct Arr256x64i32 {
 //         }
 //     }
 
-//     ~EIYAROMatList8() {
+//     ~EiyaroMatList8() {
 //         for(int i=0; i<256; i++) {
 //             delete matVec[i];
 //         }
@@ -299,14 +299,14 @@ struct Arr256x64i32 {
 //     }
 // };
 
-struct EIYAROMatList16 {
+struct EiyaroMatList16 {
     std::vector<Mat256x256i16*> matVec;
 
     Mat256x256i16 at(int i) {
         return *(matVec[i]);
     }
 
-    EIYAROMatList16() {
+    EiyaroMatList16() {
         for(int i = 0; i < 256; i++) {
             Mat256x256i16* ptr = new Mat256x256i16;
             assert(ptr != NULL);
@@ -314,7 +314,7 @@ struct EIYAROMatList16 {
         }
     }
 
-    ~EIYAROMatList16() {
+    ~EiyaroMatList16() {
         for(int i = 0; i < 256; i++)
             delete matVec[i];
     }
@@ -329,23 +329,23 @@ struct EIYAROMatList16 {
         }
     }
 
-    // void copyFrom(EIYAROMatList8& other) {
+    // void copyFrom(EiyaroMatList8& other) {
     //     for(int i=0; i<256; i++) {
     //         matVec[i]->copyFrom(*other.matVec[i]);
     //     }
     // }
 
-    // void copyFrom(EIYAROMatList16& other) {
+    // void copyFrom(EiyaroMatList16& other) {
     //     for(int i=0; i<256; i++) {
     //         matVec[i]->copyFrom(*other.matVec[i]);
     //     }
     // }
 };
 
-// extern EIYAROMatList8* matList_int8;
-extern EIYAROMatList16* matList_int16;
+// extern EiyaroMatList8* matList_int8;
+extern EiyaroMatList16* matList_int16;
 
-inline void iter_mineEIYARO(const uint8_t *fixedMessage,
+inline void iter_mineEiyaro(const uint8_t *fixedMessage,
                             uint32_t len,
                             // uint8_t nonce[8],
                             uint8_t result[32]) {
@@ -446,7 +446,7 @@ inline int countLeadingZero(uint8_t result[32]) {
     return count;
 }
 
-// inline int test_mineEIYARO(
+// inline int test_mineEiyaro(
 //     const uint8_t *fixedMessage,
 //     uint32_t len,
 //     uint8_t nonce[32],
@@ -458,7 +458,7 @@ inline int countLeadingZero(uint8_t result[32]) {
 //   for(step=0; step<count; step++) {
 //     uint8_t result[32];
 //     //std::cerr<<"Mine step "<<step<<std::endl;
-//     iter_mineEIYARO(fixedMessage,100,nonce,result);
+//     iter_mineEiyaro(fixedMessage,100,nonce,result);
 //     std::cerr<<"Mine step "<<step<<std::endl;
 //     for (int i = 0; i < 32; i++) {
 //       printf("%02x ", result[i]);

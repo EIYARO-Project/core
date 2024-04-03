@@ -3,10 +3,10 @@ package difficulty
 import (
 	"math/big"
 
-	"eiyaro/consensus"
-	"eiyaro/mining/tensority"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
+	"ey/consensus"
+	"ey/mining/tensority"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
 )
 
 var (

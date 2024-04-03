@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	cfg "eiyaro/config"
+	cfg "ey/config"
 )
 
 func TestNodeUsedDataDir(t *testing.T) {

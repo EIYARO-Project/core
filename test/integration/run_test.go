@@ -3,9 +3,9 @@ package integration
 import (
 	"fmt"
 
-	cfg "eiyaro/config"
-	"eiyaro/crypto/ed25519/chainkd"
-	"eiyaro/util"
+	cfg "ey/config"
+	"ey/crypto/ed25519/chainkd"
+	"ey/util"
 )
 
 // Mock config.

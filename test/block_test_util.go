@@ -1,12 +1,12 @@
 package test
 
 import (
-	"eiyaro/mining/tensority"
-	"eiyaro/protocol"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/validation"
-	"eiyaro/protocol/vm"
+	"ey/mining/tensority"
+	"ey/protocol"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/validation"
+	"ey/protocol/vm"
 )
 
 // NewBlock create block according to the current status of chain

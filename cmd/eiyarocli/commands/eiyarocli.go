@@ -7,7 +7,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"eiyaro/util"
+	"ey/util"
 )
 
 // eiyarocli usage template

@@ -47,7 +47,7 @@ const (
 
 var (
 	// The full version string
-	Version = "1.0.0"
+	Version = "1.0.1"
 	// GitCommit is set with --ldflags "-X main.gitCommit=$(git rev-parse HEAD)"
 	GitCommit string
 	Status    *UpdateStatus
@@ -129,7 +129,7 @@ func (s *UpdateStatus) CheckUpdate(localVerStr string, remoteVerStr string, remo
 			"Current version": localVerStr,
 			"Newer version":   remoteVerStr,
 			"seed":            remoteAddr,
-		}).Warn("Please update your eiyarod via https://github.com/EY/eiyaro/releases/ or http://eiyaro.org/wallet/")
+		}).Warn("Please update your eiyarod via https://github.com/Eiyaro/ey/releases/ or http://eiyaro.io/wallet/")
 		s.notified = true
 	}
 	return nil

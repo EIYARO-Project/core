@@ -4,8 +4,8 @@ import (
 	"math"
 	"time"
 
-	"eiyaro/errors"
-	"eiyaro/protocol/bc/types"
+	"ey/errors"
+	"ey/protocol/bc/types"
 )
 
 // NewBuilder return new TemplateBuilder instance

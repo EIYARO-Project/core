@@ -4,16 +4,16 @@ import (
 	"os"
 	"testing"
 
-	"eiyaro/testutil"
+	"ey/testutil"
 
 	"github.com/golang/protobuf/proto"
 
-	"eiyaro/database"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/database/storage"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/state"
+	"ey/database"
+	dbm "ey/database/leveldb"
+	"ey/database/storage"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/state"
 )
 
 func TestAttachOrDetachBlocks(t *testing.T) {

@@ -6,14 +6,14 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	cfg "eiyaro/config"
-	"eiyaro/consensus"
-	"eiyaro/event"
-	"eiyaro/p2p"
-	"eiyaro/p2p/security"
-	core "eiyaro/protocol"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
+	cfg "ey/config"
+	"ey/consensus"
+	"ey/event"
+	"ey/p2p"
+	"ey/p2p/security"
+	core "ey/protocol"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
 	"github.com/tendermint/go-crypto"
 )
 
@@ -28,7 +28,7 @@ var (
 	errVaultModeDialPeer = errors.New("can't dial peer in vault mode")
 )
 
-// Chain is the interface for EIYARO core
+// Chain is the interface for Eiyaro core
 type Chain interface {
 	BestBlockHeader() *types.BlockHeader
 	BestBlockHeight() uint64

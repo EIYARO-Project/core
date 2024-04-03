@@ -6,7 +6,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/net/websocket"
+	"ey/net/websocket"
 )
 
 // timeZeroVal is simply the zero value for a time.Time and is used to avoid

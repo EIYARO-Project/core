@@ -9,10 +9,10 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"eiyaro/consensus"
-	"eiyaro/encoding/blockchain"
-	"eiyaro/protocol/bc"
-	"eiyaro/testutil"
+	"ey/consensus"
+	"ey/encoding/blockchain"
+	"ey/protocol/bc"
+	"ey/testutil"
 )
 
 func TestBlock(t *testing.T) {

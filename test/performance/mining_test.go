@@ -4,10 +4,10 @@ import (
 	"os"
 	"testing"
 
-	"eiyaro/account"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/mining"
-	"eiyaro/test"
+	"ey/account"
+	dbm "ey/database/leveldb"
+	"ey/mining"
+	"ey/test"
 )
 
 // Function NewBlockTemplate's benchmark - 0.05s

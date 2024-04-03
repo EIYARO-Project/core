@@ -7,8 +7,8 @@ import (
 	"github.com/spf13/cobra"
 	jww "github.com/spf13/jwalterweatherman"
 
-	"eiyaro/crypto/ed25519/chainkd"
-	"eiyaro/util"
+	"ey/crypto/ed25519/chainkd"
+	"ey/util"
 )
 
 func init() {

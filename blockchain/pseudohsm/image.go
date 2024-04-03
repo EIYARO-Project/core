@@ -9,7 +9,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/crypto/ed25519/chainkd"
+	"ey/crypto/ed25519/chainkd"
 )
 
 const logModule = "pseudohsm"

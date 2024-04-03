@@ -2,11 +2,12 @@ package config
 
 import (
 	"encoding/hex"
+
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/consensus"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
+	"ey/consensus"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
 )
 
 func GenesisTx() *types.Tx {
@@ -81,8 +82,8 @@ func testNetGenesisBlock() *types.Block {
 			Version:   1,
 			Height:    0,
 			Nonce:     9253507043297,
-			Timestamp: 1528945000,
-			Bits:      2305843009214532812,
+			Timestamp: 1712057661,
+			Bits:      2605843009214532812,
 			BlockCommitment: types.BlockCommitment{
 				TransactionsMerkleRoot: merkleRoot,
 				TransactionStatusHash:  txStatusHash,
@@ -114,8 +115,8 @@ func soloNetGenesisBlock() *types.Block {
 			Version:   1,
 			Height:    0,
 			Nonce:     9253507043297,
-			Timestamp: 1528945000,
-			Bits:      2305843009214532812,
+			Timestamp: 1712057661,
+			Bits:      2605843009214532812,
 			BlockCommitment: types.BlockCommitment{
 				TransactionsMerkleRoot: merkleRoot,
 				TransactionStatusHash:  txStatusHash,

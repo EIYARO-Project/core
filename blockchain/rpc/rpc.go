@@ -11,15 +11,15 @@ import (
 	"strings"
 	"time"
 
-	"eiyaro/errors"
-	"eiyaro/net/http/httperror"
-	"eiyaro/net/http/reqid"
+	"ey/errors"
+	"ey/net/http/httperror"
+	"ey/net/http/reqid"
 )
 
-// EIYARO-specific header fields
+// Eiyaro-specific header fields
 const (
 	HeaderBlockchainID = "Blockchain-ID"
-	HeaderCoreID       = "EIYARO-Core-ID"
+	HeaderCoreID       = "Eiyaro-Core-ID"
 	HeaderTimeout      = "RPC-Timeout"
 )
 
@@ -27,7 +27,7 @@ const (
 // the RPC client's blockchain ID.
 var ErrWrongNetwork = errors.New("connected to a peer on a different network")
 
-// A Client is a EIYARO RPC client. It performs RPCs over HTTP using JSON
+// A Client is a Eiyaro RPC client. It performs RPCs over HTTP using JSON
 // request and responses. A Client must be configured with a secret token
 // to authenticate with other Cores on the network.
 type Client struct {
@@ -44,7 +44,7 @@ type Client struct {
 }
 
 func (c Client) userAgent() string {
-	return fmt.Sprintf("EIYARO; process=%s; buildtag=%s; blockchainID=%s",
+	return fmt.Sprintf("Eiyaro; process=%s; buildtag=%s; blockchainID=%s",
 		c.Username, c.BuildTag, c.BlockchainID)
 }
 

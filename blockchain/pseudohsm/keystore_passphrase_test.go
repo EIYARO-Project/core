@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"eiyaro/crypto/ed25519/chainkd"
+	"ey/crypto/ed25519/chainkd"
 	"github.com/pborman/uuid"
 )
 
@@ -20,7 +20,7 @@ func TestKeyEncryptDecrypt(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	password := "bytomtest"
+	password := "eiyarotest"
 	alias := "verylight"
 	// Do a few rounds of decryption and encryption
 	for i := 0; i < 3; i++ {
@@ -61,7 +61,7 @@ func TestGenerateFile(t *testing.T) {
 		Alias:   "verylight",
 	}
 	t.Log(key)
-	password := "bytomtest"
+	password := "eiyarotest"
 	xkey, err := EncryptKey(key, password, veryLightScryptN, veryLightScryptP)
 	file := keyFileName(key.ID.String())
 	writeKeyFile(file, xkey)

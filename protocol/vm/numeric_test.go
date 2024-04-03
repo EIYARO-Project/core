@@ -5,7 +5,7 @@ import (
 	"math"
 	"testing"
 
-	"eiyaro/testutil"
+	"ey/testutil"
 )
 
 func TestNumericOps(t *testing.T) {

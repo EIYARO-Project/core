@@ -5,7 +5,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"eiyaro/encoding/base32"
+	"ey/encoding/base32"
 )
 
 //1<seq_id ,increase by 1

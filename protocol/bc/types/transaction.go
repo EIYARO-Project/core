@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io"
 
-	"eiyaro/encoding/blockchain"
-	"eiyaro/errors"
-	"eiyaro/protocol/bc"
+	"ey/encoding/blockchain"
+	"ey/errors"
+	"ey/protocol/bc"
 )
 
 const serRequired = 0x7 // Bit mask accepted serialization flag.

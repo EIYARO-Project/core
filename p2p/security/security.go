@@ -3,7 +3,7 @@ package security
 import (
 	log "github.com/sirupsen/logrus"
 
-	cfg "eiyaro/config"
+	cfg "ey/config"
 )
 
 const logModule = "p2pSecurity"

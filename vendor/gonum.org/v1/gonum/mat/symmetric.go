@@ -186,9 +186,9 @@ func (s *SymDense) AddSym(a, b Symmetric) {
 			}
 			for i := 0; i < n; i++ {
 				eyp := bmat.Data[i*bmat.Stride+i : i*bmat.Stride+n]
-				seyp := s.mat.Data[i*s.mat.Stride+i : i*s.mat.Stride+n]
+				stmp := s.mat.Data[i*s.mat.Stride+i : i*s.mat.Stride+n]
 				for j, v := range amat.Data[i*amat.Stride+i : i*amat.Stride+n] {
-					seyp[j] = v + eyp[j]
+					stmp[j] = v + eyp[j]
 				}
 			}
 			return
@@ -196,9 +196,9 @@ func (s *SymDense) AddSym(a, b Symmetric) {
 	}
 
 	for i := 0; i < n; i++ {
-		seyp := s.mat.Data[i*s.mat.Stride : i*s.mat.Stride+n]
+		stmp := s.mat.Data[i*s.mat.Stride : i*s.mat.Stride+n]
 		for j := i; j < n; j++ {
-			seyp[j] = a.At(i, j) + b.At(i, j)
+			stmp[j] = a.At(i, j) + b.At(i, j)
 		}
 	}
 }
@@ -220,9 +220,9 @@ func (s *SymDense) CopySym(a Symmetric) int {
 		}
 	default:
 		for i := 0; i < n; i++ {
-			seyp := s.mat.Data[i*s.mat.Stride : i*s.mat.Stride+n]
+			stmp := s.mat.Data[i*s.mat.Stride : i*s.mat.Stride+n]
 			for j := i; j < n; j++ {
-				seyp[j] = a.At(i, j)
+				stmp[j] = a.At(i, j)
 			}
 		}
 	}

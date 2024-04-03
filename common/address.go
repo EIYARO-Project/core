@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"eiyaro/common/bech32"
-	"eiyaro/consensus"
+	"ey/common/bech32"
+	"ey/consensus"
 )
 
 var (
@@ -109,7 +109,7 @@ func encodeSegWitAddress(hrp string, witnessVersion byte, witnessProgram []byte)
 // public key, the address will be associated with the passed defaultNet.
 func DecodeAddress(addr string, param *consensus.Params) (Address, error) {
 	// Bech32 encoded segwit addresses start with a human-readable part
-	// (hrp) followed by '1'. For EIYARO mainnet the hrp is "bm", and for
+	// (hrp) followed by '1'. For Eiyaro mainnet the hrp is "bm", and for
 	// testnet it is "tm". If the address string has a prefix that matches
 	// one of the prefixes for the known networks, we try to decode it as
 	// a segwit address.

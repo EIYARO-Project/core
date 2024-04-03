@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"eiyaro/testutil"
+	"ey/testutil"
 )
 
 func TestStackOps(t *testing.T) {

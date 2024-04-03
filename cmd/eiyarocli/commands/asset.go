@@ -8,8 +8,8 @@ import (
 	jww "github.com/spf13/jwalterweatherman"
 
 	"encoding/hex"
-	"eiyaro/crypto/ed25519/chainkd"
-	"eiyaro/util"
+	"ey/crypto/ed25519/chainkd"
+	"ey/util"
 )
 
 func init() {

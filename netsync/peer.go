@@ -10,10 +10,10 @@ import (
 	"github.com/tendermint/tmlibs/flowrate"
 	"gopkg.in/fatih/set.v0"
 
-	"eiyaro/consensus"
-	"eiyaro/errors"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
+	"ey/consensus"
+	"ey/errors"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
 )
 
 const (

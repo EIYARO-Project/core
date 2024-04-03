@@ -5,15 +5,15 @@ import (
 
 	"time"
 
-	"eiyaro/config"
-	"eiyaro/consensus"
-	"eiyaro/database"
-	"eiyaro/database/storage"
-	"eiyaro/protocol"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/state"
-	"eiyaro/testutil"
+	"ey/config"
+	"ey/consensus"
+	"ey/database"
+	"ey/database/storage"
+	"ey/protocol"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/state"
+	"ey/testutil"
 )
 
 var blockMap map[int][]*attachBlock

@@ -8,9 +8,9 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"eiyaro/encoding/blockchain"
-	"eiyaro/protocol/bc"
-	"eiyaro/testutil"
+	"ey/encoding/blockchain"
+	"ey/protocol/bc"
+	"ey/testutil"
 )
 
 func TestSerializationSpendCommitment(t *testing.T) {

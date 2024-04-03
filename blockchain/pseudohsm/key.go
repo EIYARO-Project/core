@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"eiyaro/crypto/ed25519/chainkd"
+	"ey/crypto/ed25519/chainkd"
 	"github.com/pborman/uuid"
 )
 

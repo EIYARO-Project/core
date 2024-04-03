@@ -4,8 +4,8 @@ import (
 	"errors"
 	"math/rand"
 
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
 )
 
 type Chain struct {

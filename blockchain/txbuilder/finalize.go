@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"context"
 
-	cfg "eiyaro/config"
-	"eiyaro/consensus"
-	"eiyaro/errors"
-	"eiyaro/protocol"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/vm"
+	cfg "ey/config"
+	"ey/consensus"
+	"ey/errors"
+	"ey/protocol"
+	"ey/protocol/bc/types"
+	"ey/protocol/vm"
 )
 
 var (

@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/viper"
 	cmn "github.com/tendermint/tmlibs/common"
 
-	cfg "eiyaro/config"
+	cfg "ey/config"
 )
 
 var (

@@ -7,8 +7,8 @@ import (
 	"github.com/golang/groupcache/lru"
 	"github.com/golang/groupcache/singleflight"
 
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
 )
 
 const maxCachedBlocks = 30

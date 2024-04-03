@@ -6,18 +6,18 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/account"
-	"eiyaro/asset"
-	"eiyaro/blockchain/query"
-	"eiyaro/blockchain/signers"
-	"eiyaro/common"
-	"eiyaro/consensus"
-	"eiyaro/consensus/segwit"
-	"eiyaro/crypto/sha3pool"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/vm/vmutil"
+	"ey/account"
+	"ey/asset"
+	"ey/blockchain/query"
+	"ey/blockchain/signers"
+	"ey/common"
+	"ey/consensus"
+	"ey/consensus/segwit"
+	"ey/crypto/sha3pool"
+	dbm "ey/database/leveldb"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/vm/vmutil"
 )
 
 // annotateTxs adds asset data to transactions

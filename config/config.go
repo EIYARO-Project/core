@@ -10,7 +10,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/crypto/ed25519"
+	"ey/crypto/ed25519"
 )
 
 var (
@@ -30,7 +30,7 @@ type Config struct {
 	Websocket *WebsocketConfig `mapstructure:"ws"`
 }
 
-// DefaultConfig Default configurable parameters.
+// Default configurable parameters.
 func DefaultConfig() *Config {
 	return &Config{
 		BaseConfig: DefaultBaseConfig(),
@@ -43,7 +43,7 @@ func DefaultConfig() *Config {
 	}
 }
 
-// SetRoot Set the RootDir for all Config structs
+// Set the RootDir for all Config structs
 func (cfg *Config) SetRoot(root string) *Config {
 	cfg.BaseConfig.RootDir = root
 	return cfg
@@ -80,7 +80,7 @@ func (cfg *Config) NodeKey() (string, error) {
 	return privKey.String(), nil
 }
 
-// BaseConfig -----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 // BaseConfig
 type BaseConfig struct {
 	// The root directory for all data.
@@ -121,7 +121,7 @@ type BaseConfig struct {
 	LogFile string `mapstructure:"log_file"`
 }
 
-// DefaultBaseConfig Default configurable base parameters.
+// Default configurable base parameters.
 func DefaultBaseConfig() BaseConfig {
 	return BaseConfig{
 		Moniker:           "anonymous",
@@ -164,7 +164,7 @@ type P2PConfig struct {
 	KeepDial         string `mapstructure:"keep_dial"`
 }
 
-// DefaultP2PConfig Default configurable p2p parameters.
+// Default configurable p2p parameters.
 func DefaultP2PConfig() *P2PConfig {
 	return &P2PConfig{
 		ListenAddress:    "tcp://0.0.0.0:46656",
@@ -180,7 +180,7 @@ func DefaultP2PConfig() *P2PConfig {
 	}
 }
 
-// WalletConfig -----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 type WalletConfig struct {
 	Disable  bool   `mapstructure:"disable"`
 	Rescan   bool   `mapstructure:"rescan"`
@@ -205,21 +205,21 @@ type WebsocketConfig struct {
 	MaxNumConcurrentReqs int `mapstructure:"max_num_concurrent_reqs"`
 }
 
-// DefaultRPCAuthConfig Default configurable rpc's auth parameters.
+// Default configurable rpc's auth parameters.
 func DefaultRPCAuthConfig() *RPCAuthConfig {
 	return &RPCAuthConfig{
 		Disable: false,
 	}
 }
 
-// DefaultWebConfig Default configurable web parameters.
+// Default configurable web parameters.
 func DefaultWebConfig() *WebConfig {
 	return &WebConfig{
 		Closed: false,
 	}
 }
 
-// DefaultWalletConfig Default configurable wallet parameters.
+// Default configurable wallet parameters.
 func DefaultWalletConfig() *WalletConfig {
 	return &WalletConfig{
 		Disable:  false,
@@ -229,7 +229,7 @@ func DefaultWalletConfig() *WalletConfig {
 	}
 }
 
-// DefaultSimdConfig Default configurable web parameters.
+// Default configurable web parameters.
 func DefaultSimdConfig() *SimdConfig {
 	return &SimdConfig{
 		Enable: false,
@@ -266,8 +266,8 @@ func DefaultDataDir() string {
 	case "darwin":
 		// In order to be compatible with old data path,
 		// copy the data from the old path to the new path
-		oldPath := filepath.Join(home, "Library", "EIYARO")
-		newPath := filepath.Join(home, "Library", "Application Support", "EIYARO")
+		oldPath := filepath.Join(home, "Library", "Eiyaro")
+		newPath := filepath.Join(home, "Library", "Application Support", "Eiyaro")
 		if !isFolderNotExists(oldPath) && isFolderNotExists(newPath) {
 			if err := os.Rename(oldPath, newPath); err != nil {
 				log.Errorf("DefaultDataDir: %v", err)
@@ -276,7 +276,7 @@ func DefaultDataDir() string {
 		}
 		return newPath
 	case "windows":
-		return filepath.Join(home, "AppData", "Roaming", "EIYARO")
+		return filepath.Join(home, "AppData", "Roaming", "Eiyaro")
 	default:
 		return filepath.Join(home, ".eiyaro")
 	}

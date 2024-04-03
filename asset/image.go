@@ -5,7 +5,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/common"
+	"ey/common"
 )
 
 // Image is the struct for hold export asset data

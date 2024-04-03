@@ -5,7 +5,7 @@ import (
 	"math"
 	"strings"
 
-	"eiyaro/protocol/bc"
+	"ey/protocol/bc"
 )
 
 // consensus variables
@@ -15,23 +15,23 @@ const (
 	VMGasRate        = int64(200)
 	StorageGasRate   = int64(1)
 	MaxGasAmount     = int64(200000)
-	DefaultGasCredit = int64(10)
+	DefaultGasCredit = int64(30000)
 
 	// CoinbasePendingBlockNumber config parameter for coinbase reward
-	CoinbasePendingBlockNumber = uint64(50)
+	CoinbasePendingBlockNumber = uint64(5)
 	subsidyReductionInterval   = uint64(175200)
 	baseSubsidy                = uint64(100000000000)
 	InitialBlockSubsidy        = uint64(21000000000000000)
 	subsidyReductionRate       = 0.1
 
 	// BlocksPerRetarget config for pow mining
-	BlocksPerRetarget     = uint64(256)
+	BlocksPerRetarget     = uint64(1000)
 	TargetSecondsPerBlock = uint64(180)
 	SeedPerRetarget       = uint64(256)
 
 	// MaxTimeOffsetSeconds is the maximum number of seconds a block time is allowed to be ahead of the current time
-	MaxTimeOffsetSeconds = uint64(30 * 60)
-	MedianTimeBlocks     = 8
+	MaxTimeOffsetSeconds = uint64(60 * 60)
+	MedianTimeBlocks     = 11
 
 	PayToWitnessPubKeyHashDataSize = 20
 	PayToWitnessScriptHashDataSize = 32
@@ -40,7 +40,7 @@ const (
 	EYAlias = "EY"
 )
 
-// EYAssetID is EY's asset id, the soul asset of EIYARO
+// EYAssetID is EY's asset id, the soul asset of Eiyaro
 var EYAssetID = &bc.AssetID{
 	V0: binary.BigEndian.Uint64([]byte{0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff}),
 	V1: binary.BigEndian.Uint64([]byte{0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff}),
@@ -61,7 +61,7 @@ var EYDefinitionMap = map[string]interface{}{
 	"name":        EYAlias,
 	"symbol":      EYAlias,
 	"decimals":    8,
-	"description": `EIYARO Official Issue`,
+	"description": `Eiyaro Official Issue`,
 }
 
 // BlockSubsidy calculates the coinbase reward for a given block height, considering a 10% reduction every subsidyReductionInterval blocks.

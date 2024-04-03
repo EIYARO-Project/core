@@ -3,10 +3,10 @@ package protocol
 import (
 	"testing"
 
-	"eiyaro/config"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/state"
-	"eiyaro/testutil"
+	"ey/config"
+	"ey/protocol/bc"
+	"ey/protocol/state"
+	"ey/testutil"
 )
 
 func TestCalcReorganizeNodes(t *testing.T) {

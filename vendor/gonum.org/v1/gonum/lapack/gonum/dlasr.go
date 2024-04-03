@@ -88,13 +88,13 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 			if direct == lapack.Forward {
 				for j := 0; j < m-1; j++ {
 					ctmp := c[j]
-					seyp := s[j]
-					if ctmp != 1 || seyp != 0 {
+					stmp := s[j]
+					if ctmp != 1 || stmp != 0 {
 						for i := 0; i < n; i++ {
 							tmp2 := a[j*lda+i]
 							tmp := a[(j+1)*lda+i]
-							a[(j+1)*lda+i] = ctmp*tmp - seyp*tmp2
-							a[j*lda+i] = seyp*tmp + ctmp*tmp2
+							a[(j+1)*lda+i] = ctmp*tmp - stmp*tmp2
+							a[j*lda+i] = stmp*tmp + ctmp*tmp2
 						}
 					}
 				}
@@ -102,13 +102,13 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 			}
 			for j := m - 2; j >= 0; j-- {
 				ctmp := c[j]
-				seyp := s[j]
-				if ctmp != 1 || seyp != 0 {
+				stmp := s[j]
+				if ctmp != 1 || stmp != 0 {
 					for i := 0; i < n; i++ {
 						tmp2 := a[j*lda+i]
 						tmp := a[(j+1)*lda+i]
-						a[(j+1)*lda+i] = ctmp*tmp - seyp*tmp2
-						a[j*lda+i] = seyp*tmp + ctmp*tmp2
+						a[(j+1)*lda+i] = ctmp*tmp - stmp*tmp2
+						a[j*lda+i] = stmp*tmp + ctmp*tmp2
 					}
 				}
 			}
@@ -117,13 +117,13 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 			if direct == lapack.Forward {
 				for j := 1; j < m; j++ {
 					ctmp := c[j-1]
-					seyp := s[j-1]
-					if ctmp != 1 || seyp != 0 {
+					stmp := s[j-1]
+					if ctmp != 1 || stmp != 0 {
 						for i := 0; i < n; i++ {
 							tmp := a[j*lda+i]
 							tmp2 := a[i]
-							a[j*lda+i] = ctmp*tmp - seyp*tmp2
-							a[i] = seyp*tmp + ctmp*tmp2
+							a[j*lda+i] = ctmp*tmp - stmp*tmp2
+							a[i] = stmp*tmp + ctmp*tmp2
 						}
 					}
 				}
@@ -131,17 +131,17 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 			}
 			for j := m - 1; j >= 1; j-- {
 				ctmp := c[j-1]
-				seyp := s[j-1]
-				if ctmp != 1 || seyp != 0 {
+				stmp := s[j-1]
+				if ctmp != 1 || stmp != 0 {
 					for i := 0; i < n; i++ {
 						ctmp := c[j-1]
-						seyp := s[j-1]
-						if ctmp != 1 || seyp != 0 {
+						stmp := s[j-1]
+						if ctmp != 1 || stmp != 0 {
 							for i := 0; i < n; i++ {
 								tmp := a[j*lda+i]
 								tmp2 := a[i]
-								a[j*lda+i] = ctmp*tmp - seyp*tmp2
-								a[i] = seyp*tmp + ctmp*tmp2
+								a[j*lda+i] = ctmp*tmp - stmp*tmp2
+								a[i] = stmp*tmp + ctmp*tmp2
 							}
 						}
 					}
@@ -152,13 +152,13 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 		if direct == lapack.Forward {
 			for j := 0; j < m-1; j++ {
 				ctmp := c[j]
-				seyp := s[j]
-				if ctmp != 1 || seyp != 0 {
+				stmp := s[j]
+				if ctmp != 1 || stmp != 0 {
 					for i := 0; i < n; i++ {
 						tmp := a[j*lda+i]
 						tmp2 := a[(m-1)*lda+i]
-						a[j*lda+i] = seyp*tmp2 + ctmp*tmp
-						a[(m-1)*lda+i] = ctmp*tmp2 - seyp*tmp
+						a[j*lda+i] = stmp*tmp2 + ctmp*tmp
+						a[(m-1)*lda+i] = ctmp*tmp2 - stmp*tmp
 					}
 				}
 			}
@@ -166,13 +166,13 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 		}
 		for j := m - 2; j >= 0; j-- {
 			ctmp := c[j]
-			seyp := s[j]
-			if ctmp != 1 || seyp != 0 {
+			stmp := s[j]
+			if ctmp != 1 || stmp != 0 {
 				for i := 0; i < n; i++ {
 					tmp := a[j*lda+i]
 					tmp2 := a[(m-1)*lda+i]
-					a[j*lda+i] = seyp*tmp2 + ctmp*tmp
-					a[(m-1)*lda+i] = ctmp*tmp2 - seyp*tmp
+					a[j*lda+i] = stmp*tmp2 + ctmp*tmp
+					a[(m-1)*lda+i] = ctmp*tmp2 - stmp*tmp
 				}
 			}
 		}
@@ -182,13 +182,13 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 		if direct == lapack.Forward {
 			for j := 0; j < n-1; j++ {
 				ctmp := c[j]
-				seyp := s[j]
-				if ctmp != 1 || seyp != 0 {
+				stmp := s[j]
+				if ctmp != 1 || stmp != 0 {
 					for i := 0; i < m; i++ {
 						tmp := a[i*lda+j+1]
 						tmp2 := a[i*lda+j]
-						a[i*lda+j+1] = ctmp*tmp - seyp*tmp2
-						a[i*lda+j] = seyp*tmp + ctmp*tmp2
+						a[i*lda+j+1] = ctmp*tmp - stmp*tmp2
+						a[i*lda+j] = stmp*tmp + ctmp*tmp2
 					}
 				}
 			}
@@ -196,13 +196,13 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 		}
 		for j := n - 2; j >= 0; j-- {
 			ctmp := c[j]
-			seyp := s[j]
-			if ctmp != 1 || seyp != 0 {
+			stmp := s[j]
+			if ctmp != 1 || stmp != 0 {
 				for i := 0; i < m; i++ {
 					tmp := a[i*lda+j+1]
 					tmp2 := a[i*lda+j]
-					a[i*lda+j+1] = ctmp*tmp - seyp*tmp2
-					a[i*lda+j] = seyp*tmp + ctmp*tmp2
+					a[i*lda+j+1] = ctmp*tmp - stmp*tmp2
+					a[i*lda+j] = stmp*tmp + ctmp*tmp2
 				}
 			}
 		}
@@ -211,13 +211,13 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 		if direct == lapack.Forward {
 			for j := 1; j < n; j++ {
 				ctmp := c[j-1]
-				seyp := s[j-1]
-				if ctmp != 1 || seyp != 0 {
+				stmp := s[j-1]
+				if ctmp != 1 || stmp != 0 {
 					for i := 0; i < m; i++ {
 						tmp := a[i*lda+j]
 						tmp2 := a[i*lda]
-						a[i*lda+j] = ctmp*tmp - seyp*tmp2
-						a[i*lda] = seyp*tmp + ctmp*tmp2
+						a[i*lda+j] = ctmp*tmp - stmp*tmp2
+						a[i*lda] = stmp*tmp + ctmp*tmp2
 					}
 				}
 			}
@@ -225,13 +225,13 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 		}
 		for j := n - 1; j >= 1; j-- {
 			ctmp := c[j-1]
-			seyp := s[j-1]
-			if ctmp != 1 || seyp != 0 {
+			stmp := s[j-1]
+			if ctmp != 1 || stmp != 0 {
 				for i := 0; i < m; i++ {
 					tmp := a[i*lda+j]
 					tmp2 := a[i*lda]
-					a[i*lda+j] = ctmp*tmp - seyp*tmp2
-					a[i*lda] = seyp*tmp + ctmp*tmp2
+					a[i*lda+j] = ctmp*tmp - stmp*tmp2
+					a[i*lda] = stmp*tmp + ctmp*tmp2
 				}
 			}
 		}
@@ -240,13 +240,13 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 	if direct == lapack.Forward {
 		for j := 0; j < n-1; j++ {
 			ctmp := c[j]
-			seyp := s[j]
-			if ctmp != 1 || seyp != 0 {
+			stmp := s[j]
+			if ctmp != 1 || stmp != 0 {
 				for i := 0; i < m; i++ {
 					tmp := a[i*lda+j]
 					tmp2 := a[i*lda+n-1]
-					a[i*lda+j] = seyp*tmp2 + ctmp*tmp
-					a[i*lda+n-1] = ctmp*tmp2 - seyp*tmp
+					a[i*lda+j] = stmp*tmp2 + ctmp*tmp
+					a[i*lda+n-1] = ctmp*tmp2 - stmp*tmp
 				}
 
 			}
@@ -255,13 +255,13 @@ func (impl Implementation) Dlasr(side blas.Side, pivot lapack.Pivot, direct lapa
 	}
 	for j := n - 2; j >= 0; j-- {
 		ctmp := c[j]
-		seyp := s[j]
-		if ctmp != 1 || seyp != 0 {
+		stmp := s[j]
+		if ctmp != 1 || stmp != 0 {
 			for i := 0; i < m; i++ {
 				tmp := a[i*lda+j]
 				tmp2 := a[i*lda+n-1]
-				a[i*lda+j] = seyp*tmp2 + ctmp*tmp
-				a[i*lda+n-1] = ctmp*tmp2 - seyp*tmp
+				a[i*lda+j] = stmp*tmp2 + ctmp*tmp
+				a[i*lda+n-1] = ctmp*tmp2 - stmp*tmp
 			}
 		}
 	}

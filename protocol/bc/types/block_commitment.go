@@ -3,8 +3,8 @@ package types
 import (
 	"io"
 
-	"eiyaro/encoding/blockchain"
-	"eiyaro/protocol/bc"
+	"ey/encoding/blockchain"
+	"ey/protocol/bc"
 )
 
 // BlockCommitment store the TransactionsMerkleRoot && TransactionStatusHash

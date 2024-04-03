@@ -6,12 +6,12 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/account"
-	"eiyaro/consensus/difficulty"
-	"eiyaro/event"
-	"eiyaro/mining"
-	"eiyaro/protocol"
-	"eiyaro/protocol/bc/types"
+	"ey/account"
+	"ey/consensus/difficulty"
+	"ey/event"
+	"ey/mining"
+	"ey/protocol"
+	"ey/protocol/bc/types"
 )
 
 const (

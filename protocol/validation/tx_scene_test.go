@@ -4,10 +4,10 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"eiyaro/consensus"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/vm"
+	"ey/consensus"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/vm"
 )
 
 func TestValidateTx(t *testing.T) {

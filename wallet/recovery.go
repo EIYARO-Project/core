@@ -8,14 +8,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"eiyaro/account"
-	"eiyaro/blockchain/signers"
-	"eiyaro/crypto/ed25519/chainkd"
-	"eiyaro/crypto/sha3pool"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/errors"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
+	"ey/account"
+	"ey/blockchain/signers"
+	"ey/crypto/ed25519/chainkd"
+	"ey/crypto/sha3pool"
+	dbm "ey/database/leveldb"
+	"ey/errors"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
 )
 
 const (

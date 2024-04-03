@@ -3,7 +3,7 @@ package vm
 import (
 	"math"
 
-	"eiyaro/math/checked"
+	"ey/math/checked"
 )
 
 func op1Add(vm *virtualMachine) error {

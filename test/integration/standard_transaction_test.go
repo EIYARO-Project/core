@@ -6,14 +6,14 @@ import (
 	"os"
 	"testing"
 
-	"eiyaro/account"
-	"eiyaro/blockchain/pseudohsm"
-	"eiyaro/blockchain/signers"
-	"eiyaro/crypto/ed25519/chainkd"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/validation"
-	"eiyaro/test"
+	"ey/account"
+	"ey/blockchain/pseudohsm"
+	"ey/blockchain/signers"
+	"ey/crypto/ed25519/chainkd"
+	dbm "ey/database/leveldb"
+	"ey/protocol/bc/types"
+	"ey/protocol/validation"
+	"ey/test"
 )
 
 func TestP2PKH(t *testing.T) {

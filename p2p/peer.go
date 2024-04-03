@@ -15,9 +15,9 @@ import (
 	cmn "github.com/tendermint/tmlibs/common"
 	"github.com/tendermint/tmlibs/flowrate"
 
-	cfg "eiyaro/config"
-	"eiyaro/consensus"
-	"eiyaro/p2p/connection"
+	cfg "ey/config"
+	"ey/consensus"
+	"ey/p2p/connection"
 )
 
 // peerConn contains the raw connection and its config.

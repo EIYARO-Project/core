@@ -7,9 +7,9 @@ import (
 	"github.com/spf13/cobra"
 	jww "github.com/spf13/jwalterweatherman"
 
-	"eiyaro/crypto/ed25519/chainkd"
-	chainjson "eiyaro/encoding/json"
-	"eiyaro/util"
+	"ey/crypto/ed25519/chainkd"
+	chainjson "ey/encoding/json"
+	"ey/util"
 )
 
 var createKeyCmd = &cobra.Command{

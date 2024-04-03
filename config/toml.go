@@ -6,7 +6,7 @@ import (
 	cmn "github.com/tendermint/tmlibs/common"
 )
 
-// EnsureRoot /****** these are for production settings ***********/
+/****** these are for production settings ***********/
 func EnsureRoot(rootDir string, network string) {
 	cmn.EnsureDir(rootDir, 0700)
 	cmn.EnsureDir(rootDir+"/data", 0700)

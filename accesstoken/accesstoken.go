@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"eiyaro/crypto/sha3pool"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/errors"
+	"ey/crypto/sha3pool"
+	dbm "ey/database/leveldb"
+	"ey/errors"
 )
 
 const tokenSize = 32

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"eiyaro/errors"
+	"ey/errors"
 )
 
 var (

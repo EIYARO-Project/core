@@ -5,13 +5,13 @@ import (
 	"encoding/hex"
 	"strings"
 
-	"eiyaro/blockchain/signers"
-	"eiyaro/common"
-	"eiyaro/consensus"
-	"eiyaro/crypto"
-	"eiyaro/crypto/ed25519"
-	"eiyaro/crypto/ed25519/chainkd"
-	chainjson "eiyaro/encoding/json"
+	"ey/blockchain/signers"
+	"ey/common"
+	"ey/consensus"
+	"ey/crypto"
+	"ey/crypto/ed25519"
+	"ey/crypto/ed25519/chainkd"
+	chainjson "ey/encoding/json"
 )
 
 // SignMsgResp is response for sign message

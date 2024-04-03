@@ -8,8 +8,8 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"eiyaro/encoding/blockchain"
-	"eiyaro/testutil"
+	"ey/encoding/blockchain"
+	"ey/testutil"
 )
 
 func TestSerializationIssuance(t *testing.T) {

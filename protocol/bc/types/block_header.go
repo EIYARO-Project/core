@@ -6,13 +6,13 @@ import (
 	"io"
 	"time"
 
-	"eiyaro/encoding/blockchain"
-	"eiyaro/encoding/bufpool"
-	"eiyaro/errors"
-	"eiyaro/protocol/bc"
+	"ey/encoding/blockchain"
+	"ey/encoding/bufpool"
+	"ey/errors"
+	"ey/protocol/bc"
 )
 
-// BlockHeader defines information about a block and is used in the EIYARO
+// BlockHeader defines information about a block and is used in the Eiyaro
 type BlockHeader struct {
 	Version           uint64  // The version of the block.
 	Height            uint64  // The height of the block.

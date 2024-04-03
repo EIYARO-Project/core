@@ -6,7 +6,7 @@ import (
 	"io"
 	"testing"
 
-	"eiyaro/protocol/bc"
+	"ey/protocol/bc"
 )
 
 func MustDecodeHash(s string) (h bc.Hash) {

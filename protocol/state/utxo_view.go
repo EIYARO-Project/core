@@ -3,9 +3,9 @@ package state
 import (
 	"errors"
 
-	"eiyaro/consensus"
-	"eiyaro/database/storage"
-	"eiyaro/protocol/bc"
+	"ey/consensus"
+	"ey/database/storage"
+	"ey/protocol/bc"
 )
 
 // UtxoViewpoint represents a view into the set of unspent transaction outputs

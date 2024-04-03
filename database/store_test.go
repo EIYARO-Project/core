@@ -4,14 +4,14 @@ import (
 	"os"
 	"testing"
 
-	"eiyaro/config"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/database/storage"
-	"eiyaro/protocol"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/state"
-	"eiyaro/testutil"
+	"ey/config"
+	dbm "ey/database/leveldb"
+	"ey/database/storage"
+	"ey/protocol"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/state"
+	"ey/testutil"
 )
 
 func TestLoadBlockIndex(t *testing.T) {

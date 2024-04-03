@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 	jww "github.com/spf13/jwalterweatherman"
 
-	"eiyaro/version"
+	"ey/version"
 )
 
 var versionCmd = &cobra.Command{

@@ -13,27 +13,27 @@ import (
 	cmn "github.com/tendermint/tmlibs/common"
 	browser "github.com/toqueteos/webbrowser"
 
-	"eiyaro/accesstoken"
-	"eiyaro/account"
-	"eiyaro/api"
-	"eiyaro/asset"
-	"eiyaro/blockchain/pseudohsm"
-	"eiyaro/blockchain/txfeed"
-	cfg "eiyaro/config"
-	"eiyaro/consensus"
-	"eiyaro/database"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/env"
-	"eiyaro/event"
-	bytomLog "eiyaro/log"
-	"eiyaro/mining/cpuminer"
-	"eiyaro/mining/miningpool"
-	"eiyaro/mining/tensority"
-	"eiyaro/net/websocket"
-	"eiyaro/netsync"
-	"eiyaro/p2p"
-	"eiyaro/protocol"
-	w "eiyaro/wallet"
+	"ey/accesstoken"
+	"ey/account"
+	"ey/api"
+	"ey/asset"
+	"ey/blockchain/pseudohsm"
+	"ey/blockchain/txfeed"
+	cfg "ey/config"
+	"ey/consensus"
+	"ey/database"
+	dbm "ey/database/leveldb"
+	"ey/env"
+	"ey/event"
+	eiyaroLog "ey/log"
+	"ey/mining/cpuminer"
+	"ey/mining/miningpool"
+	"ey/mining/tensority"
+	"ey/net/websocket"
+	"ey/netsync"
+	"ey/p2p"
+	"ey/protocol"
+	w "ey/wallet"
 )
 
 const (
@@ -67,7 +67,7 @@ func NewNode(config *cfg.Config) *Node {
 		cmn.Exit("Error: " + err.Error())
 	}
 
-	if err := bytomLog.InitLogFile(config); err != nil {
+	if err := eiyaroLog.InitLogFile(config); err != nil {
 		log.WithField("err", err).Fatalln("InitLogFile failed")
 	}
 

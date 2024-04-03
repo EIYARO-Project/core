@@ -8,7 +8,7 @@ import (
 	"math/big"
 	"strconv"
 
-	"eiyaro/crypto/ed25519"
+	"ey/crypto/ed25519"
 )
 
 const format = "Private-key-format: v1.3\n"

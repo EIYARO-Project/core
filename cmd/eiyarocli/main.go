@@ -3,7 +3,7 @@ package main
 import (
 	"runtime"
 
-	cmd "eiyaro/cmd/eiyarocli/commands"
+	cmd "ey/cmd/eiyarocli/commands"
 )
 
 func main() {

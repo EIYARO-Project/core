@@ -4,15 +4,15 @@ import (
 	"context"
 	"encoding/json"
 
-	"eiyaro/blockchain/signers"
-	"eiyaro/blockchain/txbuilder"
-	"eiyaro/common"
-	"eiyaro/consensus"
-	"eiyaro/crypto/ed25519/chainkd"
-	"eiyaro/errors"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/vm/vmutil"
+	"ey/blockchain/signers"
+	"ey/blockchain/txbuilder"
+	"ey/common"
+	"ey/consensus"
+	"ey/crypto/ed25519/chainkd"
+	"ey/errors"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/vm/vmutil"
 )
 
 //DecodeSpendAction unmarshal JSON-encoded data of spend action

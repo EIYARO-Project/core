@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"eiyaro/consensus"
-	"eiyaro/errors"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/test/mock"
-	"eiyaro/testutil"
+	"ey/consensus"
+	"ey/errors"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/test/mock"
+	"ey/testutil"
 )
 
 func TestAppendHeaderList(t *testing.T) {

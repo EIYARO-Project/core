@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"eiyaro/errors"
+	"ey/errors"
 )
 
 // ErrBadFilter is returned from Parse when

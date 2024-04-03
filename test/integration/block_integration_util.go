@@ -10,15 +10,15 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"eiyaro/database"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/database/storage"
-	"eiyaro/event"
-	"eiyaro/protocol"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/state"
-	"eiyaro/testutil"
+	"ey/database"
+	dbm "ey/database/leveldb"
+	"ey/database/storage"
+	"ey/event"
+	"ey/protocol"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/state"
+	"ey/testutil"
 )
 
 const (

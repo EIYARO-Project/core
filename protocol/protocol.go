@@ -5,16 +5,16 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/config"
-	"eiyaro/errors"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/state"
+	"ey/config"
+	"ey/errors"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/state"
 )
 
 const maxProcessBlockChSize = 1024
 
-// Chain provides functions for working with the EIYARO block chain.
+// Chain provides functions for working with the Eiyaro block chain.
 type Chain struct {
 	index          *state.BlockIndex
 	orphanManage   *OrphanManage

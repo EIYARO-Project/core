@@ -1,7 +1,7 @@
 package go_algorithm
 
 import (
-	"eiyaro/protocol/bc"
+	"ey/protocol/bc"
 )
 
 func LegacyAlgorithm(bh, seed *bc.Hash) *bc.Hash {

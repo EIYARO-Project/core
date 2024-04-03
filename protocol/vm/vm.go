@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"eiyaro/errors"
+	"ey/errors"
 )
 
 type virtualMachine struct {

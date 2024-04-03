@@ -1,5 +1,5 @@
 language: go
-go_import_path: eiyaro
+go_import_path: github.com/eiyaro/eiyaro
 dist: trusty
 sudo: false
 

@@ -3,7 +3,7 @@ package vm
 import (
 	"testing"
 
-	"eiyaro/testutil"
+	"ey/testutil"
 )
 
 func TestControlOps(t *testing.T) {

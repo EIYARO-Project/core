@@ -6,12 +6,12 @@ import (
 	"runtime"
 	"sync"
 
-	"eiyaro/consensus"
-	"eiyaro/consensus/segwit"
-	"eiyaro/errors"
-	"eiyaro/math/checked"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/vm"
+	"ey/consensus"
+	"ey/consensus/segwit"
+	"ey/errors"
+	"ey/math/checked"
+	"ey/protocol/bc"
+	"ey/protocol/vm"
 )
 
 const ruleAA = 142500
@@ -42,7 +42,7 @@ var (
 
 // GasState record the gas usage status
 type GasState struct {
-	EYValue    uint64
+	EYValue   uint64
 	GasLeft    int64
 	GasUsed    int64
 	GasValid   bool

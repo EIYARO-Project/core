@@ -9,8 +9,8 @@ import (
 
 	"github.com/tendermint/go-wire"
 
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
 )
 
 //protocol msg byte

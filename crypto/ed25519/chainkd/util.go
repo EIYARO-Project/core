@@ -3,7 +3,7 @@ package chainkd
 import (
 	"io"
 
-	"eiyaro/crypto/ed25519"
+	"ey/crypto/ed25519"
 )
 
 // Utility functions

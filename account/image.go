@@ -1,4 +1,4 @@
-// Package account stores and tracks accounts within a EIYARO Core.
+// Package account stores and tracks accounts within a Eiyaro Core.
 package account
 
 import (

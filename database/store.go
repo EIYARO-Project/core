@@ -9,13 +9,13 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/tendermint/tmlibs/common"
 
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/database/storage"
-	"eiyaro/errors"
-	"eiyaro/protocol"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/state"
+	dbm "ey/database/leveldb"
+	"ey/database/storage"
+	"ey/errors"
+	"ey/protocol"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/state"
 )
 
 const logModule = "leveldb"

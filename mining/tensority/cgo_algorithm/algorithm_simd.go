@@ -12,7 +12,7 @@ import "C"
 import (
 	"unsafe"
 
-	"eiyaro/protocol/bc"
+	"ey/protocol/bc"
 )
 
 func SimdAlgorithm(bh, seed *bc.Hash) *bc.Hash {

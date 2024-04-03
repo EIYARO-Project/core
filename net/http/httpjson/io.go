@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"reflect"
 
-	"eiyaro/errors"
+	"ey/errors"
 	log "github.com/sirupsen/logrus"
 )
 

@@ -9,11 +9,11 @@ import (
 	"github.com/golang/groupcache/lru"
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/consensus"
-	"eiyaro/event"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/state"
+	"ey/consensus"
+	"ey/event"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/state"
 )
 
 // msg type

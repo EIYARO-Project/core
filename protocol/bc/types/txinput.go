@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"io"
 
-	"eiyaro/encoding/blockchain"
-	"eiyaro/errors"
-	"eiyaro/protocol/bc"
+	"ey/encoding/blockchain"
+	"ey/errors"
+	"ey/protocol/bc"
 )
 
 // serflag variables for input types.

@@ -6,7 +6,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	chainjson "eiyaro/encoding/json"
+	chainjson "ey/encoding/json"
 )
 
 // TODO(bobg): most of the code here is duplicated from

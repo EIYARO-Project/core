@@ -6,10 +6,10 @@ import (
 	"os"
 	"testing"
 
-	"eiyaro/consensus"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/vm"
+	"ey/consensus"
+	dbm "ey/database/leveldb"
+	"ey/protocol/bc/types"
+	"ey/protocol/vm"
 )
 
 // case1:           |------c1(height=7)

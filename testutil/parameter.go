@@ -1,7 +1,7 @@
 package testutil
 
 import (
-	"eiyaro/protocol/bc"
+	"ey/protocol/bc"
 )
 
 var (

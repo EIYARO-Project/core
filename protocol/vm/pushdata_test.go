@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"eiyaro/testutil"
+	"ey/testutil"
 )
 
 func TestPushdataOps(t *testing.T) {

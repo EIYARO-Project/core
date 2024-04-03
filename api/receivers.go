@@ -3,7 +3,7 @@ package api
 import (
 	"context"
 
-	"eiyaro/blockchain/txbuilder"
+	"ey/blockchain/txbuilder"
 )
 
 func (a *API) createAccountReceiver(ctx context.Context, ins struct {

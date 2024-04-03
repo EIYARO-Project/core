@@ -9,7 +9,7 @@ import (
 	"math"
 	"sync"
 
-	"eiyaro/encoding/bufpool"
+	"ey/encoding/bufpool"
 )
 
 var bufPool = sync.Pool{New: func() interface{} { return new([9]byte) }}

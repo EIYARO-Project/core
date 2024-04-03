@@ -5,14 +5,14 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/account"
-	"eiyaro/consensus"
-	"eiyaro/consensus/segwit"
-	"eiyaro/crypto/sha3pool"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/errors"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
+	"ey/account"
+	"ey/consensus"
+	"ey/consensus/segwit"
+	"ey/crypto/sha3pool"
+	dbm "ey/database/leveldb"
+	"ey/errors"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
 )
 
 // GetAccountUtxos return all account unspent outputs

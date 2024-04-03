@@ -8,11 +8,11 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"eiyaro/consensus"
-	"eiyaro/consensus/difficulty"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/testutil"
+	"ey/consensus"
+	"ey/consensus/difficulty"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/testutil"
 )
 
 func stringToBigInt(s string, base int) *big.Int {

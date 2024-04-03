@@ -6,10 +6,10 @@ import (
 	"os"
 	"testing"
 
-	"eiyaro/accesstoken"
-	"eiyaro/blockchain/rpc"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/testutil"
+	"ey/accesstoken"
+	"ey/blockchain/rpc"
+	dbm "ey/database/leveldb"
+	"ey/testutil"
 )
 
 func TestAPIHandler(t *testing.T) {

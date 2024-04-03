@@ -3,7 +3,7 @@ package ecmath
 import (
 	"crypto/subtle"
 
-	"eiyaro/crypto/ed25519/internal/edwards25519"
+	"ey/crypto/ed25519/internal/edwards25519"
 )
 
 // Scalar is a 256-bit little-endian scalar.

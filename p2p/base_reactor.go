@@ -3,7 +3,7 @@ package p2p
 import (
 	cmn "github.com/tendermint/tmlibs/common"
 
-	"eiyaro/p2p/connection"
+	"ey/p2p/connection"
 )
 
 //Reactor is responsible for handling incoming messages of one or more `Channels`

@@ -3,7 +3,7 @@ package performance
 import (
 	"testing"
 
-	"eiyaro/util"
+	"ey/util"
 )
 
 // Test rpc call benchmark - 0.1 s/op

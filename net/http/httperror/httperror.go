@@ -6,8 +6,8 @@ import (
 	"context"
 	"net/http"
 
-	"eiyaro/errors"
-	"eiyaro/net/http/httpjson"
+	"ey/errors"
+	"ey/net/http/httpjson"
 )
 
 // Info contains a set of error codes to send to the user.

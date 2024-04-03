@@ -9,17 +9,17 @@ import (
 	"testing"
 	"time"
 
-	"eiyaro/account"
-	"eiyaro/blockchain/pseudohsm"
-	"eiyaro/blockchain/signers"
-	"eiyaro/blockchain/txbuilder"
-	"eiyaro/common"
-	"eiyaro/consensus"
-	"eiyaro/crypto/ed25519/chainkd"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/errors"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
+	"ey/account"
+	"ey/blockchain/pseudohsm"
+	"ey/blockchain/signers"
+	"ey/blockchain/txbuilder"
+	"ey/common"
+	"ey/consensus"
+	"ey/crypto/ed25519/chainkd"
+	dbm "ey/database/leveldb"
+	"ey/errors"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
 )
 
 // MockBlock mock a block

@@ -4,8 +4,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/karalabe/cookiejar.v2/collections/prque"
 
-	"eiyaro/p2p/security"
-	"eiyaro/protocol/bc"
+	"ey/p2p/security"
+	"ey/protocol/bc"
 )
 
 const (

@@ -1,12 +1,12 @@
 /*
-Package equity provides a compiler for EIYARO's Equity contract language.
+Package equity provides a compiler for Eiyaro's Equity contract language.
 
 A contract is a means to lock some payment in the output of a
 transaction. It contains a number of clauses, each describing a way to
 unlock, or redeem, the payment in a subsequent transaction.  By
 executing the statements in a clause, using contract arguments
 supplied by the payer and clause arguments supplied by the redeemer,
-nodes in a EIYARO network can determine whether a proposed spend is
+nodes in a Eiyaro network can determine whether a proposed spend is
 valid.
 
 The language definition is in flux, but here's what's implemented as

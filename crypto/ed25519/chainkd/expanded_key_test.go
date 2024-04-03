@@ -5,7 +5,7 @@ import (
 	"crypto"
 	"testing"
 
-	"eiyaro/crypto/ed25519"
+	"ey/crypto/ed25519"
 )
 
 // Testing basic InnerSign+Verify and the invariants:

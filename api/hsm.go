@@ -5,8 +5,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/blockchain/txbuilder"
-	"eiyaro/crypto/ed25519/chainkd"
+	"ey/blockchain/txbuilder"
+	"ey/crypto/ed25519/chainkd"
 )
 
 type createKeyResp struct {

@@ -7,16 +7,16 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/account"
-	"eiyaro/blockchain/txbuilder"
-	"eiyaro/consensus"
-	"eiyaro/errors"
-	"eiyaro/protocol"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/protocol/state"
-	"eiyaro/protocol/validation"
-	"eiyaro/protocol/vm/vmutil"
+	"ey/account"
+	"ey/blockchain/txbuilder"
+	"ey/consensus"
+	"ey/errors"
+	"ey/protocol"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/protocol/state"
+	"ey/protocol/validation"
+	"ey/protocol/vm/vmutil"
 )
 
 const logModule = "mining"

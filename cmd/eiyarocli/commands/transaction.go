@@ -9,11 +9,11 @@ import (
 	"github.com/spf13/cobra"
 	jww "github.com/spf13/jwalterweatherman"
 
-	"eiyaro/api"
-	"eiyaro/blockchain/txbuilder"
-	chainjson "eiyaro/encoding/json"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/util"
+	"ey/api"
+	"ey/blockchain/txbuilder"
+	chainjson "ey/encoding/json"
+	"ey/protocol/bc/types"
+	"ey/util"
 )
 
 func init() {

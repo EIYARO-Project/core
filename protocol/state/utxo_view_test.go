@@ -3,10 +3,10 @@ package state
 import (
 	"testing"
 
-	"eiyaro/consensus"
-	"eiyaro/database/storage"
-	"eiyaro/protocol/bc"
-	"eiyaro/testutil"
+	"ey/consensus"
+	"ey/database/storage"
+	"ey/protocol/bc"
+	"ey/testutil"
 )
 
 var defaultEntry = map[bc.Hash]bc.Entry{

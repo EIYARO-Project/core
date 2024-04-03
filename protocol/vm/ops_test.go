@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"testing"
 
-	"eiyaro/errors"
-	"eiyaro/math/checked"
-	"eiyaro/testutil"
+	"ey/errors"
+	"ey/math/checked"
+	"ey/testutil"
 )
 
 func TestParseOp(t *testing.T) {

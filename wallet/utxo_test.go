@@ -8,12 +8,12 @@ import (
 	"sort"
 	"testing"
 
-	"eiyaro/account"
-	"eiyaro/consensus"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
-	"eiyaro/testutil"
+	"ey/account"
+	"ey/consensus"
+	dbm "ey/database/leveldb"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
+	"ey/testutil"
 )
 
 func TestGetAccountUtxos(t *testing.T) {

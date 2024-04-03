@@ -7,16 +7,16 @@ import (
 	"path"
 	"reflect"
 
-	"eiyaro/account"
-	"eiyaro/asset"
-	"eiyaro/blockchain/pseudohsm"
-	"eiyaro/blockchain/signers"
-	"eiyaro/crypto/ed25519/chainkd"
-	dbm "eiyaro/database/leveldb"
-	"eiyaro/event"
-	"eiyaro/protocol"
-	"eiyaro/protocol/bc/types"
-	w "eiyaro/wallet"
+	"ey/account"
+	"ey/asset"
+	"ey/blockchain/pseudohsm"
+	"ey/blockchain/signers"
+	"ey/crypto/ed25519/chainkd"
+	dbm "ey/database/leveldb"
+	"ey/event"
+	"ey/protocol"
+	"ey/protocol/bc/types"
+	w "ey/wallet"
 )
 
 type walletTestConfig struct {

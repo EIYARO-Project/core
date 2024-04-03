@@ -1,7 +1,7 @@
 package crypto
 
 import (
-	"eiyaro/common"
+	"ey/common"
 	"golang.org/x/crypto/ripemd160"
 	"golang.org/x/crypto/sha3"
 )

@@ -8,12 +8,12 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"eiyaro/account"
-	"eiyaro/blockchain/txbuilder"
-	"eiyaro/errors"
-	"eiyaro/net/http/reqid"
-	"eiyaro/protocol/bc"
-	"eiyaro/protocol/bc/types"
+	"ey/account"
+	"ey/blockchain/txbuilder"
+	"ey/errors"
+	"ey/net/http/reqid"
+	"ey/protocol/bc"
+	"ey/protocol/bc/types"
 )
 
 var (
