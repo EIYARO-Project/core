@@ -59,12 +59,12 @@ The Eiyaro project comes with several executables found in the `cmd` directory.
 
 | Command      | Description                                                  |
 | ------------ | ------------------------------------------------------------ |
-| **eiyarocd**   | eiyarod command can help to initialize and launch eiyaro domain by custom parameters. `eiyarocd --help` for command line options. |
-| **eiyaroccli** | Our main Eiyaro CLI client. It is the entry point into the Eiyaro network (main-, test- or private net), capable of running as a full node archive node (retaining all historical state). It can be used by other processes as a gateway into the Eiyaro network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eiyaroccli --help` and the [eiyaroccli API page](https://github.com/EIYARO/ey/blob/main/API-Reference.md) for command line options. |
+| **eiyarocd**   | eiyarod command can help to initialize and launch eiyaro domain by custom parameters. `eiyarod --help` for command line options. |
+| **eiyaroccli** | Our main Eiyaro CLI client. It is the entry point into the Eiyaro network (main-, test- or private net), capable of running as a full node archive node (retaining all historical state). It can be used by other processes as a gateway into the Eiyaro network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eiyarocli --help` and the [eiyaroccli API page](https://github.com/EIYARO/ey/blob/main/API-Reference.md) for command line options. |
 
 ## Running eiyaro
 
-Currently, eiyaro is still in active development and a ton of work needs to be done, but we also provide the following content for these eager to do something with `eiyaro classic`. This section won't cover all the commands of `eiyarocd` and `eiyaroccli` at length, for more information, please the help of every command, e.g., `eiyaroccli help`.
+Currently, eiyaro is still in active development and a ton of work needs to be done, but we also provide the following content for these eager to do something with `eiyaro`. This section won't cover all the commands of `eiyarod` and `eiyarocli` at length, for more information, please the help of every command, e.g., `eiyarocli help`.
 
 ### Initialize
 
@@ -92,7 +92,7 @@ $ nohup ./eiyarod node &
 
 ```
 
-available flags for `eiyarocd node`:
+available flags for `eiyarod node`:
 
 ```
 Flags:
@@ -126,11 +126,11 @@ Flags:
 
 Global Flags:
       --home string   root directory for config and data
-  -r, --root string   DEPRECATED. Use --home (default "/Users/zcc/Library/Application Support/Eiyaroclassic")
+  -r, --root string   DEPRECATED. Use --home (default "/Users/zcc/Library/Application Support/Eiyaro")
       --trace         print out full stack trace on errors
 ```
 
-Given the `eiyarocd` node is running, the general workflow is as follows:
+Given the `eiyarod` node is running, the general workflow is as follows:
 
 - create key, then you can create account and asset.
 - send transaction, i.e., build, sign and submit transaction.
@@ -143,7 +143,7 @@ You could enable the _simd_ feature to speed up the _PoW_ verification (e.g., du
 eiyarod node --simd.enable
 ```
 
-To enable this feature you will need to compile from the source code by yourself, and `make eiyarocd-simd`. 
+To enable this feature you will need to compile from the source code by yourself, and `make eiyarod-simd`. 
 
 What is more,
 
