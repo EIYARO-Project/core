@@ -178,7 +178,7 @@ For the usage please refer to [running-in-docker-wiki](https://github.com/Eiyaro
 
 Thank you for considering helping out with the source code! Any contributions are highly appreciated, and we are grateful for even the smallest of fixes!
 
-If you run into an issue, feel free to [eiyaro classic issues](https://github.com/Eiyaro/ey/issues/) in this repository. We are glad to help!
+If you run into an issue, feel free to [eiyaro issues](https://github.com/Eiyaro/ey/issues/) in this repository. We are glad to help!
 
 ## License
 
