@@ -10,7 +10,7 @@ Automated builds are available for stable releases and the unstable master branc
 
 Eiyaro classic is software designed to operate and connect to highly scalable blockchain networks confirming to the Eiyaro classic Blockchain Protocol, which allows partipicants to define, issue and transfer digitial assets on a multi-asset shared ledger. Please refer to the [White Paper](https://github.com/Eiyaro/wiki/blob/master/en-US/Eiyaro-Technical-White-Paper-EN.pdf) for more details.
 
-In the current state `eiyaro classic` is able to:
+In the current state `eiyaro` is able to:
 
 - Manage key, account as well as asset
 - Send transactions, i.e., issue, spend and retire asset
