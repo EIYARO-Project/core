@@ -30,7 +30,7 @@ const (
 	SeedPerRetarget       = uint64(256)
 
 	// MaxTimeOffsetSeconds is the maximum number of seconds a block time is allowed to be ahead of the current time
-	MaxTimeOffsetSeconds = uint64(30 * 60)
+	MaxTimeOffsetSeconds = uint64(10 * 60)
 	MedianTimeBlocks     = 8
 
 	PayToWitnessPubKeyHashDataSize = 20
