@@ -60,7 +60,7 @@ The Eiyaro project comes with several executables found in the `cmd` directory.
 | Command      | Description                                                  |
 | ------------ | ------------------------------------------------------------ |
 | **eiyarocd**   | eiyarod command can help to initialize and launch eiyaro domain by custom parameters. `eiyarocd --help` for command line options. |
-| **eiyaroccli** | Our main Eiyaro CLI client. It is the entry point into the Eiyaro network (main-, test- or private net), capable of running as a full node archive node (retaining all historical state). It can be used by other processes as a gateway into the Eiyaro network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eiyaroccli --help` and the [eiyaroccli Wiki page](https://github.com/Eiyaro/eiyaro-classic/wiki/Command-Line-Options) for command line options. |
+| **eiyaroccli** | Our main Eiyaro CLI client. It is the entry point into the Eiyaro network (main-, test- or private net), capable of running as a full node archive node (retaining all historical state). It can be used by other processes as a gateway into the Eiyaro network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eiyaroccli --help` and the [eiyaroccli Wiki page](https://github.com/EIYARO/ey/blob/main/API-Reference.md) for command line options. |
 
 ## Running eiyaro
 
