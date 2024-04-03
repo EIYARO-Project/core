@@ -24,9 +24,10 @@ $ git clone https://github.com/Eiyaro/ey.git $GOPATH/src/github.com/eiyaro
 #### Build
 
 ```
-$ cd $GOPATH/src/github.com/eiyaro
-$ make eiyarod    # build eiyarod
-$ make eiyarocli  # build eiyarocli
+$ cd $GOPATH/src/eiyaro/ey
+$ go mod tidy
+$ make eiyarocd    
+$ make eiyaroccli  
 ```
 
 When successfully building the project, the `eiyaro` and `eiyarocli` binary should be present in `cmd/eiyarod` and `cmd/eiyarocli` directory, respectively.
