@@ -51,7 +51,7 @@ $ make eiyarocd
 $ make eiyaroccli  
 ```
 
-When successfully building the project, the `eiyarod` and `eiyarocli` binary should be present in `cmd/eiyarocd` and `cmd/eiyaroccli` directory, respectively.
+When successfully building the project, the `eiyarod` and `eiyarocli` binary should be present in `cmd/eiyarod` and `cmd/eiyarocli` directory, respectively.
 
 ### Executables
 
