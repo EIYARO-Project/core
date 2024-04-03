@@ -18,7 +18,7 @@ const (
 	DefaultGasCredit = int64(30000)
 
 	// CoinbasePendingBlockNumber config parameter for coinbase reward
-	CoinbasePendingBlockNumber = uint64(5)
+	CoinbasePendingBlockNumber = uint64(50)
 	subsidyReductionInterval   = uint64(175200)
 	baseSubsidy                = uint64(100000000000)
 	InitialBlockSubsidy        = uint64(21000000000000000)
@@ -30,8 +30,8 @@ const (
 	SeedPerRetarget       = uint64(256)
 
 	// MaxTimeOffsetSeconds is the maximum number of seconds a block time is allowed to be ahead of the current time
-	MaxTimeOffsetSeconds = uint64(60 * 60)
-	MedianTimeBlocks     = 11
+	MaxTimeOffsetSeconds = uint64(30 * 60)
+	MedianTimeBlocks     = 8
 
 	PayToWitnessPubKeyHashDataSize = 20
 	PayToWitnessScriptHashDataSize = 32
