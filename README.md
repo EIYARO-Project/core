@@ -140,7 +140,7 @@ __simd feature:__
 
 You could enable the _simd_ feature to speed up the _PoW_ verification (e.g., during mining and block verification) by simply:
 ```
-eiyarocd node --simd.enable
+eiyarod node --simd.enable
 ```
 
 To enable this feature you will need to compile from the source code by yourself, and `make eiyarocd-simd`. 
