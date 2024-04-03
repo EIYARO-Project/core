@@ -1,16 +1,5 @@
 ## Install from release
 
-You can install from [release](https://github.com/Eiyaro/eiyaro/releases), it offers some releases for 3 main operating system. 
-
-Examples:
-
-- eiyaro-1.0.3-darwin_386.tgz
-- eiyaro-1.0.3-darwin_amd64.tgz
-- eiyaro-1.0.3-linux_386.tgz
-- eiyaro-1.0.3-linux_amd64.tgz
-- eiyaro-1.0.3-windows_386.zip
-- eiyaro-1.0.3-windows_amd64.zip
-
 ## Install from source
 
 ### Requirements
@@ -29,7 +18,7 @@ $ go env GOROOT GOPATH
 #### Get the source code
 
 ```
-$ git clone https://github.com/Eiyaro/eiyaro.git $GOPATH/src/github.com/eiyaro
+$ git clone https://github.com/Eiyaro/ey.git $GOPATH/src/github.com/eiyaro
 ```
 
 #### Build
