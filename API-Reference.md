@@ -6,7 +6,7 @@ Client | URL
 :----: | :----:
 Go     | http://api.eiyaro.com/
 
-http://api.eiyaro.com/net-inof
+http://api.eiyaro.com/net-info
 ```bash
 {
 "status": "success",
