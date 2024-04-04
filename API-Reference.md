@@ -4,7 +4,28 @@ Default JSON-RPC endpoints:
 
 Client | URL
 :----: | :----:
-Go     | http://api.eiyaro.com
+Go     | http://api.eiyaro.com/
+
+http://api.eiyaro.com/net-inof
+```bash
+{
+"status": "success",
+"data": {
+"listening": true,
+"syncing": true,
+"mining": false,
+"peer_count": 5,
+"current_block": 1499,
+"highest_block": 2373,
+"network_id": "mainnet",
+"version_info": {
+"version": "1.0.1",
+"update": 0,
+"new_version": "1.0.1"
+}
+}
+}
+```
 
 ```bash
 $ git clone https://github.com/Eiyaro/ey.git $GOPATH/src/eiyaro/ey
