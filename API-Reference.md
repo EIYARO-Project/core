@@ -4,7 +4,17 @@ Default JSON-RPC endpoints:
 
 Client | URL
 :----: | :----:
-Go     | http://localhost:9888
+Go     | http://api.eiyaro.com
+
+```bash
+$ git clone https://github.com/Eiyaro/ey.git $GOPATH/src/eiyaro/ey
+$ cd $GOPATH/src/eiyaro/ey
+$ go mod tidy
+$ cd /src/eiyaro/ey/cmd/eiyarod
+$ go build
+$ ./eiyarod init --chain_id mainnet
+$ nohup ./eiyarod node --web.closed &
+```
 
 A complete request example via `curl`:
 
