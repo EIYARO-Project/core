@@ -3,8 +3,8 @@ FROM golang:1.9-alpine as builder
 
 RUN apk add --no-cache make git
 
-ADD . /go/src/github.com/eiyaro/eiyaro-classic
-RUN cd /go/src/github.com/eiyaro/eiyaro-classic && make eiyarod && make eiyarocli
+ADD . /go/src/github.com/eiyaro/ey
+RUN cd /go/src/github.com/eiyaro/ey && make eiyarod && make eiyarocli
 
 # Pull Eiyaro into a second stage deploy alpine container
 FROM alpine:latest
