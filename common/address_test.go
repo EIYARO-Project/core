@@ -24,8 +24,8 @@ func TestAddresses(t *testing.T) {
 		// Segwit address tests.
 		{
 			name:    "segwit mainnet p2wpkh v0",
-			addr:    "BM1QW508D6QEJXTDG4Y5R3ZARVARY0C5XW7K23GYYF",
-			encoded: "bm1qw508d6qejxtdg4y5r3zarvary0c5xw7k23gyyf",
+			addr:    "EY1QW508D6QEJXTDG4Y5R3ZARVARY0C5XW7K23GYYF",
+			encoded: "ey1qw508d6qejxtdg4y5r3zarvary0c5xw7k23gyyf",
 			valid:   true,
 			result: tstAddressWitnessPubKeyHash(
 				0,
@@ -43,8 +43,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "segwit mainnet p2wsh v0",
-			addr:    "bm1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qk5egtg",
-			encoded: "bm1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qk5egtg",
+			addr:    "ey1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qk5egtg",
+			encoded: "ey1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qk5egtg",
 			valid:   true,
 			result: tstAddressWitnessScriptHash(
 				0,
@@ -66,8 +66,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "segwit testnet p2wpkh v0",
-			addr:    "tm1qw508d6qejxtdg4y5r3zarvary0c5xw7kw8fqyc",
-			encoded: "tm1qw508d6qejxtdg4y5r3zarvary0c5xw7kw8fqyc",
+			addr:    "ty1qw508d6qejxtdg4y5r3zarvary0c5xw7kw8fqyc",
+			encoded: "ty1qw508d6qejxtdg4y5r3zarvary0c5xw7kw8fqyc",
 			valid:   true,
 			result: tstAddressWitnessPubKeyHash(
 				0,
@@ -85,8 +85,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "segwit testnet p2wsh v0",
-			addr:    "tm1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qqq379v",
-			encoded: "tm1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qqq379v",
+			addr:    "ty1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qqq379v",
+			encoded: "ty1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qqq379v",
 			valid:   true,
 			result: tstAddressWitnessScriptHash(
 				0,
@@ -108,8 +108,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "segwit testnet p2wsh witness v0",
-			addr:    "tm1qqqqqp399et2xygdj5xreqhjjvcmzhxw4aywxecjdzew6hylgvsesvkesyk",
-			encoded: "tm1qqqqqp399et2xygdj5xreqhjjvcmzhxw4aywxecjdzew6hylgvsesvkesyk",
+			addr:    "ty1qqqqqp399et2xygdj5xreqhjjvcmzhxw4aywxecjdzew6hylgvsesvkesyk",
+			encoded: "ty1qqqqqp399et2xygdj5xreqhjjvcmzhxw4aywxecjdzew6hylgvsesvkesyk",
 			valid:   true,
 			result: tstAddressWitnessScriptHash(
 				0,
@@ -132,19 +132,19 @@ func TestAddresses(t *testing.T) {
 		// Unsupported witness versions (version 0 only supported at this point)
 		{
 			name:  "segwit mainnet witness v1",
-			addr:  "bm1pw508d6qejxtdg4y5r3zarvary0c5xw7kw508d6qejxtdg4y5r3zarvary0c5xw7k7grplx",
+			addr:  "ey1pw508d6qejxtdg4y5r3zarvary0c5xw7kw508d6qejxtdg4y5r3zarvary0c5xw7k7grplx",
 			valid: false,
 			net:   &consensus.MainNetParams,
 		},
 		{
 			name:  "segwit mainnet witness v16",
-			addr:  "BM1SW50QA3JX3S",
+			addr:  "EY1SW50QA3JX3S",
 			valid: false,
 			net:   &consensus.MainNetParams,
 		},
 		{
 			name:  "segwit mainnet witness v2",
-			addr:  "bm1zw508d6qejxtdg4y5r3zarvaryvg6kdaj",
+			addr:  "ey1zw508d6qejxtdg4y5r3zarvaryvg6kdaj",
 			valid: false,
 			net:   &consensus.MainNetParams,
 		},
@@ -157,49 +157,49 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:  "segwit invalid checksum",
-			addr:  "bm1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t5",
+			addr:  "ey1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t5",
 			valid: false,
 			net:   &consensus.MainNetParams,
 		},
 		{
 			name:  "segwit invalid witness version",
-			addr:  "BM13W508D6QEJXTDG4Y5R3ZARVARY0C5XW7KN40WF2",
+			addr:  "EY13W508D6QEJXTDG4Y5R3ZARVARY0C5XW7KN40WF2",
 			valid: false,
 			net:   &consensus.MainNetParams,
 		},
 		{
 			name:  "segwit invalid program length",
-			addr:  "bm1rw5uspcuh",
+			addr:  "ey1rw5uspcuh",
 			valid: false,
 			net:   &consensus.MainNetParams,
 		},
 		{
 			name:  "segwit invalid program length",
-			addr:  "bm10w508d6qejxtdg4y5r3zarvary0c5xw7kw508d6qejxtdg4y5r3zarvary0c5xw7kw5rljs90",
+			addr:  "ey10w508d6qejxtdg4y5r3zarvary0c5xw7kw508d6qejxtdg4y5r3zarvary0c5xw7kw5rljs90",
 			valid: false,
 			net:   &consensus.MainNetParams,
 		},
 		{
 			name:  "segwit invalid program length for witness version 0 (per BIP141)",
-			addr:  "BM1QR508D6QEJXTDG4Y5R3ZARVARYV98GJ9P",
+			addr:  "EY1QR508D6QEJXTDG4Y5R3ZARVARYV98GJ9P",
 			valid: false,
 			net:   &consensus.MainNetParams,
 		},
 		{
 			name:  "segwit mixed case",
-			addr:  "tm1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3q0sL5k7",
+			addr:  "ty1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3q0sL5k7",
 			valid: false,
 			net:   &consensus.TestNetParams,
 		},
 		{
 			name:  "segwit zero padding of more than 4 bits",
-			addr:  "tm1pw508d6qejxtdg4y5r3zarqfsj6c3",
+			addr:  "ty1pw508d6qejxtdg4y5r3zarqfsj6c3",
 			valid: false,
 			net:   &consensus.TestNetParams,
 		},
 		{
 			name:  "segwit non-zero padding in 8-to-5 conversion",
-			addr:  "tm1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3pjxtptv",
+			addr:  "ty1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3pjxtptv",
 			valid: false,
 			net:   &consensus.TestNetParams,
 		},
