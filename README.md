@@ -1,5 +1,6 @@
 Eiyaro
 
+[![Build](https://img.shields.io/badge/Build-Coming_soon-blue)](https://github.com/EIYARO/ey/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/EIYARO/ey/releases/latest)
 [![Supports Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/EIYARO/ey/releases/latest)
 [![License](https://img.shields.io/github/license/EIYARO/ey)](https://github.com/EIYARO/ey/blob/master/LICENSE)
