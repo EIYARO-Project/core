@@ -87,7 +87,7 @@ release: binary
 endif
 
 release-all: clean
-	GOOS=darwin  make release
+#	GOOS=darwin  make release
 	GOOS=linux   make release
 	GOOS=windows make release
 
@@ -132,7 +132,7 @@ benchmark:
 	@go test -bench $(PACKAGES)
 
 functional-tests:
-	@go test -timeout=5m -tags="functional" ./test 
+	@go test -timeout=5m -tags="functional" ./test
 
 ci: test functional-tests
 
