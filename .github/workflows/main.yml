@@ -10,7 +10,7 @@ permissions:
 on:
 
   push:
-    branches: [ main ]
+    branches: [ main, ci-cd ]
     tags: [ "*" ]
     paths-ignore: [ "README.md", "CHANGELOG.md", "cliff.toml" ]
 
