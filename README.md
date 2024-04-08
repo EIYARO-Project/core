@@ -1,10 +1,14 @@
 Eiyaro
 
-[![Build Status](https://travis-ci.org/Eiyaro/e.svg)](https://travis-ci.org/Eiyaro/ey) [![AGPL v3](https://img.shields.io/badge/license-AGPL%20v3-brightgreen.svg)](./LICENSE)
+[![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/EIYARO/ey/releases/latest)
+[![Supports Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/EIYARO/ey/releases/latest)
+[![License](https://img.shields.io/github/license/EIYARO/ey)](https://github.com/EIYARO/ey/blob/master/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/EIYARO/ey?label=latest%20release)](https://github.com/EIYARO/ey/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/EIYARO/ey/total)](https://github.com/EIYARO/ey/releases)
 
 **Official golang implementation of the Eiyaro protocol.**
 
-Automated builds are available for stable releases and the unstable master branch. Binary archives are published at https://github.com/Eiyaro/ey/releases.
+Automated builds are available for stable releases and the unstable master branch. Binary archives are published at https://github.com/EIYARO/ey/releases.
 
 ## What is Eiyaro?
 
@@ -17,8 +21,8 @@ In the current state `eiyaro` is able to:
 
 ## Installing with Homebrew
 
-```
-brew tap eiyaro/eiyaro && brew install eiyaro
+```console
+$ brew tap eiyaro/eiyaro && brew install eiyaro
 ```
 
 ## Building from source
@@ -31,22 +35,21 @@ brew tap eiyaro/eiyaro && brew install eiyaro
 
 Ensure Go with the supported version is installed properly:
 
-```bash
+```console
 $ go version
 $ go env GOROOT GOPATH
 ```
 
 - Get the source code
 
-``` bash
+```console
 $ git clone https://github.com/Eiyaro/ey.git $GOPATH/src/eiyaro/ey
 ```
 
 - Build source code
 
-``` bash
+```console
 $ cd $GOPATH/src/eiyaro/ey
-$ go mod tidy
 $ make eiyarocd    
 $ make eiyaroccli  
 ```
@@ -70,11 +73,10 @@ Currently, eiyaro is still in active development and a ton of work needs to be d
 
 First of all, initialize the node:
 
-```bash
+```console
 $ cd /src/eiyaro/ey/cmd/eiyarod
 $ go build
 $ ./eiyarod init --chain_id mainnet
-
 ```
 
 There are three options for the flag `--chain_id`:
@@ -87,9 +89,8 @@ After that, you'll see `config.toml` generated, then launch the node.
 
 ### launch
 
-``` bash
+```console
 $ nohup ./eiyarod node &
-
 ```
 
 available flags for `eiyarod node`:
@@ -139,8 +140,8 @@ Given the `eiyarod` node is running, the general workflow is as follows:
 __simd feature:__
 
 You could enable the _simd_ feature to speed up the _PoW_ verification (e.g., during mining and block verification) by simply:
-```
-eiyarod node --simd.enable
+```console
+$ eiyarod node --simd.enable
 ```
 
 To enable this feature you will need to compile from the source code by yourself, and `make eiyarod-simd`. 
@@ -156,7 +157,7 @@ For more details about using `eiyarocli` command please refer to [API Reference]
 
 Copy and save your tokename, tokename is used to log into your node page Access the dashboard:
 
-```
+```console
 $ cd /src/eiyaro/ey/cmd/eiyarocli
 $ go build
 $ ./eiyarocli create-access-token eiyaro
@@ -168,17 +169,17 @@ $ open http://localhost:9888/ OR Login with your IP + 9888 port
 
 Ensure your [Docker](https://www.docker.com/) version is 17.05 or higher.
 
-```bash
+```console
 $ docker build -t eiyaro .
 ```
 
-For the usage please refer to [running-in-docker-wiki](https://github.com/Eiyaro/ey/wiki/Running-in-Docker).
+For the usage please refer to [running-in-docker-wiki](https://github.com/EIYARO/ey/wiki/Running-in-Docker).
 
 ## Contributing
 
 Thank you for considering helping out with the source code! Any contributions are highly appreciated, and we are grateful for even the smallest of fixes!
 
-If you run into an issue, feel free to [eiyaro issues](https://github.com/Eiyaro/ey/issues/) in this repository. We are glad to help!
+If you run into an issue, feel free to [eiyaro issues](https://github.com/EIYARO/ey/issues/) in this repository. We are glad to help!
 
 ## License
 
