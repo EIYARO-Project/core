@@ -58,7 +58,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           name: EIYARO ${{ env.tag }}
-          body: ${{ steps.git-cliff.outputs.content }}
+          body: "## New release"
           files: target/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
