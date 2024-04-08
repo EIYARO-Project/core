@@ -46,26 +46,27 @@ jobs:
 
   release:
     if: contains(github.ref_type, 'tag')
-
     name: Create GitHub Release
-    needs: [ build ]
     with:
       fail-fast: false
+    runs-on: ubuntu-latest
+    needs: [ build ]
 
-    name: Checkout
-    uses: actions/checkout@v3
-    with:
-      fetch-depth: 0
-      submodules: true
+    steps:
+      name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        submodules: true
 
-    name: Build Release
-    run: make release-all
+      name: Build Release
+      run: make release-all
 
-    name: Create GitHub release
-    uses: softprops/action-gh-release@v1
-    with:
-      name: EIYARO ${{ env.tag }}
-      body: ${{ steps.git-cliff.outputs.content }}
-      files: target/*
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      name: Create GitHub release
+      uses: softprops/action-gh-release@v1
+      with:
+        name: EIYARO ${{ env.tag }}
+        body: ${{ steps.git-cliff.outputs.content }}
+        files: target/*
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
