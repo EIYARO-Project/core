@@ -9,7 +9,7 @@ Eiyaro
 
 **Official golang implementation of the Eiyaro protocol.**
 
-Automated builds are available for stable releases and the unstable master branch. Binary archives are published at https://github.com/EIYARO/ey/releases.
+Automated builds are available for stable releases and the unstable master branch. Binary archives are published at https://github.com/EIYARO-Project/core/releases.
 
 ## What is Eiyaro?
 
