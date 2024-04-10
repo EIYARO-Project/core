@@ -1,4 +1,4 @@
-Eiyaro
+# Eiyaro Core
 
 [![Build](https://github.com/EIYARO-Project/core/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/EIYARO-Project/core/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/EIYARO-Project/core/releases/latest)
