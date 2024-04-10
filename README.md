@@ -13,7 +13,7 @@ Automated builds are available for stable releases and the unstable master branc
 
 ## What is Eiyaro?
 
-Eiyaro is software designed to operate and connect to highly scalable blockchain networks confirming to the Eiyaro Blockchain Protocol, which allows partipicants to define, issue and transfer digitial assets on a multi-asset shared ledger. Please refer to the [White Paper](https://github.com/Eiyaro/wiki/blob/master/en-US/Eiyaro-Technical-White-Paper-EN.pdf) for more details.
+The goal of the EIYARO project is to create a blockchain ecosystem with a wide range of application scenarios, and provide users with safe, efficient and convenient digital asset transaction services. We will reduce transaction costs, increase transaction speed, and ensure network security and stability through continuous technological innovation and optimisation.
 
 In the current state `eiyaro` is able to:
 
@@ -51,8 +51,8 @@ $ git clone https://github.com/Eiyaro/ey.git $GOPATH/src/eiyaro/ey
 
 ```console
 $ cd $GOPATH/src/eiyaro/ey
-$ make eiyarocd    
-$ make eiyaroccli  
+$ make eiyarod    
+$ make eiyarocli  
 ```
 
 When successfully building the project, the `eiyarod` and `eiyarocli` binary should be present in `cmd/eiyarod` and `cmd/eiyarocli` directory, respectively.
@@ -63,8 +63,8 @@ The Eiyaro project comes with several executables found in the `cmd` directory.
 
 | Command      | Description                                                  |
 | ------------ | ------------------------------------------------------------ |
-| **eiyarocd**   | eiyarod command can help to initialize and launch eiyaro domain by custom parameters. `eiyarod --help` for command line options. |
-| **eiyaroccli** | Our main Eiyaro CLI client. It is the entry point into the Eiyaro network (main-, test- or private net), capable of running as a full node archive node (retaining all historical state). It can be used by other processes as a gateway into the Eiyaro network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eiyarocli --help` and the [eiyaroccli API page](https://github.com/EIYARO/ey/blob/main/API-Reference.md) for command line options. |
+| **eiyarod**   | eiyarod command can help to initialize and launch eiyaro domain by custom parameters. `eiyarod --help` for command line options. |
+| **eiyarocli** | Our main Eiyaro CLI client. It is the entry point into the Eiyaro network (main-, test- or private net), capable of running as a full node archive node (retaining all historical state). It can be used by other processes as a gateway into the Eiyaro network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eiyarocli --help` and the [eiyaroccli API page](https://github.com/EIYARO/ey/blob/main/API-Reference.md) for command line options. |
 
 ## Running eiyaro
 
@@ -75,8 +75,7 @@ Currently, eiyaro is still in active development and a ton of work needs to be d
 First of all, initialize the node:
 
 ```console
-$ cd /src/eiyaro/ey/cmd/eiyarod
-$ go build
+$ cd ./cmd/eiyarod
 $ ./eiyarod init --chain_id mainnet
 ```
 
@@ -159,8 +158,7 @@ For more details about using `eiyarocli` command please refer to [API Reference]
 Copy and save your tokename, tokename is used to log into your node page Access the dashboard:
 
 ```console
-$ cd /src/eiyaro/ey/cmd/eiyarocli
-$ go build
+$ cd ./cmd/eiyarocli
 $ ./eiyarocli create-access-token eiyaro
 
 $ open http://localhost:9888/ OR Login with your IP + 9888 port
