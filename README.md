@@ -25,7 +25,7 @@ In the current state `eiyaro` is able to:
 
 ### Requirements
 
-- [Go](https://golang.org/doc/install) version 1.8 or higher, with `$GOPATH` set to your preferred directory
+- [Go](https://golang.org/doc/install) version 1.18 or higher, with `$GOPATH` set to your preferred directory
 
 ### Installation
 
