@@ -47,7 +47,7 @@ A complete request example via `curl`:
 The complete request and response are as follows:
 ```console
 # $ curl -X POST url/method -d data
-$ $ curl -X POST http://localhost:9888/create-key -d '{"alias": "alice", "password": "123456", "language": "en"}'
+$ curl -X POST http://localhost:9888/create-key -d '{"alias": "alice", "password": "123456", "language": "en"}'
 
 # Response
 {
@@ -176,7 +176,7 @@ create key by random pattern:
 
 ```console
 # Request
-$ $ curl -X POST create-key -d '{"alias": "alice", "password": "123456", "language": "en"}'
+$ curl -X POST create-key -d '{"alias": "alice", "password": "123456", "language": "en"}'
 
 # Result
 {
@@ -191,7 +191,7 @@ create key by specified mnemonic:
 
 ```console
 # Request
-$ $ curl -X POST create-key -d '{"alias":"jack", "password":"123456", "mnemonic":"please observe raw beauty blue sea believe then boat float beyond position", "language":"en"}'
+$ curl -X POST create-key -d '{"alias":"jack", "password":"123456", "mnemonic":"please observe raw beauty blue sea believe then boat float beyond position", "language":"en"}'
 
 # Result
 {
@@ -222,7 +222,7 @@ none
 
 ```console
 # Request
-$ $ curl -X POST list-keys
+$ curl -X POST list-keys
 
 # Result
 [
@@ -260,7 +260,7 @@ none if the key alias is updated successfully.
 
 ```console
 # Request
-$ $ curl -X POST update-key-alias -d '{"xpub": "a7dae957c2d35b42efe7e6871cf5a75ebd2a0d0e51caffe767db42d3e6d69dbe211d1ca492ecf05908fe6fa625ad61b3253375ea744c9442dd5551613ba50aea", "new_alias": "new_key"}'
+$ curl -X POST update-key-alias -d '{"xpub": "a7dae957c2d35b42efe7e6871cf5a75ebd2a0d0e51caffe767db42d3e6d69dbe211d1ca492ecf05908fe6fa625ad61b3253375ea744c9442dd5551613ba50aea", "new_alias": "new_key"}'
 
 # Result
 ```
