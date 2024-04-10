@@ -3,12 +3,12 @@ package utxo_view
 import (
 	"encoding/hex"
 
-	"ey/consensus"
-	"ey/consensus/difficulty"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
-	"ey/testutil"
+	"core/consensus"
+	"core/consensus/difficulty"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/state"
+	"core/testutil"
 )
 
 const utxoPreFix = "UT:"

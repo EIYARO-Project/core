@@ -6,15 +6,15 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/account"
-	"ey/asset"
-	"ey/blockchain/pseudohsm"
-	dbm "ey/database/leveldb"
-	"ey/errors"
-	"ey/event"
-	"ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"core/account"
+	"core/asset"
+	"core/blockchain/pseudohsm"
+	dbm "core/database/leveldb"
+	"core/errors"
+	"core/event"
+	"core/protocol"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
 )
 
 const (

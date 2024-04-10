@@ -4,10 +4,10 @@ import (
 	"context"
 	"net"
 
-	"ey/errors"
-	"ey/netsync"
-	"ey/p2p"
-	"ey/version"
+	"core/errors"
+	"core/netsync"
+	"core/p2p"
+	"core/version"
 )
 
 type VersionInfo struct {

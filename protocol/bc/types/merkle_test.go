@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"ey/protocol/bc"
-	"ey/protocol/vm"
-	"ey/testutil"
+	"core/protocol/bc"
+	"core/protocol/vm"
+	"core/testutil"
 )
 
 func TestMerkleRoot(t *testing.T) {

@@ -14,12 +14,12 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/tendermint/go-wire"
 
-	"ey/common"
-	cfg "ey/config"
-	"ey/crypto"
-	"ey/crypto/ed25519"
-	"ey/p2p/netutil"
-	"ey/version"
+	"core/common"
+	cfg "core/config"
+	"core/crypto"
+	"core/crypto/ed25519"
+	"core/p2p/netutil"
+	"core/version"
 )
 
 const (

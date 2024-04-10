@@ -9,8 +9,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"ey/equity/compiler"
-	equityutil "ey/equity/equity/util"
+	"core/equity/compiler"
+	equityutil "core/equity/equity/util"
 )
 
 const (

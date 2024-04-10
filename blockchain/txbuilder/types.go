@@ -4,10 +4,10 @@ import (
 	"context"
 	"encoding/json"
 
-	"ey/crypto/ed25519/chainkd"
-	chainjson "ey/encoding/json"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"core/crypto/ed25519/chainkd"
+	chainjson "core/encoding/json"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
 )
 
 // Template represents a partially- or fully-signed transaction.

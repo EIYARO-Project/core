@@ -4,16 +4,16 @@ import (
 	"os"
 	"testing"
 
-	"ey/testutil"
+	"core/testutil"
 
 	"github.com/golang/protobuf/proto"
 
-	"ey/database"
-	dbm "ey/database/leveldb"
-	"ey/database/storage"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
+	"core/database"
+	dbm "core/database/leveldb"
+	"core/database/storage"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/state"
 )
 
 func TestAttachOrDetachBlocks(t *testing.T) {

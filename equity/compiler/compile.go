@@ -6,10 +6,10 @@ import (
 	"io"
 	"io/ioutil"
 
-	chainjson "ey/encoding/json"
-	"ey/errors"
-	"ey/protocol/vm"
-	"ey/protocol/vm/vmutil"
+	chainjson "core/encoding/json"
+	"core/errors"
+	"core/protocol/vm"
+	"core/protocol/vm/vmutil"
 )
 
 // ValueInfo describes how a blockchain value is used in a contract

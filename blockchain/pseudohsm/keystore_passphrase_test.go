@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"ey/crypto/ed25519/chainkd"
+	"core/crypto/ed25519/chainkd"
 	"github.com/pborman/uuid"
 )
 

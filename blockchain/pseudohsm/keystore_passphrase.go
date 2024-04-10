@@ -16,9 +16,9 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"ey/crypto"
-	"ey/crypto/ed25519/chainkd"
-	"ey/crypto/randentropy"
+	"core/crypto"
+	"core/crypto/ed25519/chainkd"
+	"core/crypto/randentropy"
 	"github.com/pborman/uuid"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/crypto/scrypt"

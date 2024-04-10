@@ -5,9 +5,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/errors"
-	"ey/p2p"
-	"ey/p2p/connection"
+	"core/errors"
+	"core/p2p"
+	"core/p2p/connection"
 )
 
 const (

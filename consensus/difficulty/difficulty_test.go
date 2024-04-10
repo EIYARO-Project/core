@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"testing"
 
-	"ey/consensus"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"core/consensus"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
 )
 
 // A lower difficulty Int actually reflects a more difficult mining progress.

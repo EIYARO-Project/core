@@ -15,9 +15,9 @@ import (
 	log "github.com/sirupsen/logrus"
 	wire "github.com/tendermint/go-wire"
 
-	"ey/crypto"
-	dbm "ey/database/leveldb"
-	"ey/errors"
+	"core/crypto"
+	dbm "core/database/leveldb"
+	"core/errors"
 )
 
 var (

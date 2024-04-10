@@ -6,8 +6,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/blockchain/txfeed"
-	"ey/errors"
+	"core/blockchain/txfeed"
+	"core/errors"
 )
 
 // POST /create-txfeed

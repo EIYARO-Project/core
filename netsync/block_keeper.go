@@ -6,12 +6,12 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/consensus"
-	"ey/errors"
-	"ey/mining/tensority"
-	"ey/p2p/security"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"core/consensus"
+	"core/errors"
+	"core/mining/tensority"
+	"core/p2p/security"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
 )
 
 const (

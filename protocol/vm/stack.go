@@ -1,6 +1,6 @@
 package vm
 
-import "ey/math/checked"
+import "core/math/checked"
 
 func opToAltStack(vm *virtualMachine) error {
 	err := vm.applyCost(2)

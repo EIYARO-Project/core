@@ -1,10 +1,10 @@
 package txbuilder
 
 import (
-	"ey/consensus"
-	"ey/consensus/segwit"
-	"ey/protocol/bc/types"
-	"ey/protocol/vm/vmutil"
+	"core/consensus"
+	"core/consensus/segwit"
+	"core/protocol/bc/types"
+	"core/protocol/vm/vmutil"
 )
 
 const (

@@ -4,9 +4,9 @@ import (
 	"encoding/binary"
 	"unsafe"
 
-	"ey/crypto/scrypt"
-	"ey/crypto/sha3pool"
-	"ey/protocol/bc"
+	"core/crypto/scrypt"
+	"core/crypto/sha3pool"
+	"core/protocol/bc"
 )
 
 func calcSeed(blockHashs []*bc.Hash) []byte {

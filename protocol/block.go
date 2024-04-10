@@ -3,11 +3,11 @@ package protocol
 import (
 	log "github.com/sirupsen/logrus"
 
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
-	"ey/protocol/validation"
+	"core/errors"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/state"
+	"core/protocol/validation"
 )
 
 var (

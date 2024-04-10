@@ -4,10 +4,10 @@ import (
 	"os"
 	"testing"
 
-	"ey/account"
-	dbm "ey/database/leveldb"
-	"ey/mining"
-	"ey/test"
+	"core/account"
+	dbm "core/database/leveldb"
+	"core/mining"
+	"core/test"
 )
 
 // Function NewBlockTemplate's benchmark - 0.05s

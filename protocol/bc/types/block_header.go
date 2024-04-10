@@ -6,10 +6,10 @@ import (
 	"io"
 	"time"
 
-	"ey/encoding/blockchain"
-	"ey/encoding/bufpool"
-	"ey/errors"
-	"ey/protocol/bc"
+	"core/encoding/blockchain"
+	"core/encoding/bufpool"
+	"core/errors"
+	"core/protocol/bc"
 )
 
 // BlockHeader defines information about a block and is used in the Eiyaro

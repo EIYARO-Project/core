@@ -5,7 +5,7 @@ import (
 	"math"
 	"strings"
 
-	"ey/protocol/bc"
+	"core/protocol/bc"
 )
 
 // consensus variables

@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"ey/consensus"
-	dbm "ey/database/leveldb"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/vm"
+	"core/consensus"
+	dbm "core/database/leveldb"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/vm"
 )
 
 func TestBlockHeader(t *testing.T) {

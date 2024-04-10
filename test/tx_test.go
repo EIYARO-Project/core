@@ -11,15 +11,15 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/account"
-	"ey/asset"
-	"ey/blockchain/pseudohsm"
-	"ey/consensus"
-	dbm "ey/database/leveldb"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/validation"
-	"ey/protocol/vm"
+	"core/account"
+	"core/asset"
+	"core/blockchain/pseudohsm"
+	"core/consensus"
+	dbm "core/database/leveldb"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/validation"
+	"core/protocol/vm"
 )
 
 func init() {

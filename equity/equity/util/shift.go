@@ -6,9 +6,9 @@ import (
 	"encoding/hex"
 	"errors"
 
-	"ey/protocol/vm"
+	"core/protocol/vm"
 
-	"ey/equity/compiler"
+	"core/equity/compiler"
 )
 
 const (

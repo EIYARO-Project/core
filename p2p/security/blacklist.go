@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	cfg "ey/config"
-	dbm "ey/database/leveldb"
+	cfg "core/config"
+	dbm "core/database/leveldb"
 )
 
 const (

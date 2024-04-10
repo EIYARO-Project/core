@@ -8,8 +8,8 @@ import (
 	"testing"
 	"testing/quick"
 
-	"ey/errors"
-	"ey/testutil"
+	"core/errors"
+	"core/testutil"
 )
 
 type tracebuf struct {

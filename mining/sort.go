@@ -1,6 +1,6 @@
 package mining
 
-import "ey/protocol"
+import "core/protocol"
 
 type byTime []*protocol.TxDesc
 

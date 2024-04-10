@@ -6,12 +6,12 @@ import (
 	"sort"
 	"sync"
 
-	"ey/common"
-	"ey/consensus"
-	"ey/consensus/difficulty"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/testutil"
+	"core/common"
+	"core/consensus"
+	"core/consensus/difficulty"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/testutil"
 )
 
 // approxNodesPerDay is an approximation of the number of new blocks there are

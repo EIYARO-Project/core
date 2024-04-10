@@ -5,17 +5,17 @@ import (
 	"os"
 	"testing"
 
-	"ey/account"
-	"ey/asset"
-	"ey/blockchain/pseudohsm"
-	"ey/blockchain/query"
-	"ey/blockchain/signers"
-	"ey/consensus"
-	"ey/crypto/ed25519/chainkd"
-	dbm "ey/database/leveldb"
-	"ey/event"
-	"ey/protocol/bc/types"
-	"ey/testutil"
+	"core/account"
+	"core/asset"
+	"core/blockchain/pseudohsm"
+	"core/blockchain/query"
+	"core/blockchain/signers"
+	"core/consensus"
+	"core/crypto/ed25519/chainkd"
+	dbm "core/database/leveldb"
+	"core/event"
+	"core/protocol/bc/types"
+	"core/testutil"
 )
 
 func TestWalletUnconfirmedTxs(t *testing.T) {

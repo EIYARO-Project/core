@@ -1,3 +1,3 @@
-module ey
+module core
 
 go 1.22

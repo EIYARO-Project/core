@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"ey/accesstoken"
-	"ey/errors"
+	"core/accesstoken"
+	"core/errors"
 )
 
 const tokenExpiry = time.Minute * 5

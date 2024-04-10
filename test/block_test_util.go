@@ -1,12 +1,12 @@
 package test
 
 import (
-	"ey/mining/tensority"
-	"ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/validation"
-	"ey/protocol/vm"
+	"core/mining/tensority"
+	"core/protocol"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/validation"
+	"core/protocol/vm"
 )
 
 // NewBlock create block according to the current status of chain

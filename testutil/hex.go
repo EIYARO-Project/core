@@ -6,7 +6,7 @@ import (
 	"io"
 	"testing"
 
-	"ey/protocol/bc"
+	"core/protocol/bc"
 )
 
 func MustDecodeHash(s string) (h bc.Hash) {

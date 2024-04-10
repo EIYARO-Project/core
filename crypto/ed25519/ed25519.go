@@ -16,7 +16,7 @@ import (
 	"io"
 	"strconv"
 
-	"ey/crypto/ed25519/internal/edwards25519"
+	"core/crypto/ed25519/internal/edwards25519"
 )
 
 const (

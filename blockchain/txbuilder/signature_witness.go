@@ -6,11 +6,11 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/crypto/ed25519/chainkd"
-	"ey/crypto/sha3pool"
-	chainjson "ey/encoding/json"
-	"ey/errors"
-	"ey/protocol/vm"
+	"core/crypto/ed25519/chainkd"
+	"core/crypto/sha3pool"
+	chainjson "core/encoding/json"
+	"core/errors"
+	"core/protocol/vm"
 )
 
 type (

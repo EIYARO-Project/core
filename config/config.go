@@ -10,7 +10,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/crypto/ed25519"
+	"core/crypto/ed25519"
 )
 
 var (
@@ -30,7 +30,7 @@ type Config struct {
 	Websocket *WebsocketConfig `mapstructure:"ws"`
 }
 
-// Default configurable parameters.
+// DefaultConfig Default configurable parameters.
 func DefaultConfig() *Config {
 	return &Config{
 		BaseConfig: DefaultBaseConfig(),
@@ -43,7 +43,7 @@ func DefaultConfig() *Config {
 	}
 }
 
-// Set the RootDir for all Config structs
+// SetRoot Set the RootDir for all Config structs
 func (cfg *Config) SetRoot(root string) *Config {
 	cfg.BaseConfig.RootDir = root
 	return cfg
@@ -80,7 +80,7 @@ func (cfg *Config) NodeKey() (string, error) {
 	return privKey.String(), nil
 }
 
-//-----------------------------------------------------------------------------
+// BaseConfig -----------------------------------------------------------------------------
 // BaseConfig
 type BaseConfig struct {
 	// The root directory for all data.
@@ -121,7 +121,7 @@ type BaseConfig struct {
 	LogFile string `mapstructure:"log_file"`
 }
 
-// Default configurable base parameters.
+// DefaultBaseConfig Default configurable base parameters.
 func DefaultBaseConfig() BaseConfig {
 	return BaseConfig{
 		Moniker:           "anonymous",
@@ -164,7 +164,7 @@ type P2PConfig struct {
 	KeepDial         string `mapstructure:"keep_dial"`
 }
 
-// Default configurable p2p parameters.
+// DefaultP2PConfig Default configurable p2p parameters.
 func DefaultP2PConfig() *P2PConfig {
 	return &P2PConfig{
 		ListenAddress:    "tcp://0.0.0.0:46656",
@@ -180,7 +180,7 @@ func DefaultP2PConfig() *P2PConfig {
 	}
 }
 
-//-----------------------------------------------------------------------------
+// WalletConfig -----------------------------------------------------------------------------
 type WalletConfig struct {
 	Disable  bool   `mapstructure:"disable"`
 	Rescan   bool   `mapstructure:"rescan"`
@@ -205,21 +205,21 @@ type WebsocketConfig struct {
 	MaxNumConcurrentReqs int `mapstructure:"max_num_concurrent_reqs"`
 }
 
-// Default configurable rpc's auth parameters.
+// DefaultRPCAuthConfig Default configurable rpc's auth parameters.
 func DefaultRPCAuthConfig() *RPCAuthConfig {
 	return &RPCAuthConfig{
 		Disable: false,
 	}
 }
 
-// Default configurable web parameters.
+// DefaultWebConfig Default configurable web parameters.
 func DefaultWebConfig() *WebConfig {
 	return &WebConfig{
 		Closed: false,
 	}
 }
 
-// Default configurable wallet parameters.
+// DefaultWalletConfig Default configurable wallet parameters.
 func DefaultWalletConfig() *WalletConfig {
 	return &WalletConfig{
 		Disable:  false,
@@ -229,7 +229,7 @@ func DefaultWalletConfig() *WalletConfig {
 	}
 }
 
-// Default configurable web parameters.
+// DefaultSimdConfig Default configurable web parameters.
 func DefaultSimdConfig() *SimdConfig {
 	return &SimdConfig{
 		Enable: false,

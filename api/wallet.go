@@ -3,11 +3,11 @@ package api
 import (
 	"context"
 
-	"ey/account"
-	"ey/asset"
-	"ey/blockchain/pseudohsm"
-	"ey/crypto/ed25519/chainkd"
-	"ey/errors"
+	"core/account"
+	"core/asset"
+	"core/blockchain/pseudohsm"
+	"core/crypto/ed25519/chainkd"
+	"core/errors"
 )
 
 // POST /wallet error

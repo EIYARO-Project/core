@@ -7,11 +7,11 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/account"
-	"ey/event"
-	"ey/mining"
-	"ey/protocol"
-	"ey/protocol/bc/types"
+	"core/account"
+	"core/event"
+	"core/mining"
+	"core/protocol"
+	"core/protocol/bc/types"
 )
 
 const (

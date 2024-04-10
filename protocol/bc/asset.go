@@ -5,8 +5,8 @@ import (
 	"errors"
 	"io"
 
-	"ey/crypto/sha3pool"
-	"ey/encoding/blockchain"
+	"core/crypto/sha3pool"
+	"core/encoding/blockchain"
 )
 
 // NewAssetID convert byte array to aseet id

@@ -10,11 +10,11 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/tendermint/go-crypto"
 
-	cfg "ey/config"
-	dbm "ey/database/leveldb"
-	"ey/errors"
-	conn "ey/p2p/connection"
-	"ey/p2p/security"
+	cfg "core/config"
+	dbm "core/database/leveldb"
+	"core/errors"
+	conn "core/p2p/connection"
+	"core/p2p/security"
 )
 
 var (

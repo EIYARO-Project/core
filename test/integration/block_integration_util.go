@@ -10,15 +10,15 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"ey/database"
-	dbm "ey/database/leveldb"
-	"ey/database/storage"
-	"ey/event"
-	"ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
-	"ey/testutil"
+	"core/database"
+	dbm "core/database/leveldb"
+	"core/database/storage"
+	"core/event"
+	"core/protocol"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/state"
+	"core/testutil"
 )
 
 const (

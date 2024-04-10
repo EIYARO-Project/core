@@ -12,7 +12,7 @@ import (
 	"github.com/gorilla/websocket"
 	log "github.com/sirupsen/logrus"
 
-	"ey/errors"
+	"core/errors"
 )
 
 // websocketSendBufferSize is the number of elements the send channel

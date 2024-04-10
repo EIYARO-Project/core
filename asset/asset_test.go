@@ -9,13 +9,13 @@ import (
 	"strings"
 	"testing"
 
-	"ey/consensus"
-	"ey/crypto/ed25519/chainkd"
-	"ey/database"
-	dbm "ey/database/leveldb"
-	"ey/event"
-	"ey/protocol"
-	"ey/testutil"
+	"core/consensus"
+	"core/crypto/ed25519/chainkd"
+	"core/database"
+	dbm "core/database/leveldb"
+	"core/event"
+	"core/protocol"
+	"core/testutil"
 )
 
 func TestDefineAssetWithLowercase(t *testing.T) {

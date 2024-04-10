@@ -6,10 +6,10 @@ import (
 	"os"
 	"testing"
 
-	"ey/consensus"
-	dbm "ey/database/leveldb"
-	"ey/protocol/bc/types"
-	"ey/protocol/vm"
+	"core/consensus"
+	dbm "core/database/leveldb"
+	"core/protocol/bc/types"
+	"core/protocol/vm"
 )
 
 // case1:           |------c1(height=7)

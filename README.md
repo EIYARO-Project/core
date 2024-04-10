@@ -20,11 +20,6 @@ In the current state `eiyaro` is able to:
 - Manage key, account as well as asset
 - Send transactions, i.e., issue, spend and retire asset
 
-## Installing with Homebrew
-
-```console
-$ brew tap eiyaro/eiyaro && brew install eiyaro
-```
 
 ## Building from source
 
@@ -172,13 +167,21 @@ Ensure your [Docker](https://www.docker.com/) version is 17.05 or higher.
 $ docker build -t eiyaro .
 ```
 
-For the usage please refer to [running-in-docker-wiki](https://github.com/EIYARO/ey/wiki/Running-in-Docker).
+For the usage please refer to [running-in-docker-wiki](https://github.com/EIYARO-Project/core/wiki/Running-in-Docker).
+
+
+## Installing with Homebrew
+
+```console
+$ brew tap eiyaro/eiyaro && brew install eiyaro
+```
+
 
 ## Contributing
 
 Thank you for considering helping out with the source code! Any contributions are highly appreciated, and we are grateful for even the smallest of fixes!
 
-If you run into an issue, feel free to [eiyaro issues](https://github.com/EIYARO/ey/issues/) in this repository. We are glad to help!
+If you run into an issue, feel free to [eiyaro issues](https://github.com/EIYARO-Project/core/issues/) in this repository. We are glad to help!
 
 ## License
 

@@ -5,7 +5,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"ey/protocol/vm"
+	"core/protocol/vm"
 )
 
 func TestAddJump(t *testing.T) {

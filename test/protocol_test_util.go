@@ -3,9 +3,9 @@ package test
 import (
 	"fmt"
 
-	dbm "ey/database/leveldb"
-	"ey/protocol"
-	"ey/protocol/bc/types"
+	dbm "core/database/leveldb"
+	"core/protocol"
+	"core/protocol/bc/types"
 )
 
 func declChain(name string, baseChain *protocol.Chain, baseHeight uint64, height uint64) (*protocol.Chain, error) {

@@ -7,10 +7,10 @@ import (
 
 	jww "github.com/spf13/jwalterweatherman"
 
-	"ey/crypto/ed25519/chainkd"
-	"ey/encoding/json"
-	chainjson "ey/encoding/json"
-	"ey/util"
+	"core/crypto/ed25519/chainkd"
+	"core/encoding/json"
+	chainjson "core/encoding/json"
+	"core/util"
 )
 
 // accountIns is used for account related request.

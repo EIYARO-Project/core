@@ -11,17 +11,17 @@ import (
 	"github.com/tendermint/go-crypto"
 	cmn "github.com/tendermint/tmlibs/common"
 
-	cfg "ey/config"
-	"ey/consensus"
-	"ey/crypto/ed25519"
-	"ey/errors"
-	"ey/event"
-	"ey/p2p/connection"
-	"ey/p2p/discover/dht"
-	"ey/p2p/discover/mdns"
-	"ey/p2p/netutil"
-	"ey/p2p/security"
-	"ey/version"
+	cfg "core/config"
+	"core/consensus"
+	"core/crypto/ed25519"
+	"core/errors"
+	"core/event"
+	"core/p2p/connection"
+	"core/p2p/discover/dht"
+	"core/p2p/discover/mdns"
+	"core/p2p/netutil"
+	"core/p2p/security"
+	"core/version"
 )
 
 const (

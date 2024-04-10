@@ -1,8 +1,8 @@
 package types
 
 import (
-	"ey/crypto/sha3pool"
-	"ey/protocol/bc"
+	"core/crypto/sha3pool"
+	"core/protocol/bc"
 )
 
 // IssuanceInput satisfies the TypedInput interface and represents a issuance.

@@ -3,9 +3,9 @@ package integration
 import (
 	"fmt"
 
-	cfg "ey/config"
-	"ey/crypto/ed25519/chainkd"
-	"ey/util"
+	cfg "core/config"
+	"core/crypto/ed25519/chainkd"
+	"core/util"
 )
 
 // Mock config.

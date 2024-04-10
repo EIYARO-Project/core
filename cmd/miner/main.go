@@ -5,12 +5,12 @@ import (
 	"log"
 	"os"
 
-	"ey/api"
-	"ey/consensus"
-	"ey/consensus/difficulty"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/util"
+	"core/api"
+	"core/consensus"
+	"core/consensus/difficulty"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/util"
 )
 
 const (

@@ -6,8 +6,8 @@ import (
 	"context"
 	"net/http"
 
-	"ey/errors"
-	"ey/net/http/httpjson"
+	"core/errors"
+	"core/net/http/httpjson"
 )
 
 // Info contains a set of error codes to send to the user.

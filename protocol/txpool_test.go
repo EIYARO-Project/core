@@ -6,13 +6,13 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"ey/consensus"
-	"ey/database/storage"
-	"ey/event"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
-	"ey/testutil"
+	"core/consensus"
+	"core/database/storage"
+	"core/event"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/state"
+	"core/testutil"
 )
 
 var testTxs = []*types.Tx{

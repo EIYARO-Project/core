@@ -3,8 +3,8 @@ package vmutil
 import (
 	"encoding/binary"
 
-	"ey/errors"
-	"ey/protocol/vm"
+	"core/errors"
+	"core/protocol/vm"
 )
 
 type Builder struct {

@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 	jww "github.com/spf13/jwalterweatherman"
 
-	"ey/util"
+	"core/util"
 )
 
 var createTransactionFeedCmd = &cobra.Command{

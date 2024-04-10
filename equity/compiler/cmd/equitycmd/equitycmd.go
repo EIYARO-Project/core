@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"ey/equity/compiler"
+	"core/equity/compiler"
 )
 
 var (
@@ -66,8 +66,8 @@ func main() {
 		"bytes":        true,
 		"encoding/hex": true,
 		"fmt":          true,
-		"ey/equity/compiler": true,
-		"ey/protocol/vm":     true,
+		"core/equity/compiler": true,
+		"core/protocol/vm":     true,
 	}
 
 	buf := new(bytes.Buffer)
@@ -254,7 +254,7 @@ func asGoParams(params []*compiler.Param) (goParams string, imports []string) {
 			typ = "uint64"
 		case "Asset":
 			typ = "bc.AssetID"
-			imports = append(imports, "ey/protocol/bc")
+			imports = append(imports, "core/protocol/bc")
 			strFlag = true
 		case "Boolean":
 			typ = "bool"
@@ -268,7 +268,7 @@ func asGoParams(params []*compiler.Param) (goParams string, imports []string) {
 			strFlag = true
 		case "PublicKey":
 			typ = "ed25519.PublicKey"
-			imports = append(imports, "ey/crypto/ed25519")
+			imports = append(imports, "core/crypto/ed25519")
 			strFlag = true
 		case "Signature":
 			typ = "[]byte"
@@ -281,7 +281,7 @@ func asGoParams(params []*compiler.Param) (goParams string, imports []string) {
 	}
 
 	if strFlag {
-		imports = append(imports, "ey/encoding/json")
+		imports = append(imports, "core/encoding/json")
 	}
 	return strings.Join(strs, ", "), imports
 }

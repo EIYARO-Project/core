@@ -8,10 +8,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/blockchain/signers"
-	"ey/blockchain/txbuilder"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"core/blockchain/signers"
+	"core/blockchain/txbuilder"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
 )
 
 //NewIssueAction create a new asset issue action

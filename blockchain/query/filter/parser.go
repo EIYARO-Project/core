@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"ey/errors"
+	"core/errors"
 )
 
 // ErrBadFilter is returned from Parse when

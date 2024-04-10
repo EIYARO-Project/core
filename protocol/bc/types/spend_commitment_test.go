@@ -5,9 +5,9 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"ey/encoding/blockchain"
-	"ey/protocol/bc"
-	"ey/testutil"
+	"core/encoding/blockchain"
+	"core/protocol/bc"
+	"core/testutil"
 )
 
 func TestReadWriteSpendCommitment(t *testing.T) {

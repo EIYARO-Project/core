@@ -1,10 +1,10 @@
 package protocol
 
 import (
-	"ey/database/storage"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
+	"core/database/storage"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/state"
 )
 
 // Store provides storage interface for blockchain data

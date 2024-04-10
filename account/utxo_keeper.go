@@ -10,9 +10,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	dbm "ey/database/leveldb"
-	"ey/errors"
-	"ey/protocol/bc"
+	dbm "core/database/leveldb"
+	"core/errors"
+	"core/protocol/bc"
 )
 
 const desireUtxoCount = 5

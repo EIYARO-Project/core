@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"ey/consensus"
+	"core/consensus"
 	"github.com/davecgh/go-spew/spew"
 )
 

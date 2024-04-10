@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"context"
 
-	cfg "ey/config"
-	"ey/consensus"
-	"ey/errors"
-	"ey/protocol"
-	"ey/protocol/bc/types"
-	"ey/protocol/vm"
+	cfg "core/config"
+	"core/consensus"
+	"core/errors"
+	"core/protocol"
+	"core/protocol/bc/types"
+	"core/protocol/vm"
 )
 
 var (

@@ -1,9 +1,9 @@
 package vmutil
 
 import (
-	"ey/crypto/ed25519"
-	"ey/errors"
-	"ey/protocol/vm"
+	"core/crypto/ed25519"
+	"core/errors"
+	"core/protocol/vm"
 )
 
 // pre-define errors

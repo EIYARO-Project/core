@@ -6,9 +6,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/testutil"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/testutil"
 )
 
 var (

@@ -10,10 +10,10 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"ey/consensus"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/testutil"
+	"core/consensus"
+	"core/errors"
+	"core/protocol/bc"
+	"core/testutil"
 )
 
 func TestTransaction(t *testing.T) {

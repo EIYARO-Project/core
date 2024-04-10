@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"ey/crypto/ed25519"
-	"ey/errors"
+	"core/crypto/ed25519"
+	"core/errors"
 )
 
 const dirPath = "testdata/pseudo"

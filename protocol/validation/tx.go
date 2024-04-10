@@ -6,12 +6,12 @@ import (
 	"runtime"
 	"sync"
 
-	"ey/consensus"
-	"ey/consensus/segwit"
-	"ey/errors"
-	"ey/math/checked"
-	"ey/protocol/bc"
-	"ey/protocol/vm"
+	"core/consensus"
+	"core/consensus/segwit"
+	"core/errors"
+	"core/math/checked"
+	"core/protocol/bc"
+	"core/protocol/vm"
 )
 
 const ruleAA = 142500

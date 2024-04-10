@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"ey/consensus"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/test/mock"
-	"ey/testutil"
+	"core/consensus"
+	"core/errors"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/test/mock"
+	"core/testutil"
 )
 
 func TestAppendHeaderList(t *testing.T) {

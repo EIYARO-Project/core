@@ -8,12 +8,12 @@ import (
 	"sort"
 	"testing"
 
-	"ey/account"
-	"ey/consensus"
-	dbm "ey/database/leveldb"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/testutil"
+	"core/account"
+	"core/consensus"
+	dbm "core/database/leveldb"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/testutil"
 )
 
 func TestGetAccountUtxos(t *testing.T) {

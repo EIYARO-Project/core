@@ -5,11 +5,11 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/config"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
+	"core/config"
+	"core/errors"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/state"
 )
 
 const maxProcessBlockChSize = 1024

@@ -6,12 +6,12 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/account"
-	"ey/consensus/difficulty"
-	"ey/event"
-	"ey/mining"
-	"ey/protocol"
-	"ey/protocol/bc/types"
+	"core/account"
+	"core/consensus/difficulty"
+	"core/event"
+	"core/mining"
+	"core/protocol"
+	"core/protocol/bc/types"
 )
 
 const (

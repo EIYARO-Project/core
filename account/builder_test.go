@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"ey/blockchain/signers"
-	"ey/blockchain/txbuilder"
-	"ey/consensus"
-	"ey/crypto/ed25519/chainkd"
-	"ey/protocol/bc"
-	"ey/testutil"
+	"core/blockchain/signers"
+	"core/blockchain/txbuilder"
+	"core/consensus"
+	"core/crypto/ed25519/chainkd"
+	"core/protocol/bc"
+	"core/testutil"
 )
 
 func TestReserveEyUtxoChain(t *testing.T) {

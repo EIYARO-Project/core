@@ -7,16 +7,16 @@ import (
 	"path"
 	"reflect"
 
-	"ey/account"
-	"ey/asset"
-	"ey/blockchain/pseudohsm"
-	"ey/blockchain/signers"
-	"ey/crypto/ed25519/chainkd"
-	dbm "ey/database/leveldb"
-	"ey/event"
-	"ey/protocol"
-	"ey/protocol/bc/types"
-	w "ey/wallet"
+	"core/account"
+	"core/asset"
+	"core/blockchain/pseudohsm"
+	"core/blockchain/signers"
+	"core/crypto/ed25519/chainkd"
+	dbm "core/database/leveldb"
+	"core/event"
+	"core/protocol"
+	"core/protocol/bc/types"
+	w "core/wallet"
 )
 
 type walletTestConfig struct {

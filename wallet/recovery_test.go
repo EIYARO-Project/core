@@ -9,17 +9,17 @@ import (
 	"testing"
 	"time"
 
-	"ey/account"
-	"ey/blockchain/pseudohsm"
-	"ey/blockchain/signers"
-	"ey/blockchain/txbuilder"
-	"ey/common"
-	"ey/consensus"
-	"ey/crypto/ed25519/chainkd"
-	dbm "ey/database/leveldb"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"core/account"
+	"core/blockchain/pseudohsm"
+	"core/blockchain/signers"
+	"core/blockchain/txbuilder"
+	"core/common"
+	"core/consensus"
+	"core/crypto/ed25519/chainkd"
+	dbm "core/database/leveldb"
+	"core/errors"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
 )
 
 // MockBlock mock a block

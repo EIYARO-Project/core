@@ -12,7 +12,7 @@ import (
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/sirupsen/logrus"
 
-	"ey/config"
+	"core/config"
 )
 
 const (

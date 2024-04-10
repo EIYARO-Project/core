@@ -5,15 +5,15 @@ import (
 
 	"time"
 
-	"ey/config"
-	"ey/consensus"
-	"ey/database"
-	"ey/database/storage"
-	"ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
-	"ey/testutil"
+	"core/config"
+	"core/consensus"
+	"core/database"
+	"core/database/storage"
+	"core/protocol"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/state"
+	"core/testutil"
 )
 
 var blockMap map[int][]*attachBlock

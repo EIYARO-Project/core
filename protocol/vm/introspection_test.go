@@ -5,8 +5,8 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"ey/errors"
-	"ey/testutil"
+	"core/errors"
+	"core/testutil"
 )
 
 func TestOutputIDAndNonceOp(t *testing.T) {

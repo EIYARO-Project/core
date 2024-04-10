@@ -3,7 +3,7 @@ package txbuilder
 import (
 	"encoding/json"
 
-	chainjson "ey/encoding/json"
+	chainjson "core/encoding/json"
 )
 
 // DataWitness used sign transaction

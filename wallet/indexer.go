@@ -8,15 +8,15 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/account"
-	"ey/asset"
-	"ey/blockchain/query"
-	"ey/crypto/sha3pool"
-	dbm "ey/database/leveldb"
-	chainjson "ey/encoding/json"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"core/account"
+	"core/asset"
+	"core/blockchain/query"
+	"core/crypto/sha3pool"
+	dbm "core/database/leveldb"
+	chainjson "core/encoding/json"
+	"core/errors"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
 )
 
 const (

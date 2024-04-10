@@ -3,17 +3,17 @@ package api
 import (
 	"context"
 
-	"ey/account"
-	"ey/asset"
-	"ey/blockchain/pseudohsm"
-	"ey/blockchain/rpc"
-	"ey/blockchain/signers"
-	"ey/blockchain/txbuilder"
-	"ey/errors"
-	"ey/net/http/httperror"
-	"ey/net/http/httpjson"
-	"ey/protocol/validation"
-	"ey/protocol/vm"
+	"core/account"
+	"core/asset"
+	"core/blockchain/pseudohsm"
+	"core/blockchain/rpc"
+	"core/blockchain/signers"
+	"core/blockchain/txbuilder"
+	"core/errors"
+	"core/net/http/httperror"
+	"core/net/http/httpjson"
+	"core/protocol/validation"
+	"core/protocol/vm"
 )
 
 var (

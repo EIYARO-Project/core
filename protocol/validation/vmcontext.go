@@ -3,11 +3,11 @@ package validation
 import (
 	"bytes"
 
-	"ey/consensus/segwit"
-	"ey/crypto/sha3pool"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/vm"
+	"core/consensus/segwit"
+	"core/crypto/sha3pool"
+	"core/errors"
+	"core/protocol/bc"
+	"core/protocol/vm"
 )
 
 // NewTxVMContext generates the vm.Context for BVM

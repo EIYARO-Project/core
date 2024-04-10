@@ -7,16 +7,16 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/account"
-	"ey/blockchain/txbuilder"
-	"ey/consensus"
-	"ey/errors"
-	"ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
-	"ey/protocol/validation"
-	"ey/protocol/vm/vmutil"
+	"core/account"
+	"core/blockchain/txbuilder"
+	"core/consensus"
+	"core/errors"
+	"core/protocol"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/state"
+	"core/protocol/validation"
+	"core/protocol/vm/vmutil"
 )
 
 const logModule = "mining"

@@ -1,8 +1,8 @@
 package bc
 
 import (
-	"ey/crypto/sha3pool"
-	"ey/errors"
+	"core/crypto/sha3pool"
+	"core/errors"
 )
 
 // Tx is a wrapper for the entries-based representation of a transaction.

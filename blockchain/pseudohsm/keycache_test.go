@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"ey/crypto/ed25519/chainkd"
+	"core/crypto/ed25519/chainkd"
 	"github.com/cespare/cp"
 	"github.com/davecgh/go-spew/spew"
 )

@@ -9,17 +9,17 @@ import (
 	"github.com/golang/groupcache/lru"
 	"golang.org/x/crypto/sha3"
 
-	"ey/blockchain/signers"
-	"ey/common"
-	"ey/consensus"
-	"ey/crypto/ed25519"
-	"ey/crypto/ed25519/chainkd"
-	dbm "ey/database/leveldb"
-	chainjson "ey/encoding/json"
-	"ey/errors"
-	"ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/vm/vmutil"
+	"core/blockchain/signers"
+	"core/common"
+	"core/consensus"
+	"core/crypto/ed25519"
+	"core/crypto/ed25519/chainkd"
+	dbm "core/database/leveldb"
+	chainjson "core/encoding/json"
+	"core/errors"
+	"core/protocol"
+	"core/protocol/bc"
+	"core/protocol/vm/vmutil"
 )
 
 // DefaultNativeAsset native EY asset

@@ -4,10 +4,10 @@ import (
 	"context"
 	"strings"
 
-	"ey/consensus"
-	"ey/encoding/json"
-	"ey/errors"
-	"ey/protocol/bc/types"
+	"core/consensus"
+	"core/encoding/json"
+	"core/errors"
+	"core/protocol/bc/types"
 )
 
 // action error

@@ -4,15 +4,15 @@ import (
 	"context"
 	"encoding/json"
 
-	"ey/blockchain/signers"
-	"ey/blockchain/txbuilder"
-	"ey/common"
-	"ey/consensus"
-	"ey/crypto/ed25519/chainkd"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/vm/vmutil"
+	"core/blockchain/signers"
+	"core/blockchain/txbuilder"
+	"core/common"
+	"core/consensus"
+	"core/crypto/ed25519/chainkd"
+	"core/errors"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/vm/vmutil"
 )
 
 //DecodeSpendAction unmarshal JSON-encoded data of spend action

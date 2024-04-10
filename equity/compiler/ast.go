@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	chainjson "ey/encoding/json"
+	chainjson "core/encoding/json"
 )
 
 // Contract is a compiled Equity contract.

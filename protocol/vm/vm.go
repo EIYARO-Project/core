@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"ey/errors"
+	"core/errors"
 )
 
 type virtualMachine struct {

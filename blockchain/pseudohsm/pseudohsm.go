@@ -12,9 +12,9 @@ import (
 
 	"github.com/pborman/uuid"
 
-	"ey/crypto/ed25519/chainkd"
-	"ey/errors"
-	mnem "ey/wallet/mnemonic"
+	"core/crypto/ed25519/chainkd"
+	"core/errors"
+	mnem "core/wallet/mnemonic"
 )
 
 // pre-define errors for supporting eiyaro errorFormatter

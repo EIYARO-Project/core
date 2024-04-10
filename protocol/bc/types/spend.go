@@ -1,7 +1,7 @@
 package types
 
 import (
-	"ey/protocol/bc"
+	"core/protocol/bc"
 )
 
 // SpendInput satisfies the TypedInput interface and represents a spend transaction.

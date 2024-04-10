@@ -5,12 +5,12 @@ import (
 
 	"gopkg.in/fatih/set.v0"
 
-	"ey/blockchain/query"
-	"ey/consensus/difficulty"
-	chainjson "ey/encoding/json"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"core/blockchain/query"
+	"core/consensus/difficulty"
+	chainjson "core/encoding/json"
+	"core/errors"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
 )
 
 // return best block hash

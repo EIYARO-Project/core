@@ -3,7 +3,7 @@ package ecmath
 import (
 	"crypto/subtle"
 
-	"ey/crypto/ed25519/internal/edwards25519"
+	"core/crypto/ed25519/internal/edwards25519"
 )
 
 // Point is a point on the ed25519 curve.

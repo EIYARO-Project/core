@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"testing"
 
-	"ey/errors"
-	"ey/math/checked"
-	"ey/testutil"
+	"core/errors"
+	"core/math/checked"
+	"core/testutil"
 )
 
 func TestParseOp(t *testing.T) {

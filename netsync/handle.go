@@ -6,14 +6,14 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	cfg "ey/config"
-	"ey/consensus"
-	"ey/event"
-	"ey/p2p"
-	"ey/p2p/security"
-	core "ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	cfg "core/config"
+	"core/consensus"
+	"core/event"
+	"core/p2p"
+	"core/p2p/security"
+	core "core/protocol"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
 	"github.com/tendermint/go-crypto"
 )
 

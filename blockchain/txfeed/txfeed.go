@@ -8,13 +8,13 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/blockchain/query"
-	dbm "ey/database/leveldb"
-	"ey/errors"
-	"ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/vm/vmutil"
+	"core/blockchain/query"
+	dbm "core/database/leveldb"
+	"core/errors"
+	"core/protocol"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/vm/vmutil"
 )
 
 const (

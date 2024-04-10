@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"ey/errors"
+	"core/errors"
 )
 
 var (

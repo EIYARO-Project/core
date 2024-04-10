@@ -1,10 +1,10 @@
 package types
 
 import (
-	"ey/consensus"
-	"ey/protocol/bc"
-	"ey/protocol/vm"
-	"ey/protocol/vm/vmutil"
+	"core/consensus"
+	"core/protocol/bc"
+	"core/protocol/vm"
+	"core/protocol/vm/vmutil"
 )
 
 // MapTx converts a types TxData object into its entries-based

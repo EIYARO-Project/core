@@ -7,18 +7,18 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/account"
-	"ey/asset"
-	"ey/blockchain/query"
-	"ey/blockchain/signers"
-	"ey/blockchain/txbuilder"
-	"ey/consensus"
-	"ey/crypto/ed25519"
-	"ey/crypto/ed25519/chainkd"
-	chainjson "ey/encoding/json"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
+	"core/account"
+	"core/asset"
+	"core/blockchain/query"
+	"core/blockchain/signers"
+	"core/blockchain/txbuilder"
+	"core/consensus"
+	"core/crypto/ed25519"
+	"core/crypto/ed25519/chainkd"
+	chainjson "core/encoding/json"
+	"core/errors"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
 )
 
 // POST /list-accounts

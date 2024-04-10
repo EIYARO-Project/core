@@ -3,9 +3,9 @@ package txbuilder
 import (
 	"context"
 
-	"ey/crypto/ed25519/chainkd"
-	chainjson "ey/encoding/json"
-	"ey/errors"
+	"core/crypto/ed25519/chainkd"
+	chainjson "core/encoding/json"
+	"core/errors"
 )
 
 // SignFunc is the function passed into Sign that produces

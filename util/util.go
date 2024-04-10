@@ -3,9 +3,9 @@ package util
 import (
 	"context"
 
-	"ey/api"
-	"ey/blockchain/rpc"
-	"ey/env"
+	"core/api"
+	"core/blockchain/rpc"
+	"core/env"
 	jww "github.com/spf13/jwalterweatherman"
 )
 

@@ -5,15 +5,15 @@ import (
 	"math"
 	"testing"
 
-	"ey/account"
-	"ey/blockchain/signers"
-	"ey/consensus"
-	"ey/crypto/ed25519/chainkd"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/validation"
-	"ey/protocol/vm/vmutil"
-	"ey/testutil"
+	"core/account"
+	"core/blockchain/signers"
+	"core/consensus"
+	"core/crypto/ed25519/chainkd"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/validation"
+	"core/protocol/vm/vmutil"
+	"core/testutil"
 )
 
 func TestValidateUglyTx(t *testing.T) {

@@ -3,9 +3,9 @@ package query
 import (
 	"encoding/json"
 
-	"ey/crypto/ed25519/chainkd"
-	chainjson "ey/encoding/json"
-	"ey/protocol/bc"
+	"core/crypto/ed25519/chainkd"
+	chainjson "core/encoding/json"
+	"core/protocol/bc"
 )
 
 //AnnotatedTx means an annotated transaction.

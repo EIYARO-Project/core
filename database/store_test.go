@@ -4,14 +4,14 @@ import (
 	"os"
 	"testing"
 
-	"ey/config"
-	dbm "ey/database/leveldb"
-	"ey/database/storage"
-	"ey/protocol"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/state"
-	"ey/testutil"
+	"core/config"
+	dbm "core/database/leveldb"
+	"core/database/storage"
+	"core/protocol"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/state"
+	"core/testutil"
 )
 
 func TestLoadBlockIndex(t *testing.T) {

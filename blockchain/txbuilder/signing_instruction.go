@@ -3,9 +3,9 @@ package txbuilder
 import (
 	"encoding/json"
 
-	"ey/crypto/ed25519/chainkd"
-	chainjson "ey/encoding/json"
-	"ey/errors"
+	"core/crypto/ed25519/chainkd"
+	chainjson "core/encoding/json"
+	"core/errors"
 )
 
 // AddWitnessKeys adds a SignatureWitness with the given quorum and

@@ -3,7 +3,7 @@ package vm
 import (
 	"testing"
 
-	"ey/testutil"
+	"core/testutil"
 )
 
 func TestSpliceOps(t *testing.T) {

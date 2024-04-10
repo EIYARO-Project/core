@@ -9,12 +9,12 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"ey/crypto/ed25519/chainkd"
-	"ey/errors"
-	"ey/math/checked"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/vm"
+	"core/crypto/ed25519/chainkd"
+	"core/errors"
+	"core/math/checked"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/vm"
 )
 
 const logModule = "txbuilder"

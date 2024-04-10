@@ -5,8 +5,8 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"ey/consensus/segwit"
-	"ey/protocol/vm"
+	"core/consensus/segwit"
+	"core/protocol/vm"
 )
 
 // DecodeProgResp is response for decode program

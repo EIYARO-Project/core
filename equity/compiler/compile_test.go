@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	chainjson "ey/encoding/json"
+	chainjson "core/encoding/json"
 
-	"ey/equity/compiler/equitytest"
+	"core/equity/compiler/equitytest"
 )
 
 func TestCompile(t *testing.T) {

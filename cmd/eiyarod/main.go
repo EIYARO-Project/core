@@ -10,8 +10,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/tendermint/tmlibs/cli"
 
-	"ey/cmd/eiyarod/commands"
-	"ey/config"
+	"core/cmd/eiyarod/commands"
+	"core/config"
 )
 
 // ContextHook is a hook for logrus.

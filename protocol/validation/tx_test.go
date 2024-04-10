@@ -6,14 +6,14 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"ey/consensus"
-	"ey/crypto/sha3pool"
-	"ey/errors"
-	"ey/protocol/bc"
-	"ey/protocol/bc/types"
-	"ey/protocol/vm"
-	"ey/protocol/vm/vmutil"
-	"ey/testutil"
+	"core/consensus"
+	"core/crypto/sha3pool"
+	"core/errors"
+	"core/protocol/bc"
+	"core/protocol/bc/types"
+	"core/protocol/vm"
+	"core/protocol/vm/vmutil"
+	"core/testutil"
 )
 
 func init() {
