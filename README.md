@@ -1,11 +1,11 @@
 Eiyaro
 
-[![Build](https://github.com/EIYARO/ey/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/EIYARO/ey/actions)
-[![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/EIYARO/ey/releases/latest)
-[![Supports Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/EIYARO/ey/releases/latest)
-[![License](https://img.shields.io/github/license/EIYARO/ey)](https://github.com/EIYARO/ey/blob/master/LICENSE)
-[![Latest Release](https://img.shields.io/github/v/release/EIYARO/ey?label=latest%20release)](https://github.com/EIYARO/ey/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/EIYARO/ey/total)](https://github.com/EIYARO/ey/releases)
+[![Build](https://github.com/EIYARO-Project/core/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/EIYARO-Project/core/actions)
+[![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/EIYARO-Project/core/releases/latest)
+[![Supports Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/EIYARO-Project/core/releases/latest)
+[![License](https://img.shields.io/github/license/EIYARO-Project/core)](https://github.com/EIYARO-Project/core/blob/master/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/EIYARO-Project/core?label=latest%20release)](https://github.com/EIYARO-Project/core/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/EIYARO-Project/core/total)](https://github.com/EIYARO-Project/core/releases)
 
 **Official golang implementation of the Eiyaro protocol.**
 
@@ -60,7 +60,7 @@ The Eiyaro project comes with several executables found in the `cmd` directory.
 | Command      | Description                                                  |
 | ------------ | ------------------------------------------------------------ |
 | **eiyarod**   | eiyarod command can help to initialize and launch eiyaro domain by custom parameters. `eiyarod --help` for command line options. |
-| **eiyarocli** | Our main Eiyaro CLI client. It is the entry point into the Eiyaro network (main-, test- or private net), capable of running as a full node archive node (retaining all historical state). It can be used by other processes as a gateway into the Eiyaro network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eiyarocli --help` and the [eiyaroccli API page](https://github.com/EIYARO/ey/blob/main/API-Reference.md) for command line options. |
+| **eiyarocli** | Our main Eiyaro CLI client. It is the entry point into the Eiyaro network (main-, test- or private net), capable of running as a full node archive node (retaining all historical state). It can be used by other processes as a gateway into the Eiyaro network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eiyarocli --help` and the [eiyaroccli API page](https://github.com/EIYARO-Project/core/blob/main/API-Reference.md) for command line options. |
 
 ## Running eiyaro
 
@@ -147,7 +147,7 @@ What is more,
 + if you are using _Mac_, please make sure _llvm_ is installed by `brew install llvm`.
 + if you are using _Windows_, please make sure _mingw-w64_ is installed and set up the _PATH_ environment variable accordingly.
 
-For more details about using `eiyarocli` command please refer to [API Reference](https://github.com/EIYARO/ey/blob/main/API-Reference.md)
+For more details about using `eiyarocli` command please refer to [API Reference](https://github.com/EIYARO-Project/core/blob/main/API-Reference.md)
 
 ### Dashboard
 
