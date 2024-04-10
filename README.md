@@ -44,7 +44,7 @@ $ go env GOROOT GOPATH
 - Get the source code
 
 ```console
-$ git clone https://github.com/Eiyaro/ey.git $GOPATH/src/eiyaro/ey
+$ git clone https://github.com/EIYARO-Project/core.git $GOPATH/src/eiyaro/ey
 ```
 
 - Build source code
