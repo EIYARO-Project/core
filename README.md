@@ -46,6 +46,7 @@ $ git clone https://github.com/EIYARO-Project/core.git $GOPATH/src/eiyaro/core
 
 ```console
 $ cd $GOPATH/src/eiyaro/core
+$ go mod tidy
 $ make eiyarod    
 $ make eiyarocli  
 ```
