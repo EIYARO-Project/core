@@ -1,4 +1,4 @@
-# Eiyaro Core
+# EIYARO Core
 
 [![Build](https://github.com/EIYARO-Project/core/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/EIYARO-Project/core/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/EIYARO-Project/core/releases/latest)
@@ -7,11 +7,11 @@
 [![Latest Release](https://img.shields.io/github/v/release/EIYARO-Project/core?label=latest%20release)](https://github.com/EIYARO-Project/core/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/EIYARO-Project/core/total)](https://github.com/EIYARO-Project/core/releases)
 
-**Official golang implementation of the Eiyaro protocol.**
+**Official golang implementation of the EIYARO protocol.**
 
 Automated builds are available for stable releases and the unstable master branch. Binary archives are published at https://github.com/EIYARO-Project/core/releases.
 
-## What is Eiyaro?
+## What is EIYARO?
 
 The goal of the EIYARO project is to create a blockchain ecosystem with a wide range of application scenarios, and provide users with safe, efficient and convenient digital asset transaction services. We will reduce transaction costs, increase transaction speed, and ensure network security and stability through continuous technological innovation and optimisation.
 
@@ -55,12 +55,12 @@ When successfully building the project, the `eiyarod` and `eiyarocli` binary sho
 
 ### Executables
 
-The Eiyaro project comes with several executables found in the `cmd` directory.
+The EIYARO project comes with several executables found in the `cmd` directory.
 
 | Command      | Description                                                  |
 | ------------ | ------------------------------------------------------------ |
 | **eiyarod**   | eiyarod command can help to initialize and launch eiyaro domain by custom parameters. `eiyarod --help` for command line options. |
-| **eiyarocli** | Our main Eiyaro CLI client. It is the entry point into the Eiyaro network (main-, test- or private net), capable of running as a full node archive node (retaining all historical state). It can be used by other processes as a gateway into the Eiyaro network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eiyarocli --help` and the [eiyaroccli API page](https://github.com/EIYARO-Project/core/blob/main/API-Reference.md) for command line options. |
+| **eiyarocli** | Our main EIYARO CLI client. It is the entry point into the EIYARO network (main-, test- or private net), capable of running as a full node archive node (retaining all historical state). It can be used by other processes as a gateway into the EIYARO network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `eiyarocli --help` and the [eiyaroccli API page](https://github.com/EIYARO-Project/core/blob/main/API-Reference.md) for command line options. |
 
 ## Running eiyaro
 
@@ -123,7 +123,7 @@ Flags:
 
 Global Flags:
       --home string   root directory for config and data
-  -r, --root string   DEPRECATED. Use --home (default "/Users/zcc/Library/Application Support/Eiyaro")
+  -r, --root string   DEPRECATED. Use --home (default "/Users/zcc/Library/Application Support/EIYARO")
       --trace         print out full stack trace on errors
 ```
 
