@@ -83,6 +83,31 @@ There are three options for the flag `--chain_id`:
 
 After that, you'll see `config.toml` generated, then launch the node.
 
+### Proposed Configuration File
+
+We have seen good performance with this configuration file:
+
+```toml
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+fast_sync = true
+db_backend = "leveldb"
+api_addr = "0.0.0.0:9888"
+node_alias = "MyMostAwesomeNodeAlias"
+moniker = "MyMostAwesomeNode"
+chain_id = "mainnet"
+[p2p]
+laddr = "tcp://0.0.0.0:46657"
+lan_discoverable = false
+seeds = "148.135.99.102:46657,217.194.133.61:46657,154.201.78.187:46657,103.115.46.201:46657,154.44.8.62:46657,24.233.3.133:46657,27.25.156.254:46657"
+keep_dial = "148.135.99.102:46657,217.194.133.61:46657,154.201.78.187:46657,103.115.46.201:46657,154.44.8.62:46657,24.233.3.133:46657,27.25.156.254:46657"
+max_num_peers = 50
+[web]
+closed = true
+```
+
+The added field `keep_dial` allows for a more stable connection to the `mainnet`.
+
 ### launch
 
 ```console
