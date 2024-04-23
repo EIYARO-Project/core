@@ -251,7 +251,7 @@ systemctl --user start eiyarod.service
 
 To query it's status:
 ```console
-systemctl - users status eiyarod.service
+systemctl --user status eiyarod.service
 ```
 
 ### Dashboard
