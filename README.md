@@ -108,7 +108,7 @@ closed = true
 
 The added field `keep_dial` allows for a more stable connection to the `mainnet`.
 
-### launch
+### Launch
 
 ```console
 $ nohup ./eiyarod node &
@@ -173,6 +173,86 @@ What is more,
 + if you are using _Windows_, please make sure _mingw-w64_ is installed and set up the _PATH_ environment variable accordingly.
 
 For more details about using `eiyarocli` command please refer to [API Reference](https://github.com/EIYARO-Project/core/blob/main/API-Reference.md)
+
+### Launching using `systemd`
+
+#### Under root
+
+```ini
+[Unit]
+Description=EIYARO Node
+After=syslog.target
+After=network.target
+
+[Service]
+RestartSec=2s
+Type=simple
+User=USERNAME
+Group=GROUP
+WorkingDirectory=/home/USERNAME
+ExecStart=/home/USERNAME/bin/eiyarod node
+Restart=always
+PrivateTmp=true
+ProtectSystem=full
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Drop the above file under `/etc/systemd/system/eiyarod.service`
+
+To enable it:
+```console
+systemctl enable eiyarod.service
+```
+
+To start it:
+```console
+systemctl start eiyarod.service
+```
+
+To query it's status:
+```console
+systemctl status eiyarod.service
+```
+
+#### Under user
+
+```ini
+[Unit]
+Description=EIYARO Node
+After=syslog.target
+After=network.target
+
+[Service]
+RestartSec=2s
+Type=simple
+WorkingDirectory=/home/USERNAME
+ExecStart=/home/USERNAME/bin/eiyarod node
+Restart=always
+
+[Install]
+WantedBy=default.target
+```
+
+
+Drop the above file under `~/.config/systemd/user/eiyarod.service`
+
+To enable it:
+```console
+systemctl --user enable eiyarod.service
+```
+
+To start it:
+```console
+systemctl --user start eiyarod.service
+```
+
+To query it's status:
+```console
+systemctl --user status eiyarod.service
+```
 
 ### Dashboard
 
