@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/github/license/EIYARO-Project/core)](https://github.com/EIYARO-Project/core/blob/master/LICENSE)
 [![Latest Release](https://img.shields.io/github/v/release/EIYARO-Project/core?label=latest%20release)](https://github.com/EIYARO-Project/core/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/EIYARO-Project/core/total)](https://github.com/EIYARO-Project/core/releases)
+[![EIYARO Project Community](https://img.shields.io/discord/1217075571528564736?label=EIYARO%20Project%20Discord&logo=discord)](https://discord.gg/W5eBcfbMjM)
 
 **Official golang implementation of the EIYARO protocol.**
 
