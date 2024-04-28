@@ -14,27 +14,27 @@ PACKAGES += 'ey/mining/tensority/go_algorithm'
 
 BUILD_FLAGS := -ldflags "-X ey/version.GitCommit=`git rev-parse HEAD`"
 
-MINER_BINARY32 := miner-$(GOOS)_386
+#MINER_BINARY32 := miner-$(GOOS)_386
 MINER_BINARY64 := miner-$(GOOS)_amd64
 
-EIYAROD_BINARY32 := eiyarod-$(GOOS)_386
+#EIYAROD_BINARY32 := eiyarod-$(GOOS)_386
 EIYAROD_BINARY64 := eiyarod-$(GOOS)_amd64
 
-EIYAROCLI_BINARY32 := eiyarocli-$(GOOS)_386
+#EIYAROCLI_BINARY32 := eiyarocli-$(GOOS)_386
 EIYAROCLI_BINARY64 := eiyarocli-$(GOOS)_amd64
 
 VERSION := $(shell awk -F= '/Version =/ {print $$2}' version/version.go | tr -d "\" ")
 
-MINER_RELEASE32 := miner-$(VERSION)-$(GOOS)_386
+#MINER_RELEASE32 := miner-$(VERSION)-$(GOOS)_386
 MINER_RELEASE64 := miner-$(VERSION)-$(GOOS)_amd64
 
-EIYAROD_RELEASE32 := eiyarod-$(VERSION)-$(GOOS)_386
+#EIYAROD_RELEASE32 := eiyarod-$(VERSION)-$(GOOS)_386
 EIYAROD_RELEASE64 := eiyarod-$(VERSION)-$(GOOS)_amd64
 
-EIYAROCLI_RELEASE32 := eiyarocli-$(VERSION)-$(GOOS)_386
+#EIYAROCLI_RELEASE32 := eiyarocli-$(VERSION)-$(GOOS)_386
 EIYAROCLI_RELEASE64 := eiyarocli-$(VERSION)-$(GOOS)_amd64
 
-EIYARO_RELEASE32 := eiyaro-$(VERSION)-$(GOOS)_386
+#EIYARO_RELEASE32 := eiyaro-$(VERSION)-$(GOOS)_386
 EIYARO_RELEASE64 := eiyaro-$(VERSION)-$(GOOS)_amd64
 
 all: test target release-all install
@@ -60,16 +60,10 @@ install:
 target:
 	mkdir -p $@
 
-binary: target/$(EIYAROD_BINARY32) target/$(EIYAROD_BINARY64) target/$(EIYAROCLI_BINARY32) target/$(EIYAROCLI_BINARY64) target/$(MINER_BINARY32) target/$(MINER_BINARY64)
+binary: target/$(EIYAROD_BINARY64) target/$(EIYAROCLI_BINARY64) target/$(MINER_BINARY64)
 
 ifeq ($(GOOS),windows)
 release: binary
-	cd target && cp -f $(MINER_BINARY32) $(MINER_BINARY32).exe
-	cd target && cp -f $(EIYAROD_BINARY32) $(EIYAROD_BINARY32).exe
-	cd target && cp -f $(EIYAROCLI_BINARY32) $(EIYAROCLI_BINARY32).exe
-	cd target && md5sum $(MINER_BINARY32).exe $(EIYAROD_BINARY32).exe $(EIYAROCLI_BINARY32).exe >$(EIYARO_RELEASE32).md5
-	cd target && zip $(EIYARO_RELEASE32).zip $(MINER_BINARY32).exe $(EIYAROD_BINARY32).exe $(EIYAROCLI_BINARY32).exe $(EIYARO_RELEASE32).md5
-	cd target && rm -f $(MINER_BINARY32) $(EIYAROD_BINARY32) $(EIYAROCLI_BINARY32) $(MINER_BINARY32).exe $(EIYAROD_BINARY32).exe $(EIYAROCLI_BINARY32).exe $(EIYARO_RELEASE32).md5
 	cd target && cp -f $(MINER_BINARY64) $(MINER_BINARY64).exe
 	cd target && cp -f $(EIYAROD_BINARY64) $(EIYAROD_BINARY64).exe
 	cd target && cp -f $(EIYAROCLI_BINARY64) $(EIYAROCLI_BINARY64).exe
@@ -78,9 +72,6 @@ release: binary
 	cd target && rm -f $(MINER_BINARY64) $(EIYAROD_BINARY64) $(EIYAROCLI_BINARY64) $(MINER_BINARY64).exe $(EIYAROD_BINARY64).exe $(EIYAROCLI_BINARY64).exe $(EIYARO_RELEASE64).md5
 else
 release: binary
-	cd target && md5sum $(MINER_BINARY32) $(EIYAROD_BINARY32) $(EIYAROCLI_BINARY32) >$(EIYARO_RELEASE32).md5
-	cd target && tar -czf $(EIYARO_RELEASE32).tgz $(MINER_BINARY32) $(EIYAROD_BINARY32) $(EIYAROCLI_BINARY32) $(EIYARO_RELEASE32).md5
-	cd target && rm -f $(MINER_BINARY32) $(EIYAROD_BINARY32) $(EIYAROCLI_BINARY32) $(EIYARO_RELEASE32).md5
 	cd target && md5sum $(MINER_BINARY64) $(EIYAROD_BINARY64) $(EIYAROCLI_BINARY64) >$(EIYARO_RELEASE64).md5
 	cd target && tar -czf $(EIYARO_RELEASE64).tgz $(MINER_BINARY64) $(EIYAROD_BINARY64) $(EIYAROCLI_BINARY64) $(EIYARO_RELEASE64).md5
 	cd target && rm -f $(MINER_BINARY64) $(EIYAROD_BINARY64) $(EIYAROCLI_BINARY64) $(EIYARO_RELEASE64).md5
@@ -106,20 +97,11 @@ clean:
 	@rm -rf crypto/sm2/*.pem
 	@echo "Done."
 
-target/$(EIYAROD_BINARY32):
-	CGO_ENABLED=0 GOARCH=386 go build $(BUILD_FLAGS) -o $@ cmd/eiyarod/main.go
-
 target/$(EIYAROD_BINARY64):
 	CGO_ENABLED=0 GOARCH=amd64 go build $(BUILD_FLAGS) -o $@ cmd/eiyarod/main.go
 
-target/$(EIYAROCLI_BINARY32):
-	CGO_ENABLED=0 GOARCH=386 go build $(BUILD_FLAGS) -o $@ cmd/eiyarocli/main.go
-
 target/$(EIYAROCLI_BINARY64):
 	CGO_ENABLED=0 GOARCH=amd64 go build $(BUILD_FLAGS) -o $@ cmd/eiyarocli/main.go
-
-target/$(MINER_BINARY32):
-	CGO_ENABLED=0 GOARCH=386 go build $(BUILD_FLAGS) -o $@ cmd/miner/main.go
 
 target/$(MINER_BINARY64):
 	CGO_ENABLED=0 GOARCH=amd64 go build $(BUILD_FLAGS) -o $@ cmd/miner/main.go
