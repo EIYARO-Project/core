@@ -274,7 +274,17 @@ Ensure your [Docker](https://www.docker.com/) version is 17.05 or higher.
 $ docker build -t eiyaro .
 ```
 
-For the usage please refer to [running-in-docker-wiki](https://github.com/EIYARO-Project/core/wiki/Running-in-Docker).
+Suggested run command:
+
+```console
+docker run -d --name EiyaroNode \
+    -p 46656:46656 \
+    -p 46657:46657 \
+    -p 9888:9888 \
+    -p 1999:1999 \
+    -e CHAIN_ID=mainnet \
+    eiyaro
+```
 
 
 ## Installing with Homebrew
