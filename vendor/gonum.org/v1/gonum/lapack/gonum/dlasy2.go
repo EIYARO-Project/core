@@ -66,7 +66,7 @@ func (impl Implementation) Dlasy2(tranl, tranr bool, isgn, n1, n2 int, tl []floa
 		var (
 			smin float64
 			tmp  [4]float64 // tmp is used as a 2×2 row-major matrix.
-			eyp [2]float64
+			btmp [2]float64
 		)
 		if n1 == 1 && n2 == 2 {
 			// 1×2 case: TL11*[X11 X12] + sgn*[X11 X12]*op[TR11 TR12] = [B11 B12].
@@ -84,8 +84,8 @@ func (impl Implementation) Dlasy2(tranl, tranr bool, isgn, n1, n2 int, tl []floa
 				tmp[1] = sgn * tr[ldtr]
 				tmp[2] = sgn * tr[1]
 			}
-			eyp[0] = b[0]
-			eyp[1] = b[1]
+			btmp[0] = b[0]
+			btmp[1] = b[1]
 		} else {
 			// 2×1 case: op[TL11 TL12]*[X11] + sgn*[X11]*TR11 = [B11].
 			//             [TL21 TL22]*[X21]       [X21]        [B21]
@@ -102,8 +102,8 @@ func (impl Implementation) Dlasy2(tranl, tranr bool, isgn, n1, n2 int, tl []floa
 				tmp[1] = tl[1]
 				tmp[2] = tl[ldtl]
 			}
-			eyp[0] = b[0]
-			eyp[1] = b[ldb]
+			btmp[0] = b[0]
+			btmp[1] = b[ldb]
 		}
 
 		// Solve 2×2 system using complete pivoting.
@@ -131,20 +131,20 @@ func (impl Implementation) Dlasy2(tranl, tranr bool, isgn, n1, n2 int, tl []floa
 		if ipiv&0x2 != 0 { // true for ipiv equal to 2 and 3.
 			// The pivot was in the second row, swap the elements of
 			// the right-hand side.
-			eyp[0], eyp[1] = eyp[1], eyp[0]-l21*eyp[1]
+			btmp[0], btmp[1] = btmp[1], btmp[0]-l21*btmp[1]
 		} else {
-			eyp[1] -= l21 * eyp[0]
+			btmp[1] -= l21 * btmp[0]
 		}
 		scale = 1
-		if 2*smlnum*math.Abs(eyp[1]) > math.Abs(u22) || 2*smlnum*math.Abs(eyp[0]) > math.Abs(u11) {
-			scale = 0.5 / math.Max(math.Abs(eyp[0]), math.Abs(eyp[1]))
-			eyp[0] *= scale
-			eyp[1] *= scale
+		if 2*smlnum*math.Abs(btmp[1]) > math.Abs(u22) || 2*smlnum*math.Abs(btmp[0]) > math.Abs(u11) {
+			scale = 0.5 / math.Max(math.Abs(btmp[0]), math.Abs(btmp[1]))
+			btmp[0] *= scale
+			btmp[1] *= scale
 		}
-		// Solve the system [u11 u12] [x21] = [ eyp[0] ].
-		//                  [  0 u22] [x22]   [ eyp[1] ]
-		x22 := eyp[1] / u22
-		x21 := eyp[0]/u11 - (u12/u11)*x22
+		// Solve the system [u11 u12] [x21] = [ btmp[0] ].
+		//                  [  0 u22] [x22]   [ btmp[1] ]
+		x22 := btmp[1] / u22
+		x21 := btmp[0]/u11 - (u12/u11)*x22
 		if ipiv&0x1 != 0 { // true for ipiv equal to 1 and 3.
 			// The pivot was in the second column, swap the elements
 			// of the solution.
@@ -201,11 +201,11 @@ func (impl Implementation) Dlasy2(tranl, tranr bool, isgn, n1, n2 int, tl []floa
 		t[3][2] = sgn * tr[1]
 	}
 
-	var eyp [4]float64
-	eyp[0] = b[0]
-	eyp[1] = b[1]
-	eyp[2] = b[ldb]
-	eyp[3] = b[ldb+1]
+	var btmp [4]float64
+	btmp[0] = b[0]
+	btmp[1] = b[1]
+	btmp[2] = b[ldb]
+	btmp[3] = b[ldb+1]
 
 	// Perform elimination.
 	var jpiv [4]int // jpiv records any column swaps for pivoting.
@@ -225,9 +225,9 @@ func (impl Implementation) Dlasy2(tranl, tranr bool, isgn, n1, n2 int, tl []floa
 		}
 		if ipsv != i {
 			// The pivot is not in the top row of the unprocessed
-			// block, swap rows ipsv and i of t and eyp.
+			// block, swap rows ipsv and i of t and btmp.
 			t[ipsv], t[i] = t[i], t[ipsv]
-			eyp[ipsv], eyp[i] = eyp[i], eyp[ipsv]
+			btmp[ipsv], btmp[i] = btmp[i], btmp[ipsv]
 		}
 		if jpsv != i {
 			// The pivot is not in the left column of the
@@ -243,7 +243,7 @@ func (impl Implementation) Dlasy2(tranl, tranr bool, isgn, n1, n2 int, tl []floa
 		}
 		for k := i + 1; k < 4; k++ {
 			t[k][i] /= t[i][i]
-			eyp[k] -= t[k][i] * eyp[i]
+			btmp[k] -= t[k][i] * btmp[i]
 			for j := i + 1; j < 4; j++ {
 				t[k][j] -= t[k][i] * t[i][j]
 			}
@@ -254,24 +254,24 @@ func (impl Implementation) Dlasy2(tranl, tranr bool, isgn, n1, n2 int, tl []floa
 		t[3][3] = smin
 	}
 	scale = 1
-	if 8*smlnum*math.Abs(eyp[0]) > math.Abs(t[0][0]) ||
-		8*smlnum*math.Abs(eyp[1]) > math.Abs(t[1][1]) ||
-		8*smlnum*math.Abs(eyp[2]) > math.Abs(t[2][2]) ||
-		8*smlnum*math.Abs(eyp[3]) > math.Abs(t[3][3]) {
+	if 8*smlnum*math.Abs(btmp[0]) > math.Abs(t[0][0]) ||
+		8*smlnum*math.Abs(btmp[1]) > math.Abs(t[1][1]) ||
+		8*smlnum*math.Abs(btmp[2]) > math.Abs(t[2][2]) ||
+		8*smlnum*math.Abs(btmp[3]) > math.Abs(t[3][3]) {
 
-		maxeyp := math.Max(math.Abs(eyp[0]), math.Abs(eyp[1]))
-		maxeyp = math.Max(maxeyp, math.Max(math.Abs(eyp[2]), math.Abs(eyp[3])))
-		scale = 1 / 8 / maxeyp
-		eyp[0] *= scale
-		eyp[1] *= scale
-		eyp[2] *= scale
-		eyp[3] *= scale
+		maxbtmp := math.Max(math.Abs(btmp[0]), math.Abs(btmp[1]))
+		maxbtmp = math.Max(maxbtmp, math.Max(math.Abs(btmp[2]), math.Abs(btmp[3])))
+		scale = 1 / 8 / maxbtmp
+		btmp[0] *= scale
+		btmp[1] *= scale
+		btmp[2] *= scale
+		btmp[3] *= scale
 	}
-	// Compute the solution of the upper triangular system t * tmp = eyp.
+	// Compute the solution of the upper triangular system t * tmp = btmp.
 	var tmp [4]float64
 	for i := 3; i >= 0; i-- {
 		temp := 1 / t[i][i]
-		tmp[i] = eyp[i] * temp
+		tmp[i] = btmp[i] * temp
 		for j := i + 1; j < 4; j++ {
 			tmp[i] -= temp * t[i][j] * tmp[j]
 		}

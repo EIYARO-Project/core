@@ -185,10 +185,10 @@ func (s *SymDense) AddSym(a, b Symmetric) {
 				s.checkOverlap(generalFromSymmetric(bmat))
 			}
 			for i := 0; i < n; i++ {
-				eyp := bmat.Data[i*bmat.Stride+i : i*bmat.Stride+n]
+				btmp := bmat.Data[i*bmat.Stride+i : i*bmat.Stride+n]
 				stmp := s.mat.Data[i*s.mat.Stride+i : i*s.mat.Stride+n]
 				for j, v := range amat.Data[i*amat.Stride+i : i*amat.Stride+n] {
-					stmp[j] = v + eyp[j]
+					stmp[j] = v + btmp[j]
 				}
 			}
 			return
