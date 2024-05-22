@@ -14,8 +14,7 @@ import (
 	"core/accesstoken"
 	"core/blockchain/txfeed"
 	cfg "core/config"
-	"core/dashboard/dashboard"
-	"core/dashboard/equity"
+	"core/dashboard"
 	"core/errors"
 	"core/event"
 	"core/mining/cpuminer"
@@ -338,12 +337,13 @@ func alwaysError(err error) http.Handler {
 
 func webAssetsHandler(next http.Handler) http.Handler {
 	mux := http.NewServeMux()
-	mux.Handle("/dashboard/", http.StripPrefix("/dashboard/", static.Handler{
-		Assets:  dashboard.Files,
+
+	mux.Handle("/dashboard/", http.StripPrefix("/", static.Handler {
+		Assets:  dashboard.Dashboard,
 		Default: "index.html",
 	}))
-	mux.Handle("/equity/", http.StripPrefix("/equity/", static.Handler{
-		Assets:  equity.Files,
+	mux.Handle("/equity/", http.StripPrefix("/", static.Handler {
+		Assets:  dashboard.Equity,
 		Default: "index.html",
 	}))
 	mux.Handle("/", next)
