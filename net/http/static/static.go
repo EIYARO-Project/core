@@ -14,6 +14,9 @@ var lastMod = time.Now()
 type Handler struct {
 	Assets embed.FS
 
+	// Root is the root path where the static files within embed.FS are located.
+	Root string
+
 	// Index is the name of an entry in Assets that should be used if the request
 	// path is empty (equivalent to requesting "/"). This is analogous to index
 	// documents commonly used in webservers. If Index is empty, it will be
@@ -30,11 +33,11 @@ type Handler struct {
 
 func (h Handler) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
 
-    data, err := h.Assets.ReadFile(r.URL.Path)
+    data, err := h.Assets.ReadFile(h.Root + r.URL.Path)
 	if err != nil && r.URL.Path == "" && h.Index != "" {
-		data, _ = h.Assets.ReadFile(r.URL.Path + h.Index)
+		data, _ = h.Assets.ReadFile(h.Root + h.Index)
 	} else if err != nil && h.Default != "" {
-	    data, _ = h.Assets.ReadFile(r.URL.Path + h.Default)
+	    data, _ = h.Assets.ReadFile(h.Root + h.Default)
 	} else if err != nil {
 		http.NotFound(rw, r)
 		return

@@ -338,12 +338,14 @@ func alwaysError(err error) http.Handler {
 func webAssetsHandler(next http.Handler) http.Handler {
 	mux := http.NewServeMux()
 
-	mux.Handle("/dashboard/", http.StripPrefix("/", static.Handler {
-		Assets:  dashboard.Dashboard,
+	mux.Handle("/dashboard/", http.StripPrefix("/dashboard/", static.Handler {
+		Assets:  dashboard.Files,
+		Root:    "dashboard/",
 		Default: "index.html",
 	}))
-	mux.Handle("/equity/", http.StripPrefix("/", static.Handler {
-		Assets:  dashboard.Equity,
+	mux.Handle("/equity/", http.StripPrefix("/equity/", static.Handler {
+		Assets:  dashboard.Files,
+		Root:    "equity/",
 		Default: "index.html",
 	}))
 	mux.Handle("/", next)

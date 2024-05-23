@@ -5,9 +5,6 @@ import (
 )
 
 var (
-    //go:embed dashboard/*
-    Dashboard embed.FS
-
-    //go:embed equity/*
-    Equity embed.FS
+    //go:embed *
+    Files embed.FS
 )
