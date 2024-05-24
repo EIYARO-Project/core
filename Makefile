@@ -10,9 +10,9 @@ endif
 endif
 
 PACKAGES    := $(shell go list ./... | grep -v '/vendor/' | grep -v '/crypto/ed25519/chainkd' | grep -v '/mining/tensority')
-PACKAGES += 'ey/mining/tensority/go_algorithm'
+PACKAGES += 'core/mining/tensority/go_algorithm'
 
-BUILD_FLAGS := -ldflags "-X ey/version.GitCommit=`git rev-parse HEAD`"
+BUILD_FLAGS := -ldflags "-X core/version.GitCommit=`git rev-parse HEAD`"
 
 #MINER_BINARY32 := miner-$(GOOS)_386
 MINER_BINARY64 := miner-$(GOOS)_amd64
