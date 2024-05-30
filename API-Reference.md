@@ -4,9 +4,9 @@ Default JSON-RPC endpoints:
 
 Client | URL
 :----: | :----:
-Go     | http://api.eiyaro.com/
+Go     | http://api.eiyaro.org/ 
 
-http://api.eiyaro.com/net-info
+http://api.eiyaro.org/net-info
 ```json
 {
   "status": "success",
